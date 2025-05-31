@@ -1,0 +1,12 @@
+# Ignore node_modules in any folder
+**/node_modules/
+/node_modules
+node_modules
+# Ignore any file or folder named 'history'
+**/.history
+**/.history/
+**/history
+**/history/
+/.history
+.history/
+**/.history/

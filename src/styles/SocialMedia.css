@@ -1,0 +1,42 @@
+.social-media .linkedin {
+    background-color: #0a66ba;
+}
+
+.social-media .insta {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-media {
+    position: relative;
+    bottom: 50% !important;
+    background: grey;
+    font-size: 0.5rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+/* Mobile and tablet responsive adjustments */
+@media (max-width: 768px) {
+    .social-media {
+        bottom: 10px !important;
+        right: 10px !important;
+        gap: 10px !important;
+    }
+
+    .social-media a {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .social-media a .fs-4 {
+        font-size: 1rem !important;
+    }
+}
+
+/* Optional: add gradient background for Instagram icon */
+.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border: none;
+}
