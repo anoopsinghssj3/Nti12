@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="corpo_tra" element={<CorporateTraining />} />
         {/* <Route path="on_tra" element={<OnlineTraining />} /> */}
-        <Route path="https://guileless-meerkat-55363e.netlify.app/on_tra" element={<OnlineTraining />} />
+        <Route path="on_tra" element={<OnlineTraining />} />
         <Route path="/certificate" element={<Certificate />} />
         <Route path="/apply_certi" element={<ApplyForCertificate />} />
         <Route path="/download_certi" element={<DownloadCertificate />} />
