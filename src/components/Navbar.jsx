@@ -75,7 +75,7 @@ export default function Navbar() {
                         </li>
 
                         <li className="nav-item mt-1">
-                            <a className="nav-link text-secondary" href="/on_tra">Online Registration</a>
+                            <a className="nav-link text-secondary" href="https://guileless-meerkat-55363e.netlify.app/on_tra">Online Registration</a>
                         </li>
 
                         <li className="nav-item mt-1">
