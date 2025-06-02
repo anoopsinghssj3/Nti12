@@ -1,5 +1,5 @@
 import React from 'react';
-import '../home_styles/OurLerners.css';
+import '../home_styles/OurLearners.css';
 
 export default function OurLearners() {
     const logos = [

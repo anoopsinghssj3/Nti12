@@ -1,0 +1,36 @@
+.learners-underline {
+  text-decoration: underline;
+  text-decoration-color: darksalmon; 
+  text-underline-offset: 6px;     
+  text-decoration-thickness: 2px; 
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.marquee {
+  display: flex;
+  width: fit-content;
+  animation: scroll 30s linear infinite;
+  gap: 60px;
+}
+
+.logo-img {
+  height: 80px;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+/* Keyframes for marquee scroll */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

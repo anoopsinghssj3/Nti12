@@ -45,61 +45,64 @@
 
 // export default Testimonials;
 
-
 import React from 'react';
 import '../home_styles/Testimonials.css';
 
 const testimonials = [
   {
     name: 'Surabhi Sharma',
-    text: 'Ducat Mohan Nagar is one of the best learning place. I enrolled for Digital Marketing under the guidance of Mr Shashank Agarwal...',
-    image: 'https://via.placeholder.com/60/FF7F50/FFFFFF?text=S',
+    text: 'Ducat Mohan Nagar is one of the best learning place...',
+    image: 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1717501086645Rahul.png&w=128&q=75',
   },
   {
     name: 'Omer Zia',
-    text: 'Especial thanks to placement head Shashank Mishra sir. He has created a storm of companies in Ducat...',
-    image: 'https://via.placeholder.com/60/4682B4/FFFFFF?text=O',
+    text: 'Especial thanks to placement head Shashank Mishra sir...',
+    image: 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1717500186395jagriti.png&w=128&q=75',
   },
   {
     name: 'Vinay Kumar',
-    text: 'The Web Designing course was fantastic! It covered UX design and modern HTML/CSS techniques...',
+    text: 'The Web Designing course was fantastic!...',
     image: 'https://via.placeholder.com/60/2E8B57/FFFFFF?text=V',
   },
   {
     name: 'Sumit Kumar',
-    text: 'Ducat is a great institute to improve Oracle DBA skills. Anjeet Sir is very supportive...',
+    text: 'Ducat is a great institute to improve Oracle DBA skills...',
     image: 'https://via.placeholder.com/60/FF7F50/FFFFFF?text=SK',
   },
 ];
 
 function Testimonials() {
   return (
-    <div className="testimonials-container container py-5">
-      <h2 className="testimonials-heading text-center">
+    <div className="container py-5 testimonials">
+      <h2 className="text-center mb-4 learners-underline">
         Testimonials
-        <div className="heading-underline"></div>
+        <div className="mx-auto mt-2"></div>
       </h2>
 
-      <div className="row justify-content-center ">
-        {testimonials.map((testimonial, index) => (
-          <div className="col-md-6 col-lg-4 mb-4" key={index}>
-            <div className="testimonial-card p-3 position-relative">
-              <div className="quote-icon position-absolute top-0 start-0 p-2 fs-1 opacity-25">❝</div>
+      <div className="position-relative overflow-hidden">
+        <div className="d-flex marquee-track">
+          {testimonials.concat(testimonials).map((testimonial, index) => (
+            <div
+              className="card mx-2 flex-shrink-0 p-3"
+              style={{ width: '300px', minHeight: '200px' }}
+              key={index}
+            >
+              <div className="position-absolute top-0 start-0 p-2 fs-1 opacity-25">❝</div>
               <div className="d-flex align-items-center mb-2">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="testimonial-img me-2"
+                  className="rounded-circle me-2"
+                  width="60"
+                  height="60"
                 />
                 <h5 className="mb-0">{testimonial.name}</h5>
               </div>
-              <div className="marquee-box">
-                <div className="marquee-text">{testimonial.text}</div>
-              </div>
-              <p className="read-more text-end text-primary mt-2 mb-0">Read more</p>
+              <p className="mb-0">{testimonial.text}</p>
+              <p className="text-end text-primary mt-2 mb-0">Read more</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
