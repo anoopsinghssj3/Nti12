@@ -22,7 +22,7 @@ const clients = [
 
 const DFCSection = () => {
   return (
-    <section className="dfc-container">
+    <section className="dfc-container mb-5">
       <div className="dfc-content">
         <h1>NTI FOR CORPORATES</h1>
         <h2>Corporate Training Solution that Accelerates Business!</h2>

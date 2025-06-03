@@ -4,16 +4,21 @@ import Corporate_traning_data from '../corporate_traning_pages/Corporate_traning
 import OurLearners from '../home_pages/OurLearners'
 import FeatureCards from '../corporate_traning_pages/FeatureCards'
 import DFCSection from '../corporate_traning_pages/DFCSection'
-
+import GEGSection from '../home_pages/GEGSection'
+import TopCourses from '../home_pages/TopCourses'
 
 function CorporateTraining() {
     return (
         <>
-            <CorporateTrainingForm />
-            <OurLearners />
-            <Corporate_traning_data />
-            <FeatureCards/>
-            <DFCSection/>
+            <div className="corporate-traning gap-3">
+                <div>   <CorporateTrainingForm /></div>
+                <div>    <OurLearners /></div>
+                <div>   <Corporate_traning_data /></div>
+                <div>   <FeatureCards /></div>
+                <div><DFCSection /></div>
+                <div className='mb-4'> <GEGSection /></div>
+                <div> <TopCourses /></div>
+            </div>
         </>
     )
 }

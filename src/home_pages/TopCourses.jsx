@@ -7,8 +7,7 @@ const courses = [
   'Digital Marketing + AI', 'Software Testing', 'AutoCAD', 'ERP', 'Azure'
 ];
 
-function TopCourses() {
-  return (
+function TopCourses() {  return (
     <div className="container my-5">
       <div className="text-center mb-4">
         <h2 className=" pb-2 learners-underline">

@@ -53,7 +53,8 @@ export default function Heroes() {
                 <div className='d-flex'>
                     <input type="search" className="btn w-25  p-2  ms-4 border-2 border position-relative btn-search-input " placeholder="Search Your Favourite Courses Today" />
                     <button className='btn p-2 btn-danger position-relative btn-search-btn border-0 fs-2 '>
-                        <Io.IoIosSearch /></button></div>
+                        <Io.IoIosSearch /></button>
+                </div>
             </div>
         </>
     )

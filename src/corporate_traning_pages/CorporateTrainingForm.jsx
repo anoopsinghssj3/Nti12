@@ -17,7 +17,7 @@ export default function CorporateTrainingForm() {
 
   return (
     <div id="corporate-training-form" className="container-fluid p-0">
-      <div className="row m-0">
+      <div className="row">
         {/* Left Section */}
         <div className="col-lg-6 text-section d-flex flex-column justify-content-center p-5 text-white">
           <h2>
