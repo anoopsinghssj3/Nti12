@@ -5,7 +5,6 @@ import OurLearners from '../home_pages/OurLearners'
 import FeatureCards from '../corporate_traning_pages/FeatureCards'
 import DFCSection from '../corporate_traning_pages/DFCSection'
 import GEGSection from '../home_pages/GEGSection'
-import TopCourses from '../home_pages/TopCourses'
 import OurSuccess from '../corporate_traning_pages/OurSuccess'
 import FAQSection from '../corporate_traning_pages/FAQSection'
 
@@ -22,7 +21,7 @@ function CorporateTraining() {
                 <div>   <FeatureCards /></div>
                 <div><DFCSection /></div>
                 <div className='mb-4'> <GEGSection /></div>
-                <div> <TopCourses /></div>
+
                 <div><OurSuccess /></div>
                 <div><FAQSection /></div>
             </div>

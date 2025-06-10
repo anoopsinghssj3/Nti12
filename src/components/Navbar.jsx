@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 import { IoMdHome } from "react-icons/io";
 import { FaBookReader, FaFileSignature } from "react-icons/fa";
 import { GiSuitcase } from "react-icons/gi";
 import { IoSchoolSharp } from "react-icons/io5";
 import { PiCertificateFill, PiCaretCircleDownFill } from "react-icons/pi";
-import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -241,32 +241,32 @@ export default function Navbar() {
 
                             {/* Other nav items */}
                             <li className="nav-item">
-                                <a className="nav-link text-secondary" href="/placement">
+                                <a className="nav-link text-secondary" href="/placement" type="button" onClick={() => navigate("/placement")}>
                                     <GiSuitcase fontSize="1.5rem" className='mb-1' /> Placement
                                 </a>
                             </li>
 
                             <li className="nav-item">
                                 <a className="nav-link text-secondary" href="/corpo_tra">
-                                    <IoSchoolSharp fontSize="1.25rem" className='mb-1' /> Corporate Training
+                                    <IoSchoolSharp fontSize="1.25rem" className='mb-1' type="button" onClick={() => navigate("/corpo_tra")}/> Corporate Training
                                 </a>
                             </li>
 
                             <li className="nav-item">
                                 <a className="nav-link text-secondary" href="/on_tra">
-                                    <FaFileSignature fontSize="1.25rem" className='mb-1' /> Online Registration
+                                    <FaFileSignature fontSize="1.25rem" className='mb-1' type="button" onClick={() => navigate("/on_tra")}/> Online Registration
                                 </a>
                             </li>
 
                             <li className="nav-item">
                                 <a className="nav-link text-secondary" href="/certificate">
-                                    <PiCertificateFill fontSize="1.5rem" className='mb-1' /> Certificate
+                                    <PiCertificateFill fontSize="1.5rem" className='mb-1' type="button" onClick={() => navigate("/certificate")}/> Certificate
                                 </a>
                             </li>
 
                             <li className="nav-item dropdown ms-1">
                                 <a className="nav-link text-secondary" href="/about">
-                                    <PiCaretCircleDownFill fontSize="1.5rem" className='mb-1' /> About
+                                    <PiCaretCircleDownFill fontSize="1.5rem" className='mb-1' type="button" onClick={() => navigate("/about")}/> About
                                 </a>
                             </li>
 

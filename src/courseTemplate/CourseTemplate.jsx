@@ -10,67 +10,55 @@ import { useNavigate, useLocation } from 'react-router-dom';
 const DEFAULT_IMG = "https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif";
 
 const fixedCourses = {
-  "mern stack + gen ai": {
+  "mern stack": {
     description: `Build full-stack web applications powered by intelligent AI features. You’ll master MongoDB for flexible data models, Express.js for robust server APIs, React for dynamic user interfaces, and Node.js for seamless backend logic. Then layer in Generative AI: learn how to integrate pre-trained language and image models into your apps to drive chatbots, content generation, and smart recommendations. Hands-on labs guide you step-by-step—from designing RESTful endpoints to crafting React components that consume AI-driven data. By project’s end you’ll have a polished portfolio: an end-to-end MERN app augmented with AI, plus guided capstones illustrating best practices in testing.`,
-    duration: "4 Months",
-    pdfLink: "https://example.com/mernstack-genai-course-outline.pdf",
-    fees: "₹25000 (GST not included) ",
+    duration: "5 Months",
+    pdfLink:
+      "https://example.com/mernstack-genai-course-outline.pdf",
+    fees: "₹35,000 (GST not included) ",
     projects: [
-      "Build a MERN stack blog platform with AI-powered content recommendations",
-      "Create a chatbot using Generative AI integrated with a React frontend",
-      "Develop an AI-driven e-commerce site with personalized product suggestions"
+      "live projects"
     ]
   },
 
   "mean stack": {
     description: `This comprehensive course blends the power of the MEAN Stack—MongoDB, Express.js, Angular, and Node.js—with cutting-edge Generative AI technologies. Learn how to design robust backend services with Node and Express, build dynamic frontends using Angular, and manage flexible data storage with MongoDB. Then take it further by integrating AI features like intelligent chatbots, content generation, and recommendation systems into your applications. Through hands-on projects, you'll gain practical experience using APIs from leading AI providers and deploying smart applications to the cloud. Each module walks you through real-world development scenarios, from creating RESTful APIs to building responsive Angular components that consume AI-driven services.`,
-    duration: "4 Months",
-    pdfLink: "https://example.com/mernstack-genai-course-outline.pdf",
-    fees: "₹25,000 (GST not included)",
-    projects: [
-      "Build a MEAN stack blog platform with AI-powered content recommendations",
-      "Create a chatbot using Generative AI integrated with an Angular frontend",
-      "Develop an AI-driven e-commerce site with personalized product suggestions"
-    ]
-  },
-
-
-  "cyber security + gen ai": {
-    description: `Learn to protect and audit digital systems while harnessing AI for smarter threat detection. You’ll first explore core security domains—network defense, ethical hacking, cryptography, and incident response—through interactive simulations and real-world labs. Then you’ll learn how Generative AI can automate log analysis, flag anomalies, and even simulate sophisticated attack scenarios for proactive defense. With guided exercises using tools like Wireshark, Metasploit, and Python-powered AI scripts, you’ll understand both the human and algorithmic sides of cybersecurity. Capstone projects include building an AI-driven intrusion detection prototype and conducting a full-scope pentest on a mock network.`,
     duration: "5 Months",
-    pdfLink: "https://example.com/cybersecurity-genai-course-outline.pdf",
-    fees: "₹55,000",
+    pdfLink: "https://example.com/mernstack-genai-course-outline.pdf",
+    fees: "₹35,000 (GST not included)",
     projects: [
-      "Develop an AI-based intrusion detection system prototype",
-      "Perform penetration testing on a simulated network environment",
-      "Automate log file anomaly detection using AI scripts"
+      "live projects"]
+  },
+
+
+  "cyber security": {
+    description: `Learn to protect and audit digital systems while harnessing AI for smarter threat detection. You’ll first explore core security domains—network defense, ethical hacking, cryptography, and incident response—through interactive simulations and real-world labs. Then you’ll learn how Generative AI can automate log analysis, flag anomalies, and even simulate sophisticated attack scenarios for proactive defense. With guided exercises using tools like Wireshark, Metasploit, and Python-powered AI scripts, you’ll understand both the human and algorithmic sides of cybersecurity. Capstone projects include building an AI-driven intrusion detection prototype and conducting a full-scope pentest on a mock network.`,
+    duration: "3 Months",
+    pdfLink: "https://example.com/cybersecurity-genai-course-outline.pdf",
+    fees: "₹20,000 (GST not included)",
+    projects: [
+      "live projects"
     ]
   },
 
-  "java fulll stack": {
+  "java full stack": {
     description: `Deep-dive into Java’s core and advanced features to become a confident, industry-ready developer. You’ll start with fundamentals—OOP principles, exception handling, and collections—then move into multithreading, JVM tuning, and memory management. Hands-on coding exercises walk you through building console apps, then scaling up to web services with Spring and Hibernate. You’ll create RESTful APIs, integrate databases via JDBC and JPA, and learn best practices for clean, maintainable code. Project modules include designing a microservice architecture, optimizing performance, and writing unit tests with JUnit. Along the way, you’ll pick up tooling workflows—Maven, Gradle, Git—and learn to deploy Java apps to cloud or on-premise servers. By course’s end, you’ll have a portfolio of real applications showcasing your mastery and be positioned to excel as a Backend Engineer, Software Developer, or Java Specialist.`,
-    duration: "4 months",
+    duration: "5 months",
     pdfLink: "https://example.com/java-expert-course-outline.pdf",
     fees: "₹40,000 (GST not included)",
     projects: [
-      "Create a multi-threaded console banking application",
-      "Develop RESTful web services using Spring Boot",
-      "Build a microservice architecture with database integration"
+      "live projects"
     ]
   },
+
   "core java": {
     img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1709033901773Java.png&w=256&q=75",
     description: `The Core Java course provides a strong foundation in Java programming for beginners and intermediate learners. You’ll start with basic concepts like variables, data types, operators, control structures, and then move into more advanced topics such as object-oriented programming (OOP), classes, inheritance, polymorphism, abstraction, and encapsulation.
-
-You will also learn exception handling, file input/output (I/O), multithreading, arrays, strings, collections framework, and Java memory management. The course includes practical coding exercises and real-life mini projects to help reinforce your understanding.
-
-By the end of this course, you’ll be able to write robust Java programs, build reusable classes and functions, and understand how Java works internally. Core Java is the stepping stone to more advanced technologies like Java EE, Android, and Spring Framework.`,
+You will also learn exception handling, file input/output (I/O), multithreading, arrays, strings, collections framework, and Java memory management. The course includes practical coding exercises and real-life mini projects to help reinforce your understanding.`,
     duration: "1.5 Months",
     pdfLink: "https://example.com/core-java-course-outline.pdf",
     fees: "₹10,000 (GST not included)",
-    projects: [
-      "Create a Library Management System using Java and OOP concepts",
-      "Build a Bank Account Simulator with file handling and exception handling"
+    projects: ["live projects"
     ]
   },
 
@@ -78,62 +66,32 @@ By the end of this course, you’ll be able to write robust Java programs, build
     img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1709033901773Java.png&w=256&q=75",
     description: `The Advanced Java course is designed for learners who have a solid understanding of Core Java and want to dive into building web-based enterprise applications. You’ll explore Java EE technologies such as JDBC (Java Database Connectivity), Servlets, JSP (Java Server Pages), and MVC architecture.
 
-This course also covers essential skills like connecting Java applications to databases, managing sessions, creating dynamic web pages, and building real-world web apps. You’ll learn to use tools like Apache Tomcat, and frameworks like Hibernate and basics of Spring for backend development.
-
-By the end of this course, you’ll be equipped to develop full-fledged web applications using Advanced Java technologies. Ideal for students, job seekers, and working professionals aiming to become backend developers or Java web application specialists.`,
+This course also covers essential skills like connecting Java applications to databases, managing sessions, creating dynamic web pages, and building real-world web apps. You’ll learn to use tools like Apache Tomcat, and frameworks like Hibernate and basics of Spring for backend development.`,
     duration: "3 Months",
     pdfLink: "https://example.com/advanced-java-course-outline.pdf",
-    fees: "₹12,000 (GST not included)",
+    fees: "₹20,000 (GST not included)",
     projects: [
-      "Build an Online Course Enrollment System using Servlets and JSP",
-      "Create a Hotel Booking System with JDBC and MySQL"
+      "live projects"
     ]
   },
 
   "advance digital marketing": {
     description: `Transform how brands connect with audiences through data-driven digital campaigns. You’ll learn to strategize and execute SEO, SEM, social media, content marketing, email workflows, and influencer partnerships. Each module pairs theory with live hands-on work in Google Ads, Facebook Business Manager, and analytics platforms—so you’ll optimize ad spend, craft compelling copy, and measure ROI in real time. Workshops guide you in building landing pages, A/B testing creatives, and automating drip campaigns. By the end, you’ll present a full multi-channel campaign, backed by dashboards and insights that drive business growth. This course equips you for roles as Digital Marketer, Performance Specialist, or Content Strategist, with portfolio projects that showcase your ability to drive measurable results.`,
-    duration: "4 Months",
+    duration: "2 Months",
     pdfLink: "https://example.com/adv-digital-marketing-course-outline.pdf",
-    fees: "₹40,000",
+    fees: "₹15,000 (GST not included) ",
     projects: [
-      "Create and optimize Google Ads campaigns for a real business",
-      "Build an email marketing automation drip workflow",
-      "Develop a multi-channel social media campaign with analytics"
+      "live projects"
     ]
   },
 
-  "ui & ux": {
-    description: `Craft intuitive, delightful digital experiences by learning both visual and experiential design. You’ll begin with user research and journey mapping to understand real needs, then sketch wireframes and build high-fidelity prototypes in Figma and Adobe XD. Dive into color theory, typography, iconography, and responsive layouts to ensure your interfaces look stunning on any device. You’ll also run usability tests, iterate on feedback, and develop design systems that scale across projects. Through hands-on challenges—like redesigning a popular app or creating a SaaS dashboard—you’ll build a polished portfolio. This course prepares you for roles as UI Designer, UX Researcher, or Product Designer, with the confidence to lead end-to-end design processes.`,
-    duration: "5 Months",
-    pdfLink: "https://example.com/ui-ux-course-outline.pdf",
-    fees: "₹45,000",
-    projects: [
-      "Redesign the user interface of a popular mobile app",
-      "Create a high-fidelity SaaS dashboard prototype in Figma",
-      "Conduct usability testing and iterate designs based on feedback"
-    ]
-  },
-
-  ".net": {
-    description: `Master the Microsoft stack to build secure, scalable applications. Start with C# fundamentals—classes, LINQ, async/await—and progress to ASP.NET Core for web APIs and Razor pages. You’ll connect to SQL Server via Entity Framework, implement identity and role-based access, and learn DI patterns for clean architecture. Labs guide you through building real-world solutions: from RESTful services to microservices with Docker and Kubernetes. Along the way, you’ll use Azure DevOps for CI/CD pipelines and integrate cloud services like Functions and Cosmos DB. By course completion, you’ll have end-to-end .NET projects in your portfolio and be ready for roles as .NET Developer, Solutions Architect, or Cloud Engineer.`,
-    duration: "6 Months",
-    pdfLink: "https://example.com/dotnet-course-outline.pdf",
-    fees: "₹60,000",
-    projects: [
-      "Build a secure web API with ASP.NET Core",
-      "Create a microservices app deployed with Docker",
-      "Setup CI/CD pipelines using Azure DevOps"
-    ]
-  },
   "data science": {
     description: `Master data analysis, visualization, and machine learning to extract actionable insights. You’ll learn Python for data manipulation, statistical modeling, and use libraries like pandas, NumPy, and scikit-learn. Courses cover data cleaning, exploratory data analysis, supervised and unsupervised learning, and deploying ML models. Real-world projects include predictive analytics and customer segmentation. The course prepares you for roles like Data Scientist, Analyst, or ML Engineer with hands-on experience and a strong portfolio.`,
     duration: "4 Months",
     pdfLink: "https://example.com/data-science-course-outline.pdf",
     fees: "₹50,000 (GST not included)",
     projects: [
-      "Predict customer churn using classification models",
-      "Perform customer segmentation using clustering algorithms",
-      "Build and deploy a machine learning model to production"
+      "live projects"
     ]
   },
   "python": {
@@ -142,132 +100,105 @@ By the end of this course, you’ll be equipped to develop full-fledged web appl
     pdfLink: "https://example.com/python-training-course-outline.pdf",
     fees: "₹10,000 (GST not included)",
     projects: [
-      "Develop automation scripts for file handling and data extraction",
-      "Build REST APIs using Flask or Django",
-      "Create a web scraper to collect and analyze data"
+      "live projects"
     ]
   },
+
   "business analytics": {
     description: `Develop the skills to analyze business data and guide decision-making. This course covers data visualization, dashboard creation, statistical analysis, and forecasting techniques using tools like Excel, Tableau, and Power BI. You’ll work on case studies to optimize business performance. Ideal for aspiring Business Analysts or Data Consultants.`,
-    duration: "3 Months",
+    duration: "2 Months",
     pdfLink: "https://example.com/business-analytics-course-outline.pdf",
-    fees: "₹30,000",
+    fees: "₹20,000 (GST not included) ",
     projects: [
-      "Create interactive dashboards in Tableau and Power BI",
-      "Analyze sales data and forecast trends using Excel",
-      "Prepare business case studies to support decision-making"
+      "live projects"
     ]
   },
+
   "aws": {
     description: `Gain expertise in Amazon Web Services cloud computing. Learn core services including EC2, S3, Lambda, and VPC configuration. Hands-on labs guide you through deploying scalable applications, setting up CI/CD pipelines with AWS DevOps tools, and managing cloud security. Perfect for Cloud Engineers, DevOps, and Solutions Architects.`,
     duration: "2.5 Months",
     pdfLink: "https://example.com/aws-professional-training-course-outline.pdf",
     fees: "₹20,000 (GST not included)",
     projects: [
-      "Deploy web applications on EC2 instances",
-      "Set up automated CI/CD pipelines using AWS CodePipeline",
-      "Configure secure VPC networks and manage IAM roles"
+      "live projects"
     ]
   },
-  "software testing course": {
+
+  "software testing (manual)": {
     description: `Understand manual and automated software testing methodologies. Topics include test case design, bug tracking, Selenium automation, and performance testing. Practical labs simulate real-world testing scenarios. This course prepares you for roles as QA Engineer, Test Analyst, or Automation Tester.`,
     duration: "3 Months",
     pdfLink: "https://example.com/software-testing-course-outline.pdf",
     fees: "₹25,000",
     projects: [
-      "Write and execute manual test cases for web applications",
-      "Automate UI testing using Selenium WebDriver",
-      "Perform load and performance testing with JMeter"
+      "live projects"
     ]
   },
-  "data analytics using python": {
-    description: `Learn to analyze large datasets using Python’s powerful libraries like pandas, matplotlib, and seaborn. The course focuses on data cleaning, visualization, and statistical analysis to drive data-driven decisions. Projects include real business datasets, preparing you for data analyst roles.`,
-    duration: "4 Months",
-    pdfLink: "https://example.com/data-analytics-python-course-outline.pdf",
-    fees: "₹40,000",
-    projects: [
-      "Clean and visualize business datasets using pandas and matplotlib",
-      "Conduct statistical analysis and hypothesis testing",
-      "Build dashboards with visual insights"
-    ]
-  },
-  "generative ai": {
-    description: `Explore cutting-edge AI models that generate text, images, and code. Understand the theory behind transformer architectures and hands-on usage of APIs like GPT and DALL·E. Build applications that automate content creation, chatbots, and design tools. Prepare for careers in AI development and research.`,
-    duration: "4 Months",
-    pdfLink: "https://example.com/generative-ai-course-outline.pdf",
-    fees: "₹50,000",
-    projects: [
-      "Create a chatbot using GPT API",
-      "Build an image generation tool with DALL·E API",
-      "Develop automated content creation workflows"
-    ]
-  },
-  "power bi": {
-    description: `Master Microsoft Power BI to transform raw data into interactive dashboards and reports. Learn data modeling, DAX formulas, and visualization best practices. Real-world exercises cover business scenarios for actionable insights. Ideal for Business Intelligence Analysts and Data Professionals.`,
+  "automation": {
+    description: `Master automation testing tools and techniques to accelerate software quality assurance processes. This course covers both foundational and advanced concepts, starting with the basics of software testing, test case design, and bug tracking systems. You'll then dive deep into automation tools like Selenium WebDriver, TestNG, and frameworks such as Maven and Jenkins. Learn how to write reusable test scripts using Java or Python, perform cross-browser testing, and set up continuous testing pipelines using CI/CD integration. Real-world labs and assignments simulate enterprise-level testing workflows, giving you experience with both front-end and back-end automation. The curriculum also touches on performance testing using tools like JMeter and explores version control practices with Git. By the end of the course, you will be confident in automating regression, functional, and integration tests.`,
     duration: "3 Months",
-    pdfLink: "https://example.com/powerbi-course-outline.pdf",
-    fees: "₹30,000",
+    pdfLink: "https://example.com/software-testing-course-outline.pdf",
+    fees: "₹15,000",
     projects: [
-      "Build interactive sales and finance dashboards",
-      "Create complex DAX formulas for data analysis",
-      "Develop reporting solutions for business users"
+      "live projects"
     ]
   },
-  "autocad": {
-    description: `Learn to create precise 2D and 3D technical drawings using AutoCAD software. The course covers drafting fundamentals, layers, annotation, and modeling tools, preparing you for careers in architecture, engineering, and design drafting.`,
-    duration: "3 Months",
-    pdfLink: "https://example.com/autocad-course-outline.pdf",
-    fees: "₹25,000",
-    projects: [
-      "Create detailed 2D architectural floor plans",
-      "Design 3D mechanical parts and assemblies",
-      "Annotate drawings with dimensions and notes"
-    ]
-  },
+
   "c programming": {
     description: `Start with fundamentals of C programming: syntax, control structures, functions, pointers, and memory management. Build efficient console applications and understand system-level programming concepts. A strong foundation for embedded systems, OS development, and software engineering roles.`,
-    duration: "3 Months",
-    pdfLink: "https://example.com/c-programming-course-outline.pdf",
-    fees: "₹20,000",
+    duration: "1.5 Months",
+    pdfLink: "https://ntitechacademy.com/wp-content/uploads/2023/09/C-LANGUAGE.pdf",
+    fees: "₹8,000",
     projects: [
-      "Write console-based C applications demonstrating pointers and memory management",
-      "Develop a simple file system simulation",
-      "Implement algorithms using C programming"
+      "live projects"
     ]
   },
-  "java android flutter": {
-    description: `Combine Java and Flutter to build native and cross-platform mobile applications. Learn Java for Android development and Flutter for rapid UI creation. Build apps with smooth UX, API integration, and database support. Prepare for mobile developer roles across Android and cross-platform ecosystems.`,
-    duration: "5 Months",
-    pdfLink: "https://example.com/java-android-flutter-course-outline.pdf",
-    fees: "₹50,000",
+
+  "c++ programming": {
+    description: `Start with fundamentals of C++ programming: syntax, control structures, functions, pointers, and memory management. Build efficient console applications and understand system-level programming concepts. A strong foundation for embedded systems, OS development, and software engineering roles.`,
+    duration: "1.5 Months",
+    pdfLink: "https://example.com/c-programming-course-outline.pdf",
+    fees: "8,000",
     projects: [
-      "Build a native Android app using Java",
-      "Create a cross-platform app with Flutter",
-      "Integrate RESTful APIs and local databases"
+      "live projects"
+    ]
+  },
+
+  "android app developement": {
+    description: `This Android App Development course is designed to help learners build real-world mobile applications using Java and Kotlin. You’ll begin by understanding Android architecture, activities, layouts, and UI components. The course then takes you through building interactive applications, working with databases using Room and SQLite, integrating RESTful APIs, and managing user input, background tasks, and notifications. You’ll also explore Android Studio, Material Design principles, and best practices for debugging and app optimization. As you progress, you’ll implement modern development techniques like MVVM architecture, Firebase integration for authentication and cloud storage, and Google Play Store deployment strategies. Practical projects include building chat apps, e-commerce applications, and media players. This program is ideal for aspiring Android Developers, Mobile Engineers, or Software Developers looking to enter the mobile tech space. With hands-on labs and personalized mentorship, you’ll graduate with a polished portfolio of Android apps and the ability to independently publish and manage applications.`,
+    duration: "2 Months",
+    pdfLink: "https://example.com/android-app-development-course-outline.pdf",
+    fees: "₹15,000",
+    projects: [
+      "live projects"
+    ]
+  },
+
+  "ios app developement": {
+    description: `This iOS App Development course empowers learners to design and build fully functional iOS applications using Swift and Xcode. Starting with core Swift programming—variables, control flow, and functions—you'll progress to more advanced topics like OOP, closures, and protocol-oriented programming. You’ll learn UIKit for building responsive interfaces and integrate essential components like navigation controllers, table views, gestures, and user inputs. The course emphasizes real-world development with modules on working with APIs, data persistence using Core Data and UserDefaults, and networking with URLSession. You'll also explore SwiftUI for declarative UI design and understand the Apple Human Interface Guidelines. Projects include building a task manager, a weather app, and a media gallery. By the end of the course, you’ll understand App Store submission, provisioning profiles, and performance optimization techniques. This course prepares you for roles as iOS Developer, Mobile Application Engineer, or Swift Programmer. With practical projects and expert guidance, you’ll gain the skills to develop, test, and deploy iOS apps confidently.`,
+    duration: "2 Months",
+    pdfLink: "https://example.com/ios-app-development-course-outline.pdf",
+    fees: "₹15,000",
+    projects: [
+      "live projects"
     ]
   },
 
   "graphics design": {
     description: `Learn design principles and software tools like Adobe Photoshop, Illustrator, and InDesign. Develop skills in branding, typography, and digital illustration. The course emphasizes creativity and design thinking, enabling learners to create eye-catching graphics for print and digital platforms. Hands-on modules focus on practical tasks such as logo creation, poster layouts, brochure design, and UI mockups. You’ll also explore color theory, visual hierarchy, and portfolio building. Whether you're aiming to freelance or join a creative agency, this program builds a strong foundation for visual communication.`,
-    duration: "1.5 Months",
+    duration: "3 Months",
     pdfLink: "https://example.com/graphics-design-course-outline.pdf",
-    fees: "₹12,000",
+    fees: "₹20,000",
     projects: [
-      "Create a brand logo and complete branding package",
-      "Design a professional brochure and poster series",
-      "Develop a UI mockup for a mobile app using design tools"
-    ]
+      "live projects"]
   },
 
   "communication skills & personality developement": {
     description: `This course is designed to enhance both verbal and non-verbal communication skills along with personal grooming and confidence-building. Participants will learn public speaking, interpersonal communication, email and business writing, body language, and conflict resolution. The personality development section focuses on leadership traits, teamwork, time management, emotional intelligence, and professional etiquette. Ideal for students and professionals seeking to improve their impact in interviews, meetings, and client interactions. Through interactive workshops, role-playing, and self-assessment exercises, learners will become confident, articulate, and workplace-ready individuals.`,
-    duration: "2 Months",
+    duration: "1.5 Months",
     pdfLink: "https://example.com/communication-personality-course-outline.pdf",
     fees: "₹5,000 (GST not included)",
     projects: [
-      "Deliver a mock public speaking presentation with peer feedback",
-      "Prepare a professional CV and practice mock interviews",
-      "Participate in group discussions and role-plays simulating real workplace scenarios"
+      "live projects"
     ],
     extras: [
       "Soft Skills Certification",
@@ -371,7 +302,7 @@ const CourseTemplate = () => {
   return (
     <main className="container py-5 course-template course-template">
 
-      <h2 className="text-center mb-5">
+      <h2 className="text-center mb-3">
         <FaGraduationCap className="me-2" />
         <strong className='text-uppercase'>{course || "Course Details"}</strong>
       </h2>
@@ -424,7 +355,7 @@ const CourseTemplate = () => {
 
           <h5><FaCheckCircle className="me-2 text-success" />Extras</h5>
           <ul>
-            {(courseData.extras || ["Placement Support", "Resume & Interview Prep"]).map((extra, idx) => (
+            {(courseData.extras || ["Placement Support", "Resume & Interview Prepration"]).map((extra, idx) => (
               <li key={idx}>{extra}</li>
             ))}
           </ul>
