@@ -82,14 +82,16 @@ export default function Navbar() {
                                         </a>
                                         <ul className="dropdown-menu submenu">
                                             {[
-                                                "MERN STACK + GEN AI",
-                                                "JAVA EXPERT",
-                                                "JAVA FULL STACK DEVELOPER + GEN AI",
-                                                ".NET",
-                                                "PYTHON TRAINING COURSE",
-                                                "C Programming",
-                                                "Java Android Flutter",
-                                                "Java Full Stack Developer"
+                                                "mern stack",
+                                                "mean stack",
+                                                "java core",
+                                                "java advance",
+                                                "java full stack",
+                                                "python",
+                                                "c Programming",
+                                                "c++ Programming",
+                                                "android app developement",
+                                                "ios app developement"
                                             ].map((prog, i) => (
                                                 <li key={i}>
                                                     <a className="dropdown-item" onClick={() => handleCourseClick(prog)}>
@@ -107,10 +109,8 @@ export default function Navbar() {
                                         </a>
                                         <ul className="dropdown-menu submenu">
                                             {[
-                                                "DATA SCIENCE PROFESSIONAL TRAINING",
-                                                "DATA ANALYTICS USING PYTHON",
-                                                "BUSINESS ANALYTICS",
-                                                "POWER BI"
+                                                "data science",
+                                                "business analytics",
                                             ].map((prog, i) => (
                                                 <li key={i}>
                                                     <a className="dropdown-item-2 dropdown-item" onClick={() => handleCourseClick(prog)}>
@@ -127,25 +127,9 @@ export default function Navbar() {
                                             cyber security
                                         </a>
                                         <ul className="dropdown-menu submenu">
-                                            {["CYBER SECURITY + GEN AI"].map((prog, i) => (
+                                            {["cyber security"].map((prog, i) => (
                                                 <li key={i}>
                                                     <a className="dropdown-item-3 dropdown-item" onClick={() => handleCourseClick(prog)}>
-                                                        {prog.toLowerCase()}
-                                                    </a>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </li>
-
-                                    {/* UI/UX */}
-                                    <li className="dropend position-relative">
-                                        <a className="px-2 dropdown-item-4 dropdown-item dropdown-toggle submenu-toggle" href="#">
-                                            UI/UX & design
-                                        </a>
-                                        <ul className="dropdown-menu submenu">
-                                            {["UI & UX", "Graphics Design"].map((prog, i) => (
-                                                <li key={i}>
-                                                    <a className="dropdown-item-4 dropdown-item" onClick={() => handleCourseClick(prog)}>
                                                         {prog.toLowerCase()}
                                                     </a>
                                                 </li>
@@ -159,7 +143,7 @@ export default function Navbar() {
                                             digital marketing
                                         </a>
                                         <ul className="dropdown-menu submenu">
-                                            {["ADVANCE DIGITAL MARKETING", "GENERATIVE AI"].map((prog, i) => (
+                                            {["advance digital marketing"].map((prog, i) => (
                                                 <li key={i}>
                                                     <a className="dropdown-item-5 dropdown-item" onClick={() => handleCourseClick(prog)}>
                                                         {prog.toLowerCase()}
@@ -176,8 +160,8 @@ export default function Navbar() {
                                         </a>
                                         <ul className="dropdown-menu submenu">
                                             {[
-                                                "AWS",
-                                                "Cloud Computing"
+                                                "aws with dev ops",
+                                                "saleforce"
                                             ].map((prog, i) => (
                                                 <li key={i}>
                                                     <a className="dropdown-item-6 dropdown-item" onClick={() => handleCourseClick(prog)}>
@@ -194,25 +178,9 @@ export default function Navbar() {
                                             software testing
                                         </a>
                                         <ul className="dropdown-menu submenu">
-                                            {["SOFTWARE TESTING COURSE"].map((prog, i) => (
+                                            {["software testing (manual)","automation"].map((prog, i) => (
                                                 <li key={i}>
                                                     <a className="dropdown-item-7 dropdown-item" onClick={() => handleCourseClick(prog)}>
-                                                        {prog.toLowerCase()}
-                                                    </a>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </li>
-
-                                    {/* CRM */}
-                                    <li className="dropend position-relative">
-                                        <a className="px-2 dropdown-item-8 dropdown-item dropdown-toggle submenu-toggle" href="#">
-                                            CRM / business platforms
-                                        </a>
-                                        <ul className="dropdown-menu submenu">
-                                            {["Salesforce"].map((prog, i) => (
-                                                <li key={i}>
-                                                    <a className="dropdown-item-8 dropdown-item" onClick={() => handleCourseClick(prog)}>
                                                         {prog.toLowerCase()}
                                                     </a>
                                                 </li>
@@ -226,7 +194,7 @@ export default function Navbar() {
                                             other professional courses
                                         </a>
                                         <ul className="dropdown-menu submenu">
-                                            {["AUTOCAD", "Communication Skills & Personality Developement"].map((prog, i) => (
+                                            {["communication skills & personality developement"].map((prog, i) => (
                                                 <li key={i}>
                                                     <a className="dropdown-item-2 dropdown-item" onClick={() => handleCourseClick(prog)}>
                                                         {prog.toLowerCase()}
@@ -248,25 +216,25 @@ export default function Navbar() {
 
                             <li className="nav-item">
                                 <a className="nav-link text-secondary" href="/corpo_tra">
-                                    <IoSchoolSharp fontSize="1.25rem" className='mb-1' type="button" onClick={() => navigate("/corpo_tra")}/> Corporate Training
+                                    <IoSchoolSharp fontSize="1.25rem" className='mb-1' type="button" onClick={() => navigate("/corpo_tra")} /> Corporate Training
                                 </a>
                             </li>
 
                             <li className="nav-item">
                                 <a className="nav-link text-secondary" href="/on_tra">
-                                    <FaFileSignature fontSize="1.25rem" className='mb-1' type="button" onClick={() => navigate("/on_tra")}/> Online Registration
+                                    <FaFileSignature fontSize="1.25rem" className='mb-1' type="button" onClick={() => navigate("/on_tra")} /> Online Registration
                                 </a>
                             </li>
 
                             <li className="nav-item">
                                 <a className="nav-link text-secondary" href="/certificate">
-                                    <PiCertificateFill fontSize="1.5rem" className='mb-1' type="button" onClick={() => navigate("/certificate")}/> Certificate
+                                    <PiCertificateFill fontSize="1.5rem" className='mb-1' type="button" onClick={() => navigate("/certificate")} /> Certificate
                                 </a>
                             </li>
 
                             <li className="nav-item dropdown ms-1">
                                 <a className="nav-link text-secondary" href="/about">
-                                    <PiCaretCircleDownFill fontSize="1.5rem" className='mb-1' type="button" onClick={() => navigate("/about")}/> About
+                                    <PiCaretCircleDownFill fontSize="1.5rem" className='mb-1' type="button" onClick={() => navigate("/about")} /> About
                                 </a>
                             </li>
 

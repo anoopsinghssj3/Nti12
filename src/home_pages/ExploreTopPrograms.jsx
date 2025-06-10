@@ -61,7 +61,7 @@ const programsData = [
     program: 'c programming',
     src: "./src/assets/C Programming.avif" || "https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg",
   },
-  
+
   {
     program: 'c++ programming',
     src: "./src/assets/C Programming.avif" || "https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg",
@@ -74,20 +74,24 @@ const programsData = [
 
   {
     program: 'android app developement',
-    src: "./src/assets/Graphics Design.png" || "https://img.freepik.com/free-photo/graphic-designer-creative-artist-working-color-selection_23-2148895654.jpg",
+    src: "./src/assets/android.png" || "https://www.freepnglogos.com/uploads/android-logo-png/android-logo-android-icon-logo-vector-eps-download-24.png",
   },
 
-  
+
   {
     program: 'ios app developement',
-    src: "./src/assets/Graphics Design.png" || "https://img.freepik.com/free-photo/graphic-designer-creative-artist-working-color-selection_23-2148895654.jpg",
+    src: "./src/assets/ios.svg" || "https://visualpharm.com/assets/123/iOS%20Logo-595b40b75ba036ed117d84b5.svg",
   },
 
   {
-    program: 'aws',
+    program: 'aws with devops',
     src: "./src/assets/AWS Course.png" || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIYGRXTb5UEZpd2NyUZxw8AUpLIF6zeZ16Pg&s",
   },
-  
+  {
+    program: 'salesforce',
+    src: "./src/assets/Salesforce.avif" || "",
+  },
+
   {
     program: 'communication skills & personality developement',
     src: "./src/assets/Communication Skills & Personality Developement.jpg" || "https://blog.iilm.edu/wp-content/uploads/2020/06/Soft-skill-image-2.jpg",
@@ -122,7 +126,7 @@ const ExploreTopPrograms = () => {
                 className="card-img-top course-image mx-auto w-25"
                 alt={`${program} course visual`}
               />
-              <div className="card-body text-center"> 
+              <div className="card-body text-center">
                 <h5 className="text-uppercase fs-6 fw-bold">{program}</h5>
               </div>
             </div>

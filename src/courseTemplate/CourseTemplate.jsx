@@ -114,7 +114,7 @@ This course also covers essential skills like connecting Java applications to da
     ]
   },
 
-  "aws": {
+  "aws with devops": {
     description: `Gain expertise in Amazon Web Services cloud computing. Learn core services including EC2, S3, Lambda, and VPC configuration. Hands-on labs guide you through deploying scalable applications, setting up CI/CD pipelines with AWS DevOps tools, and managing cloud security. Perfect for Cloud Engineers, DevOps, and Solutions Architects.`,
     duration: "2.5 Months",
     pdfLink: "https://example.com/aws-professional-training-course-outline.pdf",
@@ -164,7 +164,7 @@ This course also covers essential skills like connecting Java applications to da
   },
 
   "android app developement": {
-    description: `This Android App Development course is designed to help learners build real-world mobile applications using Java and Kotlin. You’ll begin by understanding Android architecture, activities, layouts, and UI components. The course then takes you through building interactive applications, working with databases using Room and SQLite, integrating RESTful APIs, and managing user input, background tasks, and notifications. You’ll also explore Android Studio, Material Design principles, and best practices for debugging and app optimization. As you progress, you’ll implement modern development techniques like MVVM architecture, Firebase integration for authentication and cloud storage, and Google Play Store deployment strategies. Practical projects include building chat apps, e-commerce applications, and media players. This program is ideal for aspiring Android Developers, Mobile Engineers, or Software Developers looking to enter the mobile tech space. With hands-on labs and personalized mentorship, you’ll graduate with a polished portfolio of Android apps and the ability to independently publish and manage applications.`,
+    description: `This Android App Development course is designed to help learners build real-world mobile applications using Java and Kotlin. You’ll begin by understanding Android architecture, activities, layouts, and UI components. The course then takes you through building interactive applications, working with databases using Room and SQLite, integrating RESTful APIs, and managing user input, background tasks, and notifications. You’ll also explore Android Studio, Material Design principles, and best practices for debugging and app optimization. As you progress, you’ll implement modern development techniques like MVVM architecture, Firebase integration for authentication and cloud storage, and Google Play Store deployment strategies. Practical projects include building chat apps, e-commerce applications, and media players.`,
     duration: "2 Months",
     pdfLink: "https://example.com/android-app-development-course-outline.pdf",
     fees: "₹15,000",
@@ -174,7 +174,7 @@ This course also covers essential skills like connecting Java applications to da
   },
 
   "ios app developement": {
-    description: `This iOS App Development course empowers learners to design and build fully functional iOS applications using Swift and Xcode. Starting with core Swift programming—variables, control flow, and functions—you'll progress to more advanced topics like OOP, closures, and protocol-oriented programming. You’ll learn UIKit for building responsive interfaces and integrate essential components like navigation controllers, table views, gestures, and user inputs. The course emphasizes real-world development with modules on working with APIs, data persistence using Core Data and UserDefaults, and networking with URLSession. You'll also explore SwiftUI for declarative UI design and understand the Apple Human Interface Guidelines. Projects include building a task manager, a weather app, and a media gallery. By the end of the course, you’ll understand App Store submission, provisioning profiles, and performance optimization techniques. This course prepares you for roles as iOS Developer, Mobile Application Engineer, or Swift Programmer. With practical projects and expert guidance, you’ll gain the skills to develop, test, and deploy iOS apps confidently.`,
+    description: `This iOS App Development course empowers learners to design and build fully functional iOS applications using Swift and Xcode. Starting with core Swift programming—variables, control flow, and functions—you'll progress to more advanced topics like OOP, closures, and protocol-oriented programming. You’ll learn UIKit for building responsive interfaces and integrate essential components like navigation controllers, table views, gestures, and user inputs. The course emphasizes real-world development with modules on working with APIs, data persistence using Core Data and UserDefaults, and networking with URLSession. You'll also explore SwiftUI for declarative UI design and understand the Apple Human Interface Guidelines. Projects include building a task manager, a weather app, and a media gallery. By the end of the course, you’ll understand App Store submission, provisioning profiles, and performance optimization techniques.`,
     duration: "2 Months",
     pdfLink: "https://example.com/ios-app-development-course-outline.pdf",
     fees: "₹15,000",
@@ -205,8 +205,17 @@ This course also covers essential skills like connecting Java applications to da
       "1-on-1 Mentoring",
       "Resume & Interview Support"
     ]
-  }
+  },
 
+  "salesforce": {
+    "description": "Become a Salesforce expert and learn to customize, configure, and administer the world's leading CRM platform. This course covers Salesforce Sales Cloud, Service Cloud, Marketing Cloud, and App Builder. Develop skills in creating custom objects, workflows, reports, and dashboards. Hands-on modules focus on practical tasks such as lead management, opportunity tracking, case management, and campaign automation. You’ll also explore Salesforce security, data management, and integration. Whether you're aiming to become a Salesforce Administrator, Developer, or Consultant, this program provides the knowledge and skills to excel in the Salesforce ecosystem.",
+    "duration": "3 Months",
+    "pdfLink": "https://example.com/salesforce-course-outline.pdf",
+    "fees": "₹22,000",
+    "projects": [
+      "live projects"
+    ]
+  }
 };
 
 const normalizedFixedCourses = {};
