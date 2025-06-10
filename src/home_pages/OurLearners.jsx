@@ -13,18 +13,7 @@ export default function OurLearners() {
 
     return (
         <div className="container my-5 our-learners">
-            <div className="text-center mt-5">
-                <h3 className="mb-3">
-                    <strong className="learners-underline">
-                        OUR <span className="">LEARNERS WORK AT</span>
-                    </strong>
-                </h3>
-
-                <p className="mx-auto " style={{ maxWidth: '600px' }}>
-                    Ducat learners work at some of the leading and innovative organizations of today, solving core business problems.
-                </p>
-            </div>
-
+            
             <div className="marquee-wrapper">
                 <div className="marquee">
                     {[...logos, ...logos].map((logo, idx) => (

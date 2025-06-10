@@ -45,7 +45,9 @@ export default function OnlineTraining() {
                   <input
                     type="text"
                     className="form-control"
-                    id="phone"
+                    id="phone" maxLength="10"
+                    minLength="10"
+
                     placeholder="Enter Mobile Number"
                     {...register('phone', { required: 'Mobile number is required' })}
                   />
@@ -63,7 +65,7 @@ export default function OnlineTraining() {
                     {...register('email', {
                       required: 'Email is required',
                       pattern: {
-                        value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/, 
+                        value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
                         message: 'Invalid email address',
                       },
                     })}
@@ -151,7 +153,8 @@ export default function OnlineTraining() {
                     className="form-control"
                     id="pincode"
                     placeholder="Enter Pin Code"
-                    {...register('pincode', { required: 'Pin Code is required' })}
+                    {...register('pincode', { required: 'Pin Code is required' })} maxLength="6"
+                    minLength="6"
                   />
                   {errors.pincode && <p className="text-warning small">{errors.pincode.message}</p>}
                 </div>

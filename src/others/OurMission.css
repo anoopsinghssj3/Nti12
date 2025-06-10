@@ -1,0 +1,24 @@
+.icon {
+  font-size: 1.75rem;
+  margin-top: 0.2rem;
+  color: #0dcaf0; /* Bootstrap info color */
+}
+
+.mission-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .mission-item p {
+    font-size: 0.95rem;
+  }
+}
+
+.why-nti {
+  background-color: #13275a;
+}

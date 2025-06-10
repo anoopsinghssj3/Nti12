@@ -1,77 +1,39 @@
-// import React from 'react';
-// import '../home_styles/Testimonials.css';
-
-// const testimonials = [
-//   {
-//     name: 'Er R K Singh',
-//     text: 'Good coaching of IT sector and good facilities, provide classroom and all teachers are very good.',
-//     image: ''
-//   },
-//   {
-//     name: 'Sumit Kumar',
-//     text: 'Ducat is really a very good institute to improve your skills as Oracle DBA... Anjeet Sir is the best teacher for Oracle. He is very determined and demonstrates the tough topics.',
-//     image: 'https://via.placeholder.com/60'
-//   },
-//   {
-//     name: 'Randeep Singh',
-//     text: 'Ducat placement service is one of the best placement services in Delhi NCR. Enlighten your career by enrolling for suitable courses and get placed in MNCs.',
-//     image: 'https://via.placeholder.com/60'
-//   }
-// ];
-
-// function Testimonials() {
-//   return (
-//     <div className="testimonials-container">
-//       <h2 className="testimonials-heading">
-//         Testimonials
-//         <div className="heading-underline"></div>
-//       </h2>
-//       <div className="testimonials-slider">
-//         {testimonials.map((testimonial, index) => (
-//           <div className="testimonial-card" key={index}>
-//             <div className="quote-icon">❝</div>
-//             <div className="testimonial-header">
-//               {testimonial.image && <img src={testimonial.image} alt={testimonial.name} className="testimonial-img" />}
-//               <h3>{testimonial.name}</h3>
-//             </div>
-//             <p className="testimonial-text">{testimonial.text}</p>
-//             {index === 1 && <p className="read-more">Read more</p>}
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Testimonials;
-
-import React from 'react';
+import React, { useState } from 'react';
 import '../home_styles/Testimonials.css';
 
 const testimonials = [
   {
-    name: 'Surabhi Sharma',
-    text: 'Ducat Mohan Nagar is one of the best learning place...',
-    image: 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1717501086645Rahul.png&w=128&q=75',
+    name: 'Balveer',
+    profile: "Web Developer",
+    text: 'The Digital Marketing course at NTI Tech Academy exceeded my expectations! The content was thorough, and I gained hands-on experience with real-world marketing strategies. I now feel confident managing social media campaigns and SEO. It’s the best decision I’ve made for my career!',
+    image: 'https://ntitechacademy.ent/uploads/2024/09/abhay-kamde-23-9.jpg',
   },
   {
-    name: 'Omer Zia',
-    text: 'Especial thanks to placement head Shashank Mishra sir...',
-    image: 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1717500186395jagriti.png&w=128&q=75',
+    name: 'Anjali Mishra',
+    profile: "Digital Marketing Executive",
+    text: 'Enrolling in NTI Tech Academy’s Digital Marketing Course has been a game-changer for my career as a Digital Marketing Executive! Real-world projects and expert instructors made all the difference!',
+    image: 'https://ntitechacademy.com/wp-content/uploads/2024/11/my-photo-1-300x300.jpg',
   },
   {
-    name: 'Vinay Kumar',
-    text: 'The Web Designing course was fantastic!...',
-    image: 'https://via.placeholder.com/60/2E8B57/FFFFFF?text=V',
-  },
-  {
-    name: 'Sumit Kumar',
-    text: 'Ducat is a great institute to improve Oracle DBA skills...',
-    image: 'https://via.placeholder.com/60/FF7F50/FFFFFF?text=SK',
+    name: 'Ayushi Singh',
+    profile: "Digital Marketing Executive",
+    text: "NTI Tech Academy's Digital Marketing course exceeded my expectations! Their 100% placement record truly reflects the top-notch education and support they provide. I'm thrilled with the opportunities this course has opened up for me in the field.",
+    image: 'https://ntitechacademy.com/wp-content/uploads/2023/09/ayushi-singh.jpeg',
   },
 ];
 
 function Testimonials() {
+  const [expandedIndexes, setExpandedIndexes] = useState([]);
+
+  const toggleReadMore = (index) => {
+    setExpandedIndexes((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    );
+  };
+
+  const getShortText = (text, length = 120) =>
+    text.length > length ? text.slice(0, length) + '...' : text;
+
   return (
     <div className="container py-5 testimonials">
       <h2 className="text-center mb-4 learners-underline">
@@ -79,29 +41,45 @@ function Testimonials() {
         <div className="mx-auto mt-2"></div>
       </h2>
 
-      <div className="position-relative overflow-hidden">
-        <div className="d-flex marquee-track">
-          {testimonials.concat(testimonials).map((testimonial, index) => (
-            <div
-              className="card mx-2 flex-shrink-0 p-3"
-              style={{ width: '300px', minHeight: '200px' }}
-              key={index}
-            >
-              <div className="position-absolute top-0 start-0 p-2 fs-1 opacity-25">❝</div>
-              <div className="d-flex align-items-center mb-2">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="rounded-circle me-2"
-                  width="60"
-                  height="60"
-                />
-                <h5 className="mb-0">{testimonial.name}</h5>
+      <div className="testimonials-marquee-wrapper position-relative overflow-hidden">
+        <div className="testimonials-marquee-track d-flex">
+          {testimonials.concat(testimonials).map((testimonial, index) => {
+            const originalIndex = index % testimonials.length;
+            const isExpanded = expandedIndexes.includes(originalIndex);
+
+            return (
+              <div className="card card-style testimonial-card mx-2 flex-shrink-0 p-3" key={index}>
+                <div className="quote-icon avtar-design">❝</div>
+                <div className="d-flex align-items-center mb-3">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="rounded-circle avtar"
+                    width="70"
+                    height="70"
+                  />
+                  <div className="ms-3 avtar-name">
+                    <h5 className="mb-0 fw-bold">{testimonial.name}</h5>
+                    <p className="mb-0" style={{ fontSize: '0.85rem' }}>
+                      {testimonial.profile}
+                    </p>
+                  </div>
+                </div>
+                <p className="testimonial-text">
+                  {isExpanded ? testimonial.text : getShortText(testimonial.text)}
+                </p>
+                {testimonial.text.length > 120 && (
+                  <p
+                    className="text-end  mt-2 mb-0 read-more"
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => toggleReadMore(originalIndex)}
+                  >
+                    {isExpanded ? 'Read less' : 'Read more'}
+                  </p>
+                )}
               </div>
-              <p className="mb-0">{testimonial.text}</p>
-              <p className="text-end text-primary mt-2 mb-0">Read more</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

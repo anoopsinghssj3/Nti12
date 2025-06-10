@@ -1,0 +1,29 @@
+.course-template .img-fixing {
+    justify-content: space-evenly !important;
+    height: 100vh !important;
+}
+
+
+@media (max-width:992px) {
+    .course-template .img-fixing {
+        justify-content: space-evenly !important;
+        height:100vh !important;
+    }
+
+    .course-template .img-fixing img {
+        width:52% !important;
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .course-template .img-fixing {
+        justify-content: space-evenly !important;
+        height:50vh !important;
+    }
+
+    .course-template .img-fixing img {
+        width:45% !important;
+    }
+}
