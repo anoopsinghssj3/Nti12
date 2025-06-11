@@ -16,11 +16,13 @@ import CourseTemplate from './courseTemplate/CourseTemplate';
 import PrivacyPolicy from './footer/PrivacyPolicy';
 import RefundPolicy from './footer/RefundPolicy';
 import TermsAndCondition from './footer/TermsAndCondition';
+import ScrollToTop from './components/ScrollToTop';
 
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

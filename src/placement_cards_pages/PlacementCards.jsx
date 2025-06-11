@@ -1,5 +1,5 @@
 import React from 'react';
-import '../placement_cards_styles/PlacementCards.css';
+import './PlacementCards.css';
 
 const placementData = [
     {

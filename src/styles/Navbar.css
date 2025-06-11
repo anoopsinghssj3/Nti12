@@ -31,13 +31,17 @@
         margin-top: 0 !important;
     }
 
-    .navbar-collapse ul li a:hover {
+
+    .navbar-collapse .system {
+        border-radius: 1.5rem !important;
+        text-decoration: none !important;
+    }
+
+    .navbar-collapse .system:hover {
         background-color: #030057 !important;
         color: aliceblue !important;
         border-radius: 1.5rem !important;
-        padding: 4px 6px;
     }
-
 
     .dropdown-menu .dropdown-menu {
         display: none;
@@ -74,6 +78,18 @@
     .container-fluid {
         z-index: 999 !important;
         font-size: small;
+    }
+
+    .navbar-collapse .system {
+        border-radius: 1.5rem !important;
+        text-decoration: none !important;
+        padding: 0.15rem 0.35rem !important;
+    }
+
+    .navbar-collapse .system:hover {
+        background-color: #030057 !important;
+        color: aliceblue !important;
+        border-radius: 1.5rem !important;
     }
 
     .navbar {
@@ -234,4 +250,8 @@
 
 .dropdown:hover>.submenu {
     display: none !important;
+}
+
+.dropdown-item.active{
+    background-color: transparent !important;
 }

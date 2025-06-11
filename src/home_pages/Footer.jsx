@@ -8,7 +8,7 @@ import {
 import "../home_styles/Footer.css"
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 
 
@@ -20,12 +20,22 @@ function Footer() {
         <div className="row text-center text-md-start">
           <div className="col-12 col-md-3 mb-4">
             <h5>Policies</h5>
-            <ul className="list-unstyled" style={{cursor:"pointer"}}>
-              <li onClick={() => navigate("/privacy_policy")}>Privacy Policy</li>
-              <li onClick={() => navigate("/refund_policy")}>Refund Policy</li>
-              <li onClick={() => navigate("/terms_conditions")}>Terms and Conditions</li>
-              <li onClick={() => navigate("#")}>Blog</li>
-              <li onClick={() => navigate("/about")} className="pointer" style={{ cursor: "pointer" }}>About Us</li>
+            <ul className="d-flex flex-column  list-unstyled" >
+              <li>
+                <Link to="/privacy_policy" className="text-white text-decoration-none">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to="/refund_policy" className="text-white text-decoration-none">Refund Policy</Link>
+              </li>
+              <li>
+                <Link to="/terms_conditions" className="text-white text-decoration-none">Terms and Conditions</Link>
+              </li>
+              <li>
+                <Link to="#" className="text-white text-decoration-none">Blog</Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-white text-decoration-none">About Us</Link>
+              </li>
             </ul>
 
             <div className="follow-us mt-3">

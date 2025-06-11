@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link, NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import { IoMdHome } from "react-icons/io";
 import { FaBookReader, FaFileSignature } from "react-icons/fa";
@@ -50,7 +50,7 @@ export default function Navbar() {
 
                     <button
                         className="navbar-toggler dashboard"
-                        type="button"
+                        // type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent"
@@ -63,24 +63,23 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto gap-2 mb-2 mb-lg-0 mb-sm-5 d-flex align-items-start ps-1">
 
-                            <li className="nav-item ms-4 home-style">
-                                <a className="nav-link active text-secondary" href="/">
-                                    <IoMdHome fontSize="1.5rem" className='mb-1' /> Home
-                                </a>
-                            </li>
 
-                            <li className="nav-item dropdown ms-1">
-                                <a className="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown">
+                            <Link className="nav-link nav-item active home-style text-secondary system" to="/">
+                                <IoMdHome fontSize="1.5rem" className='mb-1' /> Home
+                            </Link>
+
+                            <Link className="nav-item dropdown ms-1 system">
+                                <NavLink className="nav-link dropdown-toggle text-secondary  system" to="#" data-bs-toggle="dropdown">
                                     <FaBookReader fontSize="1.25rem" className='mb-1' /> Courses
-                                </a>
-                                <ul className="dropdown-menu bg-succees">
+                                </NavLink>
+                                <ul className="dropdown-menu">
 
                                     {/* Programming */}
-                                    <li className="dropend position-relative ">
-                                        <a className="px-2 dropdown-item dropdown-toggle submenu-toggle " href="#">
+                                    <li className="dropend position-relative text-decoration-none">
+                                        <NavLink className="px-2 dropdown-item dropdown-toggle submenu-toggle text-decoration-none" to="#">
                                             programming courses
-                                        </a>
-                                        <ul className="dropdown-menu submenu">
+                                        </NavLink>
+                                        <ul className="dropdown-menu submenu text-decoration-none">
                                             {[
                                                 "mern stack",
                                                 "mean stack",
@@ -94,9 +93,13 @@ export default function Navbar() {
                                                 "ios app developement"
                                             ].map((prog, i) => (
                                                 <li key={i}>
-                                                    <a className="dropdown-item" onClick={() => handleCourseClick(prog)}>
+                                                    <NavLink
+                                                        className="dropdown-item text-decoration-none"
+                                                        to="#"
+                                                        onClick={() => handleCourseClick(prog)}
+                                                    >
                                                         {prog.toLowerCase()}
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             ))}
                                         </ul>
@@ -104,18 +107,19 @@ export default function Navbar() {
 
                                     {/* Data Science */}
                                     <li className="dropend position-relative">
-                                        <a className="px-2 dropdown-item-2 dropdown-item dropdown-toggle submenu-toggle" href="#">
+                                        <NavLink className="px-2 dropdown-item-2 dropdown-item dropdown-toggle submenu-toggle" to="#">
                                             data science & analytics
-                                        </a>
+                                        </NavLink>
                                         <ul className="dropdown-menu submenu">
-                                            {[
-                                                "data science",
-                                                "business analytics",
-                                            ].map((prog, i) => (
+                                            {["data science", "business analytics"].map((prog, i) => (
                                                 <li key={i}>
-                                                    <a className="dropdown-item-2 dropdown-item" onClick={() => handleCourseClick(prog)}>
+                                                    <NavLink
+                                                        className="dropdown-item-2 dropdown-item"
+                                                        to="#"
+                                                        onClick={() => handleCourseClick(prog)}
+                                                    >
                                                         {prog.toLowerCase()}
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             ))}
                                         </ul>
@@ -123,15 +127,19 @@ export default function Navbar() {
 
                                     {/* Cyber Security */}
                                     <li className="dropend position-relative">
-                                        <a className="px-2 dropdown-item-3 dropdown-item dropdown-toggle submenu-toggle" href="#">
+                                        <NavLink className="px-2 dropdown-item-3 dropdown-item dropdown-toggle submenu-toggle" to="#">
                                             cyber security
-                                        </a>
+                                        </NavLink>
                                         <ul className="dropdown-menu submenu">
                                             {["cyber security"].map((prog, i) => (
                                                 <li key={i}>
-                                                    <a className="dropdown-item-3 dropdown-item" onClick={() => handleCourseClick(prog)}>
+                                                    <NavLink
+                                                        className="dropdown-item-3 dropdown-item"
+                                                        to="#"
+                                                        onClick={() => handleCourseClick(prog)}
+                                                    >
                                                         {prog.toLowerCase()}
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             ))}
                                         </ul>
@@ -139,15 +147,19 @@ export default function Navbar() {
 
                                     {/* Digital Marketing */}
                                     <li className="dropend position-relative">
-                                        <a className="px-2 dropdown-item-5 dropdown-item dropdown-toggle submenu-toggle" href="#">
+                                        <NavLink className="px-2 dropdown-item-5 dropdown-item dropdown-toggle submenu-toggle" to="#">
                                             digital marketing
-                                        </a>
+                                        </NavLink>
                                         <ul className="dropdown-menu submenu">
                                             {["advance digital marketing"].map((prog, i) => (
                                                 <li key={i}>
-                                                    <a className="dropdown-item-5 dropdown-item" onClick={() => handleCourseClick(prog)}>
+                                                    <NavLink
+                                                        className="dropdown-item-5 dropdown-item"
+                                                        to="#"
+                                                        onClick={() => handleCourseClick(prog)}
+                                                    >
                                                         {prog.toLowerCase()}
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             ))}
                                         </ul>
@@ -155,18 +167,19 @@ export default function Navbar() {
 
                                     {/* Cloud & DevOps */}
                                     <li className="dropend position-relative">
-                                        <a className="px-2 dropdown-item-6 dropdown-item dropdown-toggle submenu-toggle" href="#">
+                                        <NavLink className="px-2 dropdown-item-6 dropdown-item dropdown-toggle submenu-toggle" to="#">
                                             cloud & devops
-                                        </a>
+                                        </NavLink>
                                         <ul className="dropdown-menu submenu">
-                                            {[
-                                                "aws with dev ops",
-                                                "saleforce"
-                                            ].map((prog, i) => (
+                                            {["aws with dev ops", "saleforce"].map((prog, i) => (
                                                 <li key={i}>
-                                                    <a className="dropdown-item-6 dropdown-item" onClick={() => handleCourseClick(prog)}>
+                                                    <NavLink
+                                                        className="dropdown-item-6 dropdown-item"
+                                                        to="#"
+                                                        onClick={() => handleCourseClick(prog)}
+                                                    >
                                                         {prog.toLowerCase()}
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             ))}
                                         </ul>
@@ -174,15 +187,19 @@ export default function Navbar() {
 
                                     {/* Software Testing */}
                                     <li className="dropend position-relative">
-                                        <a className="px-2 dropdown-item-7 dropdown-item dropdown-toggle submenu-toggle" href="#">
+                                        <NavLink className="px-2 dropdown-item-7 dropdown-item dropdown-toggle submenu-toggle" to="#">
                                             software testing
-                                        </a>
+                                        </NavLink>
                                         <ul className="dropdown-menu submenu">
-                                            {["software testing (manual)","automation"].map((prog, i) => (
+                                            {["software testing (manual)", "automation"].map((prog, i) => (
                                                 <li key={i}>
-                                                    <a className="dropdown-item-7 dropdown-item" onClick={() => handleCourseClick(prog)}>
+                                                    <NavLink
+                                                        className="dropdown-item-7 dropdown-item"
+                                                        to="#"
+                                                        onClick={() => handleCourseClick(prog)}
+                                                    >
                                                         {prog.toLowerCase()}
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             ))}
                                         </ul>
@@ -190,53 +207,57 @@ export default function Navbar() {
 
                                     {/* Other Courses */}
                                     <li className="dropend position-relative">
-                                        <a className="px-2 dropdown-item-9 dropdown-item dropdown-toggle submenu-toggle" href="#">
+                                        <NavLink className="px-2 dropdown-item-9 dropdown-item dropdown-toggle submenu-toggle" to="#">
                                             other professional courses
-                                        </a>
+                                        </NavLink>
                                         <ul className="dropdown-menu submenu">
                                             {["communication skills & personality developement"].map((prog, i) => (
                                                 <li key={i}>
-                                                    <a className="dropdown-item-2 dropdown-item" onClick={() => handleCourseClick(prog)}>
+                                                    <NavLink
+                                                        className="dropdown-item-2 dropdown-item"
+                                                        to="#"
+                                                        onClick={() => handleCourseClick(prog)}
+                                                    >
                                                         {prog.toLowerCase()}
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             ))}
                                         </ul>
                                     </li>
 
                                 </ul>
-                            </li>
+                            </Link>
 
                             {/* Other nav items */}
-                            <li className="nav-item">
-                                <a className="nav-link text-secondary" href="/placement" type="button" onClick={() => navigate("/placement")}>
-                                    <GiSuitcase fontSize="1.5rem" className='mb-1' /> Placement
-                                </a>
-                            </li>
+                            {/* <li className="nav-item"> */}
+                            <Link className="nav-link text-secondary system" to="/placement" >
+                                <GiSuitcase fontSize="1.5rem" className='mb-1' /> Placement
+                            </Link>
+                            {/* </li> */}
 
-                            <li className="nav-item">
-                                <a className="nav-link text-secondary" href="/corpo_tra">
-                                    <IoSchoolSharp fontSize="1.25rem" className='mb-1' type="button" onClick={() => navigate("/corpo_tra")} /> Corporate Training
-                                </a>
-                            </li>
+                            {/* <li className="nav-item"> */}
+                            <Link className="nav-link text-secondary system" to="/corpo_tra">
+                                <IoSchoolSharp fontSize="1.25rem" className='mb-1' /> Corporate Training
+                            </Link>
+                            {/* </li> */}
 
-                            <li className="nav-item">
-                                <a className="nav-link text-secondary" href="/on_tra">
-                                    <FaFileSignature fontSize="1.25rem" className='mb-1' type="button" onClick={() => navigate("/on_tra")} /> Online Registration
-                                </a>
-                            </li>
+                            {/* <li className="nav-item"> */}
+                            <Link className="nav-link text-secondary system" to="/on_tra">
+                                <FaFileSignature fontSize="1.25rem" className='mb-1' /> Online Registration
+                            </Link>
+                            {/* </li> */}
 
-                            <li className="nav-item">
-                                <a className="nav-link text-secondary" href="/certificate">
-                                    <PiCertificateFill fontSize="1.5rem" className='mb-1' type="button" onClick={() => navigate("/certificate")} /> Certificate
-                                </a>
-                            </li>
+                            {/* <li className="nav-item"> */}
+                            <Link className="nav-link text-secondary system" to="/certificate">
+                                <PiCertificateFill fontSize="1.5rem" className='mb-1' /> Certificate
+                            </Link>
+                            {/* </li> */}
 
-                            <li className="nav-item dropdown ms-1">
-                                <a className="nav-link text-secondary" href="/about">
-                                    <PiCaretCircleDownFill fontSize="1.5rem" className='mb-1' type="button" onClick={() => navigate("/about")} /> About
-                                </a>
-                            </li>
+                            {/* <li className="nav-item dropdown ms-1"> */}
+                            <Link className="nav-link dropdown nav-item text-secondary system" to="/about">
+                                <PiCaretCircleDownFill fontSize="1.5rem" className='mb-1' /> About
+                            </Link>
+                            {/* </li> */}
 
                         </ul>
                     </div>
