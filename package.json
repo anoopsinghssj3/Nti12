@@ -2,17 +2,23 @@
   "name": "nti",
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "serve -s dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "razorpay": "^2.9.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.56.4",
-    "react-router-dom": "^7.6.0"
+    "react-router-dom": "^7.6.0",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
