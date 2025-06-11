@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import "./CourseTemplate.css"
+import "./CourseTemplate.css";
 import {
   FaClock, FaRupeeSign, FaFileDownload, FaProjectDiagram,
   FaCheckCircle, FaGraduationCap
@@ -9,6 +9,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 const DEFAULT_IMG = "https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif";
 
+// Ensure fixedCourses is defined and normalized
 const fixedCourses = {
   "mern stack": {
     description: `Build full-stack web applications powered by intelligent AI features. You’ll master MongoDB for flexible data models, Express.js for robust server APIs, React for dynamic user interfaces, and Node.js for seamless backend logic. Then layer in Generative AI: learn how to integrate pre-trained language and image models into your apps to drive chatbots, content generation, and smart recommendations. Hands-on labs guide you step-by-step—from designing RESTful endpoints to crafting React components that consume AI-driven data. By project’s end you’ll have a polished portfolio: an end-to-end MERN app augmented with AI, plus guided capstones illustrating best practices in testing.`,
@@ -218,6 +219,8 @@ This course also covers essential skills like connecting Java applications to da
   }
 };
 
+
+
 const normalizedFixedCourses = {};
 Object.keys(fixedCourses).forEach(key => {
   normalizedFixedCourses[key.toUpperCase()] = fixedCourses[key];
@@ -235,6 +238,7 @@ const CourseTemplate = () => {
   const [randomImage, setRandomImage] = useState("");
   const [randomImage2, setRandomImage2] = useState("");
 
+
   useEffect(() => {
     const images = [
       "https://camo.githubusercontent.com/5119ee303e5e49cdf23def653b737bede0da49a859a34714d62d9ab518afbbb2/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f313136323037372f73637265656e73686f74732f333834383931342f70726f6772616d6d65722e676966",
@@ -249,7 +253,7 @@ const CourseTemplate = () => {
       "https://static1.squarespace.com/static/558c162ee4b03447dc049b73/t/56a09aef9cadb60afe120881/1453366010166/?format=1500w", "https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif", "https://user-images.githubusercontent.com/74038190/236119160-976a0405-caa7-470c-9356-16d43402ea0a.gif"
     ];
 
-    // Pick 2 distinct random images
+
     let firstIndex = Math.floor(Math.random() * images.length);
     let secondIndex;
     do {
@@ -275,7 +279,6 @@ const CourseTemplate = () => {
       setDescription(courseData.description);
       setLoading(false);
     } else {
-      // Wikipedia fallback
       const query = course.replace(/[^a-zA-Z0-9 ]/g, '').trim();
 
       axios.get(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(query)}`)
@@ -309,8 +312,7 @@ const CourseTemplate = () => {
   const courseData = normalizedFixedCourses[normalizedCourse] || {};
 
   return (
-    <main className="container py-5 course-template course-template">
-
+    <main className="container py-5 course-template">
       <h2 className="text-center mb-3">
         <FaGraduationCap className="me-2" />
         <strong className='text-uppercase'>{course || "Course Details"}</strong>
@@ -346,14 +348,30 @@ const CourseTemplate = () => {
           <p>{courseData.fees || "₹25,000 – ₹55,000"}</p>
 
           <h5><FaFileDownload className="me-2 text-warning" />Curriculum</h5>
-          <a
-            href={courseData.pdfLink || "#"}
-            className="btn btn-outline-primary btn-sm mb-3"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download PDF
-          </a>
+          {courseData.pdfLink ? (
+            <div className="d-flex gap-3 flex-wrap mb-3">
+              <a
+                href={courseData.pdfLink}
+                download
+                className="btn btn-outline-primary btn-sm"
+              >
+                Download PDF
+              </a>
+              <button type='button'
+                className="btn btn-outline-secondary btn-sm"
+                onClick={() => navigate("/pdf_viewer", {
+                  state: {
+                    pdfUrl: courseData.pdfLink,
+                    courseName: course
+                  }
+                })}
+              >
+                View PDF
+              </button>
+            </div>
+          ) : (
+            <p className="text-muted">Curriculum not available</p>
+          )}
 
           <h5><FaProjectDiagram className="me-2 text-info" />Projects</h5>
           <ul>
@@ -371,10 +389,18 @@ const CourseTemplate = () => {
 
           <button
             className="btn btn-success w-100 mt-3"
-            onClick={() => alert('Enroll functionality not implemented yet')}
+            onClick={() =>
+              navigate("/payment", {
+                state: {
+                  course: course,
+                  fees: courseData.fees || "₹25,000 – ₹55,000"
+                }
+              })
+            }
           >
             Enroll Now
           </button>
+
         </div>
       </div>
     </main>

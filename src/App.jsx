@@ -17,6 +17,8 @@ import PrivacyPolicy from './footer/PrivacyPolicy';
 import RefundPolicy from './footer/RefundPolicy';
 import TermsAndCondition from './footer/TermsAndCondition';
 import ScrollToTop from './components/ScrollToTop';
+import Payment from './courseTemplate/Payment';
+import PDFViewer from './courseTemplate/PDFViewer';
 
 
 export default function App() {
@@ -39,6 +41,9 @@ export default function App() {
         <Route path="privacy_policy" element={<PrivacyPolicy />} />
         <Route path="/refund_policy" element={<RefundPolicy />} />
         <Route path="/terms_conditions" element={<TermsAndCondition />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/pdf_viewer" element={<PDFViewer />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>
