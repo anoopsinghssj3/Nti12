@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
-import '../home_styles/Testimonials.css';
+import '../home_pages/Testimonials.css';
 
 const testimonials = [
   {
     name: 'Balveer',
     profile: "Web Developer",
     text: 'The Digital Marketing course at NTI Tech Academy exceeded my expectations! The content was thorough, and I gained hands-on experience with real-world marketing strategies. I now feel confident managing social media campaigns and SEO. It’s the best decision I’ve made for my career!',
-    image: 'https://ntitechacademy.ent/uploads/2024/09/abhay-kamde-23-9.jpg',
+    image: '',
   },
   {
     name: 'Anjali Mishra',
     profile: "Digital Marketing Executive",
     text: 'Enrolling in NTI Tech Academy’s Digital Marketing Course has been a game-changer for my career as a Digital Marketing Executive! Real-world projects and expert instructors made all the difference!',
-    image: 'https://ntitechacademy.com/wp-content/uploads/2024/11/my-photo-1-300x300.jpg',
+    image: '',
   },
   {
     name: 'Ayushi Singh',
     profile: "Digital Marketing Executive",
     text: "NTI Tech Academy's Digital Marketing course exceeded my expectations! Their 100% placement record truly reflects the top-notch education and support they provide. I'm thrilled with the opportunities this course has opened up for me in the field.",
-    image: 'https://ntitechacademy.com/wp-content/uploads/2023/09/ayushi-singh.jpeg',
+    image: '',
   },
 ];
 
@@ -57,6 +57,7 @@ function Testimonials() {
                     className="rounded-circle avtar"
                     width="70"
                     height="70"
+                    loading="lazy"
                   />
                   <div className="ms-3 avtar-name">
                     <h5 className="mb-0 fw-bold">{testimonial.name}</h5>

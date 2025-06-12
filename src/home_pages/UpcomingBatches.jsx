@@ -1,56 +1,68 @@
 import React from 'react';
-import "../home_styles/UpcomingBatches.css"
+import "../home_pages/UpcomingBatches.css"
+import mern from "../../public/images/MERN STACK + GEN AI.webp"
+import mean from "../../public/images/Mean Stack.webp"
+import cyberSecurity from "../../public/images/CYBER SECURITY + GEN AI.webp"
+import javaFullStack from "../../public/images/Java Full Stack Developer.png"
+
 
 const batches = [
   {
     title: "WEB DESIGNING",
     branch: "Pitampura",
     date: "31-05-2025",
-    img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1739790191984mern-removebg-preview%20(1).png&w=256&q=75"
+    img: javaFullStack
   },
+
   {
     title: "MERN STACK",
     branch: "Noida Sector 16",
     date: "31-05-2025",
-    img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1739790191984mern-removebg-preview%20(1).png&w=256&q=75"
-  },
-  {
-    title: "CLOUD COMPUTING",
-    branch: "Noida Sector 16",
-    date: "31-05-2025",
-    img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1729665262800aws.png&w=256&q=75"
+    img: mern
   },
   {
     title: "CYBER SECURITY",
     branch: "Noida Sector 16",
     date: "31-05-2025",
-    img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1707561125125Cyber%20Security.png&w=256&q=75"
+    img: cyberSecurity
   },
-  // Repeating some batches
   {
     title: "WEB DESIGNING",
     branch: "Pitampura",
     date: "31-05-2025",
-    img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1739790191984mern-removebg-preview%20(1).png&w=256&q=75"
+    img: javaFullStack
   },
+
   {
     title: "MERN STACK",
     branch: "Noida Sector 16",
     date: "31-05-2025",
-    img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1739790191984mern-removebg-preview%20(1).png&w=256&q=75"
-  },
-  {
-    title: "CLOUD COMPUTING",
-    branch: "Noida Sector 16",
-    date: "31-05-2025",
-    img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1729665262800aws.png&w=256&q=75"
+    img: mern
   },
   {
     title: "CYBER SECURITY",
     branch: "Noida Sector 16",
     date: "31-05-2025",
-    img: "https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1707561125125Cyber%20Security.png&w=256&q=75"
-  }
+    img: cyberSecurity
+  },{
+    title: "WEB DESIGNING",
+    branch: "Pitampura",
+    date: "31-05-2025",
+    img: javaFullStack
+  },
+
+  {
+    title: "MERN STACK",
+    branch: "Noida Sector 16",
+    date: "31-05-2025",
+    img: mern
+  },
+  {
+    title: "CYBER SECURITY",
+    branch: "Noida Sector 16",
+    date: "31-05-2025",
+    img: cyberSecurity
+  },
 ];
 
 export default function UpcomingBatches() {
@@ -133,7 +145,7 @@ export default function UpcomingBatches() {
                       overflow: 'hidden'
                     }}
                   >
-                    <img
+                    <img loading="lazy"
                       src={item.img}
                       alt={item.title}
                       style={{ width: '80%', height: '80%', objectFit: 'contain' }}

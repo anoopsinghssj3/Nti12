@@ -42,7 +42,8 @@ export default function ApplyForCertificate() {
           justify-content-center
         "
       >
-        <img
+        <img 
+        loading="lazy"
           src="./src/assets/certificate.jpeg"
           alt="Certificate"
           className="img-fluid"

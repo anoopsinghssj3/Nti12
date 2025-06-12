@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import * as  Io from "react-icons/io";
-import "../home_styles/Heroes.css"
+import "../home_pages/Heroes.css"
 import { IoIosSearch } from "react-icons/io";
-import { FaRupeeSign } from "react-icons/fa"
 import { FiBookOpen, FiAward, FiBriefcase, FiSettings } from 'react-icons/fi';
-
 
 export default function Heroes() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -12,7 +9,6 @@ export default function Heroes() {
     const handleSearchSubmit = (e) => {
         e.preventDefault();
         if (searchTerm.trim()) {
-            // Navigate to search results page with query param
             window.location.href = `/search?q=${encodeURIComponent(searchTerm.trim())}`;
         }
     }
@@ -105,6 +101,7 @@ export default function Heroes() {
                                                         src={card.image}
                                                         alt="Placement Avatar"
                                                         className="img-fluid rounded-4 nti-hero-img mt-1"
+                                                        loading="lazy"
                                                     />
                                                     <h5 className="mt-3 text-primary fw-bold glow-title text-center">
                                                         🔥 Placed as {card.course}
@@ -155,7 +152,7 @@ export default function Heroes() {
                         type="submit"
                         aria-label="Search"
                     >
-                        <IoIosSearch/>
+                        <IoIosSearch />
                     </button>
                 </form>
 

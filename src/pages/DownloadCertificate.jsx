@@ -43,6 +43,7 @@ export default function DownloadCertificate() {
         "
       >
         <img
+        loading="lazy"
           src="./src/assets/certificate.jpeg"
           alt="Certificate"
           className="img-fluid"

@@ -45,7 +45,7 @@ function Payment() {
     <div className='container py-5 text-center'>
       <h2>Scan & Pay for <span className="text-primary">{courseName}</span></h2>
 
-      <img src="/src/assets/qr.jpg" alt="Scan QR" style={{ width: "200px" }} className="my-3" />
+      <img loading="lazy" src="/src/assets/qr.jpg" alt="Scan QR" style={{ width: "200px" }} className="my-3" />
       <p><strong>Amount:</strong> {courseFees}</p>
 
       <form onSubmit={handleSubmit} className="d-flex flex-column align-items-center gap-3" style={{ maxWidth: "400px", margin: "0 auto" }}>

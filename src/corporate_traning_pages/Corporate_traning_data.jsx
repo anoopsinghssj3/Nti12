@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "../corporate_traning_pages/Corporate_traning_data.css";
-import  CorporateImages from "../../src/assets/CorporateImages.webp"
+import CorporateImages from "../../public/images/CorporateImages.webp"
 
 export default function CorporateTraningData() {
     const [showMore, setShowMore] = useState(false);
@@ -65,6 +65,7 @@ export default function CorporateTraningData() {
 
                 <div className="my-3">
                     <img
+                        loading="lazy"
                         src={CorporateImages}
                         alt="Corporate Training at NTI"
                         className="w-100 rounded shadow-sm"
@@ -78,7 +79,7 @@ export default function CorporateTraningData() {
                         <li>Experienced Instructors: Over 17 years of expertise in corporate training.</li>
                         <li> Proven Track Record: Success in various IT and corporate training programs.</li>
                         <li> Interactive Learning: Ensuring that training is always engaging and productive.</li>
-                         <p className='mt-2'>
+                        <p className='mt-2'>
                             By choosing <strong>NTI India</strong>, you are investing in your organization’s future success.
                             Our seminars and training sessions are designed to transform employees into experts and certified professionals, improving confidence and ensuring long-term growth.
                         </p>

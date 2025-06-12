@@ -6,7 +6,7 @@ import { FaBookReader, FaFileSignature } from "react-icons/fa";
 import { GiSuitcase } from "react-icons/gi";
 import { IoSchoolSharp } from "react-icons/io5";
 import { PiCertificateFill, PiCaretCircleDownFill } from "react-icons/pi";
-import NtiLogo from "../.././src/assets/NtiLogo.png"
+import NtiLogo from "../../public/images/NtiLogo.png"
 
 export default function Navbar() {
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light bg-light text-secondary main-navbar">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <img src={NtiLogo} alt="NtiLogo" style={{ height: "5.5rem" }} />
+            <img src={NtiLogo} alt="NtiLogo" loading="lazy" style={{ height: "5.5rem" }} />
           </Link>
 
           <button className="navbar-toggler dashboard" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">

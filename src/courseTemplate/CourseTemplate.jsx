@@ -325,12 +325,13 @@ const CourseTemplate = () => {
         {/* LEFT SIDE WITH TWO IMAGES */}
         <div className="col-md-5 text-center mb-4 mb-md-0 d-flex flex-column align-items-center gap-3 img-fixing">
           <img
+          loading="eager"
             src={randomImage || DEFAULT_IMG}
             alt={`${course} course image 1`}
             className="img-fluid rounded shadow course-image"
             style={{ width: "60%", objectFit: "cover" }}
           />
-          <img
+          <img loading="lazy"
             src={randomImage2 || DEFAULT_IMG}
             alt={`${course} course image 2`}
             className="img-fluid rounded shadow course-image"

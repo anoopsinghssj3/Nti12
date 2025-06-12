@@ -1,19 +1,19 @@
 import React from 'react';
 import '../corporate_traning_pages/DFCSection.css';
-import iBilt from "../../src/assets/ibilt.webp"
-import accenture from "../../src/assets/accenture.webp"
-import adityaBirlaGroup from "../../src/assets/Aditya Birla Group.webp"
-import algoscale from "../../src/assets/algoscale.webp"
-import bajaj from "../../src/assets/bajaj.webp"
-import birlasoft from "../../src/assets/birlasoft.webp"
-import csc from "../../src/assets/csc.webp"
-import cognizant from "../../src/assets/cognizant.webp"
-import hewitt from "../../src/assets/hewitt.webp"
-import sopraSteria from "../../src/assets/soprasteria.webp"
-import tcs from "../../src/assets/tcs.webp"
-import jubilant from "../../src/assets/jubilant.webp"
-import infosys from "../../src/assets/infosys.webp"
-import ibm from "../../src/assets/ibm.webp"
+import iBilt from "../../public/images/ibilt.webp"
+import accenture from "../../public/images/accenture.webp"
+import adityaBirlaGroup from "../../public/images/Aditya Birla Group.webp"
+import algoscale from "../../public/images/algoscale.webp"
+import bajaj from "../../public/images/bajaj.webp"
+import birlasoft from "../../public/images/birlasoft.webp"
+import csc from "../../public/images/csc.webp"
+import cognizant from "../../public/images/cognizant.webp"
+import hewitt from "../../public/images/hewitt.webp"
+import sopraSteria from "../../public/images/soprasteria.webp"
+import tcs from "../../public/images/tcs.webp"
+import jubilant from "../../public/images/jubilant.webp"
+import infosys from "../../public/images/infosys.webp"
+import ibm from "../../public/images/ibm.webp"
 
 const clients = [
   { name: 'iBilt', logo: iBilt },
@@ -50,7 +50,7 @@ const DFCSection = () => {
       <div className="dfc-logos">
         {clients.map((client, index) => (
           <div key={index} className="dfc-logo-card">
-            <img src={client.logo} alt={client.name} />
+            <img src={client.logo} alt={client.name} loading="lazy"/>
           </div>
         ))}
       </div>

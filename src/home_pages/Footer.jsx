@@ -5,7 +5,7 @@ import {
   FaYoutube,
   FaLinkedinIn,
 } from 'react-icons/fa';
-import "../home_styles/Footer.css"
+import "../home_pages/Footer.css"
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { useNavigate, Link } from "react-router-dom";

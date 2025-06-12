@@ -4,7 +4,7 @@ import "../corporate_traning_pages/FAQSection.css";
 const faqs = [
   {
     question: 'Can I generate higher revenue through corporate training?',
-    answer: 'Yes, corporate training enhances employee skills, boosting productivity and driving higher revenue.'
+    answer: 'Yes, corporate  enhances employee skills, boosting productivity and driving higher revenue.'
   },
   {
     question: 'Can we get both technical and non-technical training sessions?',

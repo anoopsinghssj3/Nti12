@@ -31,7 +31,7 @@ const MeetTeam = () => {
                 <div className="avatar-circle mx-auto mb-3">{member.initials}</div>
                 <h5 className="fw-semibold text-dark">{member.name}</h5>
                 <p className="text-primary small mb-0">{member.role}</p>
-                <img src="" alt="" />
+                <img src="" alt="" loading="lazy"/>
               </div>
             </div>
           ))}

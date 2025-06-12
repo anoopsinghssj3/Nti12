@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedinIn, FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
-import "../home_styles/SocialMedia.css";
+import "../home_pages/SocialMedia.css";
 
 export default function SocialMedia({ name, email, phone, course, branch, message }) {
     const whatsappMsg = `Enquiry Details:\nName: ${name || ""}\nEmail: ${email || ""}\nPhone: ${phone || ""}\nCourse: ${course || ""}\nBranch: ${branch || ""}\nMessage: ${message || "N/A"}`;

@@ -33,7 +33,7 @@ export default function PlacementCards() {
                 {placementData.map((student, index) => (
                     <div className="placement-card" key={index}>
                         <div className="placement-img-wrapper">
-                            <img src={student.image} alt={student.name} className="placement-avatar" />
+                            <img src={student.image} alt={student.name} loading="lazy" className="placement-avatar" />
                         </div>
                         <h5 className="placement-name">{student.name}</h5>
                         <p><span className="label">Job Profile :</span> {student.profile}</p>
