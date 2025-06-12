@@ -2,38 +2,110 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const PDFViewer = () => {
-    const location = useLocation();
-    const navigate = useNavigate();
-    const { pdfUrl, courseName } = location.state || {};
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { pdfUrl, courseName } = location.state || {};
 
-    if (!pdfUrl) {
-        return (
-            <div className="container py-5 text-center">
-                <h3>No PDF provided</h3>
-                <button className="btn btn-primary mt-3" onClick={() => navigate(-1)}>Go Back</button>
-            </div>
-        );
-    }
-
+  if (!pdfUrl) {
     return (
-        <div className="container-fluid p-4">
-            <h4 className="mb-3">{courseName ? `${courseName} Curriculum` : "Course PDF"}</h4>
-            <div style={{ height: "80vh" }}>
-                <iframe
-                    src={pdfUrl}
-                    title="Course Curriculum PDF"
-                    width="100%"
-                    height="100%"
-                    style={{ border: "1px solid #ccc" }}
-                ></iframe>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae atque dolorem odit maiores ea non pariatur eligendi alias et, porro natus aspernatur ut minima saepe fugit! Tenetur enim pariatur veniam, voluptatem nostrum, tempore cum suscipit culpa numquam dolor molestiae illum provident expedita officia incidunt. Fugit assumenda cupiditate ab nobis vero magni eos, expedita harum amet quisquam provident delectus voluptatem non eligendi sapiente quos doloribus culpa fugiat dolorum facilis unde nam accusantium excepturi. Porro accusantium doloribus, natus repellendus, saepe temporibus aut maxime at ipsam praesentium exercitationem quam? Suscipit deserunt exercitationem amet, in illum obcaecati officia, aut distinctio, autem ratione similique facere sapiente incidunt. Illum ipsum in error reprehenderit at incidunt voluptatibus alias magnam, suscipit rerum natus quo ad saepe voluptates nobis quia eaque repudiandae veniam aliquam facere minus maiores officia. Beatae aut provident modi libero, amet nemo, necessitatibus itaque quam nam, harum autem nihil voluptatibus non! Nisi, maiores assumenda et veniam cum, dolores incidunt hic molestias ducimus optio, consequatur non voluptatem id a sapiente? Officia expedita animi similique voluptates ab provident ullam eos? Suscipit id adipisci molestiae, corporis deserunt explicabo fugit, eveniet, a nulla possimus tempore laudantium consequuntur! Molestias doloribus ullam iure doloremque quas sed cupiditate aliquam soluta vel aliquid culpa facere perspiciatis velit provident maxime, harum tempore neque aperiam vitae autem quis quasi porro enim. Laboriosam veritatis cupiditate dolor facilis quas at explicabo eveniet nobis quos inventore molestiae obcaecati eos illum debitis reprehenderit ex, molestias tempora iure non. Magni alias possimus fuga voluptatibus eaque ipsum, nemo ea temporibus exercitationem illum odio molestias commodi debitis autem voluptatum adipisci. Fugit, veritatis eligendi debitis ea expedita ex quis cumque sunt illo ipsam. Incidunt ab eaque, magnam eos exercitationem quidem atque cum dolorem, ipsa fuga voluptas dolorum libero accusamus magni illum cumque enim omnis architecto explicabo a accusantium molestias. Magnam incidunt fuga accusamus ab iure mollitia quia, voluptates odit natus modi unde ullam sapiente porro! Deleniti voluptatum, asperiores magnam dolorem laboriosam commodi perferendis. Et sapiente modi libero, dolor esse mollitia, nesciunt ullam obcaecati, cumque dolore expedita maxime earum facere tenetur perferendis vitae optio corrupti quasi voluptatum. Nemo provident error qui doloremque numquam, ea earum impedit nam blanditiis, voluptatum sunt, natus quis suscipit quia nostrum adipisci accusantium velit tenetur dolorum. Blanditiis labore modi dolores laboriosam obcaecati et quis veritatis reprehenderit qui tempore, tenetur vitae? Distinctio iure rem porro atque alias nobis perferendis dicta. Esse impedit minima magnam labore nulla architecto consectetur adipisci amet repellat corporis sequi id, iste doloremque iusto nobis rem cum omnis aspernatur excepturi sapiente alias animi. Repudiandae vitae eligendi labore reiciendis corporis dicta eius suscipit optio earum dolorum, quae commodi doloribus voluptatum exercitationem cum ipsa animi quo laborum adipisci ipsum natus obcaecati. Modi, a fugiat. Accusantium quae vel, cupiditate repudiandae sunt est suscipit pariatur? Eius quisquam nihil quod sint maiores distinctio explicabo ipsa, laudantium accusantium, tempora voluptates nisi, alias consequuntur cumque natus saepe veritatis molestiae laborum debitis ullam quas dignissimos quibusdam. Dicta, a atque nobis error in exercitationem architecto laborum? Qui minima perferendis atque sed nostrum vero laudantium possimus dignissimos molestiae id.
-     
-            </div>
-            <button className="btn btn-secondary mt-3" onClick={() => navigate(-1)}>Back to Course</button>
-        
-         </div>
-
+      <div className="container py-5 text-center">
+        <h3>No PDF provided</h3>
+        <button className="btn btn-primary mt-3" onClick={() => navigate(-1)}>
+          Go Back
+        </button>
+      </div>
     );
+  }
+
+  return (
+    <div className="container-fluid px-3 py-4 bg-light">
+      <div className="container bg-white shadow rounded p-4 mb-5">
+        <h2 className="text-center text-primary mb-3 fw-bold">NTI TECH ACADEMY</h2>
+        <h4 className="text-center mb-4">{courseName || "C Language"} Training Program</h4>
+
+        <div className="text-center mb-4">
+          <p><strong>Location:</strong> LIG - 2/21/422, Nehru Nagar, Rewa, Madhya Pradesh 486001</p>
+          <p><strong>Website:</strong> <a href="http://www.ntitechacademy.com" target="_blank" rel="noopener noreferrer" className="text-decoration-underline text-primary">www.ntitechacademy.com</a></p>
+          <p><strong>Phone:</strong> 07662-482289</p>
+        </div>
+
+        <div className="mb-4">
+          <h5 className="fw-bold">About the Program</h5>
+          <p>NTI Tech Academy offers hands-on C Language training with live projects, designed for students, professionals, and freelancers. Learn from industry experts and build a strong foundation in programming.</p>
+        </div>
+
+        <div className="mb-4">
+          <h5 className="fw-bold">Why Choose Us?</h5>
+          <ul className="list-unstyled ps-3">
+            <li>✅ 100% Job Assistance</li>
+            <li>✅ Live Project Exposure</li>
+            <li>✅ Smart Classrooms</li>
+            <li>✅ Resume & Interview Preparation</li>
+            <li>✅ No.1 Ranked C Course in the Industry</li>
+          </ul>
+        </div>
+
+        <div className="mb-4">
+          <h5 className="fw-bold">What You Will Gain</h5>
+          <ul className="list-unstyled ps-3">
+            <li>🎓 Expert Mentorship & Career Support</li>
+            <li>💼 Real-world Case Studies</li>
+            <li>📜 Hands-on Tools & Certifications</li>
+            <li>📈 Salary Hike Potential: Up to 50%</li>
+            <li>🔁 Lifetime Learning Access</li>
+          </ul>
+        </div>
+
+        <div className="mb-4">
+          <h5 className="fw-bold">Course Curriculum</h5>
+          <div className="row row-cols-1 row-cols-md-2 g-4">
+            {[
+              { title: 'Introduction to C', topics: ['History & Importance', 'Features', 'Procedural Approach'] },
+              { title: 'C Language Environment', topics: ['Compiler, Interpreter, Assembler', 'IDEs', 'Compilation Process'] },
+              { title: 'Basics & Buzzwords', topics: ['Data Types', 'Variables', 'Constants', 'Identifiers', 'Preprocessor Directives'] },
+              { title: 'Input & Output', topics: ['Reading & Writing', 'Built-in I/O Functions'] },
+              { title: 'Flow Control Statements', topics: ['if, else, else-if, switch', 'Loops: for, while, do-while', 'goto, break, continue'] },
+              { title: 'Pointers', topics: ['Types & Expressions', 'Pointer Arithmetic', 'Pointers in Arrays, Strings, Functions'] },
+              { title: 'Arrays & Strings', topics: ['1D, 2D, Multi-dimensional Arrays', 'Sorting, Searching', 'String Operations'] },
+              { title: 'Enum', topics: ['Basics & Use Cases'] },
+              { title: 'File Management', topics: ['File Modes', 'Read/Write', 'Command-line Arguments'] },
+              { title: 'Preprocessor Directives', topics: ['Macros', 'File Inclusions', 'Compiler Control'] },
+              { title: 'Functions', topics: ['Types, Nesting, Recursion', 'Passing & Returning Values'] },
+              { title: 'Structures', topics: ['Definition', 'Pointers & Functions with Structure', 'Arrays of Structure'] },
+              { title: 'Unions', topics: ['Introduction & Use Cases'] },
+              { title: 'Dynamic Memory Allocation', topics: ['malloc()', 'calloc()', 'realloc()', 'free()'] },
+            ].map((module, index) => (
+              <div key={index} className="col">
+                <div className="border rounded p-3 h-100 bg-light">
+                  <h6 className="fw-semibold text-primary">{module.title}</h6>
+                  <ul className="ps-3 mb-0">
+                    {module.topics.map((topic, i) => <li key={i}>{topic}</li>)}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-4">
+          <h5 className="fw-bold">Capstone Projects</h5>
+          <ul className="list-unstyled ps-3">
+            <li>🛠️ Mini Compilers</li>
+            <li>🗃️ Student Record Management</li>
+            <li>🔐 File Encryption Tool</li>
+            <li>📊 Pointer-Based Memory Visualizer</li>
+          </ul>
+        </div>
+
+        <div className="text-center my-4">
+          <button className="btn btn-success px-4 py-2 fw-bold">
+            Enroll Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  );
 };
 
 export default PDFViewer;
