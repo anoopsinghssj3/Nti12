@@ -220,6 +220,9 @@ This course also covers essential skills like connecting Java applications to da
 };
 
 
+// const courseLink={
+
+// }
 
 const normalizedFixedCourses = {};
 Object.keys(fixedCourses).forEach(key => {
@@ -237,7 +240,6 @@ const CourseTemplate = () => {
   const [loading, setLoading] = useState(true);
   const [randomImage, setRandomImage] = useState("");
   const [randomImage2, setRandomImage2] = useState("");
-
 
   useEffect(() => {
     const images = [
@@ -263,6 +265,7 @@ const CourseTemplate = () => {
     setRandomImage(images[firstIndex]);
     setRandomImage2(images[secondIndex]);
   }, []);
+
 
   useEffect(() => {
     if (!course.trim()) {
@@ -335,7 +338,6 @@ const CourseTemplate = () => {
           />
         </div>
 
-        {/* DETAILS */}
         <div className="col-md-7">
           <p className="lead course-description">{description}</p>
 

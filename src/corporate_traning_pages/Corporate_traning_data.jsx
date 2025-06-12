@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import "../corporate_traning_styles/Corporate_traning_data.css";
+import "../corporate_traning_pages/Corporate_traning_data.css";
+import  CorporateImages from "../../src/assets/CorporateImages.webp"
 
 export default function CorporateTraningData() {
     const [showMore, setShowMore] = useState(false);
@@ -64,7 +65,7 @@ export default function CorporateTraningData() {
 
                 <div className="my-3">
                     <img
-                        src="https://www.ducatindia.com/_next/image?url=%2Fstatic%2Fcorporate%2FCorporateImages.jpg&w=3840&q=75"
+                        src={CorporateImages}
                         alt="Corporate Training at NTI"
                         className="w-100 rounded shadow-sm"
                     />

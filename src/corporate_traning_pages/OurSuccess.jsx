@@ -1,5 +1,5 @@
 import React from 'react';
-import '../corporate_traning_styles/OurSuccess.css';
+import '../corporate_traning_pages/OurSuccess.css';
 
 const OurSuccess = () => {
   return (

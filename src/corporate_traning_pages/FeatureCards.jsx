@@ -1,5 +1,5 @@
 import React from 'react';
-import '../corporate_traning_styles/FeatureCards.css';
+import '../corporate_traning_pages/FeatureCards.css';
 
 const features = [
   {

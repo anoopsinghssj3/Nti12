@@ -1,23 +1,35 @@
 import React from 'react';
-import '../corporate_traning_styles/DFCSection.css';
-
-
+import '../corporate_traning_pages/DFCSection.css';
+import iBilt from "../../src/assets/ibilt.webp"
+import accenture from "../../src/assets/accenture.webp"
+import adityaBirlaGroup from "../../src/assets/Aditya Birla Group.webp"
+import algoscale from "../../src/assets/algoscale.webp"
+import bajaj from "../../src/assets/bajaj.webp"
+import birlasoft from "../../src/assets/birlasoft.webp"
+import csc from "../../src/assets/csc.webp"
+import cognizant from "../../src/assets/cognizant.webp"
+import hewitt from "../../src/assets/hewitt.webp"
+import sopraSteria from "../../src/assets/soprasteria.webp"
+import tcs from "../../src/assets/tcs.webp"
+import jubilant from "../../src/assets/jubilant.webp"
+import infosys from "../../src/assets/infosys.webp"
+import ibm from "../../src/assets/ibm.webp"
 
 const clients = [
-  { name: 'iBilt', logo: 'image.png' },
-  { name: 'Accenture', logo: 'Partnership-Creatives--44-.png' },
-  { name: 'Aditya Birla Group', logo: 'Aditya_Birla_Group_Logo.svg.png' },
-  { name: 'Bajaj', logo: 'images (1).jpeg' },
-  { name: 'Birlasoft', logo: 'social-logo.gif' },
-  { name: 'CSC', logo: 'csc-logo-freelogovectors.net_.png' },
-  { name: 'Hewitt', logo: '1630606671583.jpeg' },
-  { name: 'IBM', logo: '1698290270-4070-IBM-logo-1972.jpg' },
-  { name: 'Sopra Steria', logo: 'sopra_steria_logo.webp' },
-  { name: 'Jubilant FoodWorks', logo: 'jubilant_foodworks_ltd__logo.jpeg' },
-  { name: 'Infosys', logo: 'infosys-logo-infosys-icon-free-free-vector.jpg' },
-  { name: 'Algoscale', logo: '4a1f15442e6f-algoscaletechnologieslogo-1644803841444.avif' },
-  { name: 'Cognizant', logo: '1712391633-169.avif' },
-  { name: 'TCS', logo: 'TATA-Consultancy-Services-logo-01.png' },
+  { name: 'iBilt', logo: iBilt },
+  { name: 'Accenture', logo: accenture },
+  { name: 'Aditya Birla Group', logo: adityaBirlaGroup },
+  { name: 'Bajaj', logo: bajaj },
+  { name: 'Birlasoft', logo: birlasoft },
+  { name: 'CSC', logo: csc },
+  { name: 'Hewitt', logo: hewitt },
+  { name: 'IBM', logo: ibm },
+  { name: 'Sopra Steria', sopraSteria },
+  { name: 'Jubilant FoodWorks', logo: jubilant },
+  { name: 'Infosys', logo: infosys },
+  { name: 'Algoscale', logo: algoscale },
+  { name: 'Cognizant', logo: cognizant },
+  { name: 'TCS', logo: tcs },
 ];
 
 const DFCSection = () => {
