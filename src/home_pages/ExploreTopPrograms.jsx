@@ -132,25 +132,25 @@ const ExploreTopPrograms = () => {
       <h2 className="mb-4 text-center learners-underline">Explore Top Programs</h2>
 
       <div className="row g-4">
-        {programsData.map((idx, programsData) => (
+        {programsData.map((program, idx) => (
           <div
             key={idx}
             className="col-12 col-sm-6 col-md-4"
-            onClick={() => handleCourseClick(programsData)}
-            onKeyPress={(e) => e.key === 'Enter' && handleCourseClick(programsData)}
+            onClick={() => handleCourseClick(program.program)}
+            onKeyPress={(e) => e.key === 'Enter' && handleCourseClick(program.program)}
             role="button"
             tabIndex={0}
-            aria-label={`Explore ${programsData} course`}
+            aria-label={`Explore ${program.program} course`}
           >
             <div className="card h-75 shadow-sm hover-scale d-flex flex-row justify-content-center cursor-pointer">
               <img
                 loading="lazy"
-                src={programsData.src}
+                src={program.src}
                 className="card-img-top course-image mx-auto w-25"
-                alt={`${programsData.program} course visual`}
+                alt={`${program} course visual`}
               />
               <div className="card-body text-center">
-                <h5 className="text-uppercase fs-6 fw-bold">{programsData.program}</h5>
+                <h5 className="text-uppercase fs-6 fw-bold">{program.program}</h5>
               </div>
             </div>
           </div>
