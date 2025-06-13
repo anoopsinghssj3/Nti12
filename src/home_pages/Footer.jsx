@@ -50,7 +50,7 @@ function Footer() {
             </div>
           </div>
 
-          {/*Address*/}
+          {/* Address
           <div className="col-12 col-md-3 mb-4 ">
             <h5>Contact Us:</h5>
             <div className="mb-3 ">
@@ -82,7 +82,7 @@ function Footer() {
 
             <div className='mb-3'><FaLocationDot /> Pune Address: Riddhi Siddhi Heights, Chatrapati chowk Road, Wakad, Pune - 411057</div>
 
-          </div>
+          </div> */}
 
           <div className="col-12 col-md-3 mb-4">
             <h5>Location & Map:</h5>
@@ -102,9 +102,17 @@ function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className=" text-white-50 py-2 px-3 w-100 bg-warning">
-        <div className="text-center w-75">&copy; 2025 NTI Academy, All Rights Reserved  <FaArrowUp className="border border-2 p-2 text-white d-flex" fontSize="2rem" style={{ justifySelf: "end" }} />
+      <div className="text-white-50 p-4 w-100 position-relative bg-black d-flex align-items-center">
+        <div className="text-center w-100">
+          &copy; 2025 NTI Academy, All Rights Reserved
         </div>
+        <button
+          className="position-absolute top-25 end-0 me-2 mt-1 border border-2 p-2 text-white bg-dark rounded-2"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          <FaArrowUp />
+        </button>
+
       </div>
     </footer >
   );

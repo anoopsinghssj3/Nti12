@@ -44,7 +44,7 @@ const batches = [
     branch: "Noida Sector 16",
     date: "31-05-2025",
     img: cyberSecurity
-  },{
+  }, {
     title: "WEB DESIGNING",
     branch: "Pitampura",
     date: "31-05-2025",
@@ -120,7 +120,7 @@ export default function UpcomingBatches() {
           }}
         >
           {batches.map((item, index) => (
-            <div key={index} style={{ minWidth: '250px', flex: '0 0 auto' }}>
+            <div key={index} style={{ minWidth: '250px', flex: '0 0 auto' }} >
               <div
                 className="card border-0 shadow text-center"
                 style={{

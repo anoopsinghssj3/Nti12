@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <Heroes />
-            <SocialMedia />
+            {/* <SocialMedia /> */}
             <ExploreTopPrograms />
 
             <div className="text-center mt-5">

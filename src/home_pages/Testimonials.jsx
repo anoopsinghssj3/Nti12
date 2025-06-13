@@ -71,7 +71,7 @@ function Testimonials() {
                 </p>
                 {testimonial.text.length > 120 && (
                   <p
-                    className="text-end  mt-2 mb-0 read-more"
+                    className="text-end  mt-1 mb-0 read-more"
                     style={{ cursor: 'pointer' }}
                     onClick={() => toggleReadMore(originalIndex)}
                   >
