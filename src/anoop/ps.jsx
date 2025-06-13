@@ -11,6 +11,10 @@ export default function lorem50
         c sjk ksknak </div> 
 
         <div className="btn"> click button </div>
+<div className="btn"> click button </div>
+<div className="btn"> click button </div>
+
+    </div>
     </div >
   )
 }
