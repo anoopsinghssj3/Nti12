@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function lorem50
+export default function
   () {
   return (
     <div>
