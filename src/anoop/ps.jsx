@@ -6,6 +6,8 @@ export default function lorem50
     <div>
       <div className="bg-danger">
         c sjk ksknak </div> 
+
+        <div className="btn"> click button </div>
     </div>
   )
 }
