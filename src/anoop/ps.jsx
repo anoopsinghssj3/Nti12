@@ -4,10 +4,7 @@ export default function    lorem50
 () {
   return (
     <div>  
-jsdhfaljsdhflaiwfhioawhflsaidhfaiushfoadshvlkjsdvhluisah;oias
-dkjvhsidvhlisdhvsd
-sdkfjvbhsdkjfhvilsd
-sd.fvnsdkjfhvijls
+<> Anoop NTI PRIYANKA</>
 
 <div className="btn"> edit</div>
 <div className="btn"> cancel</div>
