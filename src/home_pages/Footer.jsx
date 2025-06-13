@@ -50,7 +50,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Address
+          {/*Address*/}
           <div className="col-12 col-md-3 mb-4 ">
             <h5>Contact Us:</h5>
             <div className="mb-3 ">
@@ -82,7 +82,7 @@ function Footer() {
 
             <div className='mb-3'><FaLocationDot /> Pune Address: Riddhi Siddhi Heights, Chatrapati chowk Road, Wakad, Pune - 411057</div>
 
-          </div> */}
+          </div>
 
           <div className="col-12 col-md-3 mb-4">
             <h5>Location & Map:</h5>
