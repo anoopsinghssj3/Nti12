@@ -12,7 +12,7 @@ const testimonials = [
     name: 'Anjali Mishra',
     profile: "Digital Marketing Executive",
     text: 'Enrolling in NTI Tech Academy’s Digital Marketing Course has been a game-changer for my career as a Digital Marketing Executive! Real-world projects and expert instructors made all the difference!',
-    image: '',
+    image: null,
   },
   {
     name: 'Ayushi Singh',

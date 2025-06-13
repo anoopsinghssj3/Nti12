@@ -1,14 +1,29 @@
-import React, { useEffect } from 'react';
-import { useNavigate, Link, NavLink } from "react-router-dom";
+import React, { useEffect, useRef } from 'react';
+import { useNavigate, Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import { IoMdHome } from "react-icons/io";
 import { FaBookReader, FaFileSignature } from "react-icons/fa";
 import { GiSuitcase } from "react-icons/gi";
 import { IoSchoolSharp } from "react-icons/io5";
 import { PiCertificateFill, PiCaretCircleDownFill } from "react-icons/pi";
-import NtiLogo from "../../public/images/NtiLogo.png"
+import NtiLogo from "../../public/images/NtiLogo.png";
 
 export default function Navbar() {
+  const collapseRef = useRef();
+  const navigate = useNavigate();
+
+  const handleLinkClick = () => {
+    if (window.innerWidth <= 992 && collapseRef.current) {
+      const collapse = new Collapse(collapseRef.current, { toggle: false });
+      collapse.hide();
+    }
+  };
+
+  const handleCourseClick = (program) => {
+    navigate("/course_template", { state: { course: program } });
+    handleLinkClick();
+  };
+
   useEffect(() => {
     const submenuToggles = document.querySelectorAll(".submenu-toggle");
 
@@ -31,33 +46,37 @@ export default function Navbar() {
       });
     };
   }, []);
-  const navigate = useNavigate();
-
-  const handleCourseClick = (program) => {
-    navigate("/course_template", { state: { course: program } });
-  };
 
   return (
-    <div className="w-100 bg-white sticky-top">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light text-secondary main-navbar">
+    <div className="w-100 sticky-top bg-white">
+      <nav className="navbar navbar-expand-lg navbar-light text-secondary main-navbar">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/" onClick={handleLinkClick}>
             <img src={NtiLogo} alt="NtiLogo" loading="lazy" style={{ height: "5.5rem" }} />
           </Link>
 
-          <button className="navbar-toggler dashboard" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <button
+            className="navbar-toggler dashboard"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto gap-2 mb-2 mb-lg-0 d-flex align-items-start ps-1">
+          <div
+            className="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            ref={collapseRef}
+          >
+            <ul className="navbar-nav gap-2 mb-2 mb-lg-0 d-flex align-items-start">
 
-              <NavLink className="nav-link nav-item active home-style text-secondary system" to="/">
-                <IoMdHome fontSize="1.5rem" className='mb-1' /> Home
-              </NavLink>
+              <Link className="nav-link nav-item active home-style text-secondary system" to="/" onClick={handleLinkClick}>
+                <IoMdHome fontSize="1.5rem" className='mb-1' />
+                <span>Home</span>
+              </Link>
 
-              <li className="nav-item dropdown ms-1 system">
-                <span className="nav-link dropdown-toggle text-secondary system" data-bs-toggle="dropdown" role="button">
+              <div className="nav-item dropdown system ms-1 course-style">
+                <span className="nav-link nav-item dropdown-toggle text-secondary system" data-bs-toggle="dropdown" role="button">
                   <FaBookReader fontSize="1.25rem" className='mb-1' /> Courses
                 </span>
                 <ul className="dropdown-menu">
@@ -172,27 +191,27 @@ export default function Navbar() {
                   </li>
 
                 </ul>
-              </li>
+              </div>
 
-              <NavLink className="nav-link text-secondary system" to="/placement">
-                <GiSuitcase fontSize="1.5rem" className='mb-1' /> Placement
-              </NavLink>
+              <Link className="nav-link text-secondary system me-1" to="/placement" onClick={handleLinkClick}>
+                <GiSuitcase fontSize="1.5rem" className='mb-1' /> <span>Placement</span>
+              </Link>
 
-              <NavLink className="nav-link text-secondary system" to="/corpo_tra">
-                <IoSchoolSharp fontSize="1.25rem" className='mb-1' /> Corporate Training
-              </NavLink>
+              <Link className="nav-link text-secondary system" to="/corpo_tra" onClick={handleLinkClick}>
+                <IoSchoolSharp fontSize="1.25rem" className='mb-1' /> <span>Corporate Training</span>
+              </Link>
 
-              <NavLink className="nav-link text-secondary system" to="/on_tra">
-                <FaFileSignature fontSize="1.25rem" className='mb-1' /> Online Registration
-              </NavLink>
+              <Link className="nav-link text-secondary system ms-1" to="/on_tra" onClick={handleLinkClick}>
+                <FaFileSignature fontSize="1.25rem" className='mb-1' /><span>Online Registration</span>
+              </Link>
 
-              <NavLink className="nav-link text-secondary system" to="/certificate">
-                <PiCertificateFill fontSize="1.5rem" className='mb-1' /> Certificate
-              </NavLink>
+              <Link className="nav-link text-secondary system" to="/certificate" onClick={handleLinkClick}>
+                <PiCertificateFill fontSize="1.5rem" className='mb-1' /> <span>Certificate</span>
+              </Link>
 
-              <NavLink className="nav-link dropdown nav-item text-secondary system" to="/about">
-                <PiCaretCircleDownFill fontSize="1.5rem" className='mb-1' /> About
-              </NavLink>
+              <Link className="nav-link text-secondary system" to="/about" onClick={handleLinkClick}>
+                <PiCaretCircleDownFill fontSize="1.5rem" className='mb-1' /> <span>About</span>
+              </Link>
             </ul>
           </div>
         </div>

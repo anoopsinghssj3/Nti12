@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaYoutube,
   FaLinkedinIn,
+  FaArrowUp,
 } from 'react-icons/fa';
 import "../home_pages/Footer.css"
 import { IoIosCall } from "react-icons/io";
@@ -101,8 +102,9 @@ function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="bg-black text-center text-white-50 py-2">
-        &copy; 2025 NTI Academy, All Rights Reserved
+      <div className=" text-white-50 py-2 px-3 w-100 bg-warning">
+        <div className="text-center w-75">&copy; 2025 NTI Academy, All Rights Reserved  <FaArrowUp className="border border-2 p-2 text-white d-flex" fontSize="2rem" style={{ justifySelf: "end" }} />
+        </div>
       </div>
     </footer >
   );
