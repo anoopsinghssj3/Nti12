@@ -11,6 +11,7 @@ export default function lorem50
 <div className="btn"> click button </div>
 <div className="btn"> click button </div>
 
+
     </div>
   )
 }
