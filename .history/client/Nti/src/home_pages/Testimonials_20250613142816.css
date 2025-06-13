@@ -1,0 +1,80 @@
+.testimonials .learners-underline {
+  text-decoration: underline;
+  text-decoration-color: darksalmon;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+.testimonials-marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials-marquee-track {
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
+.testimonials-marquee-track::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.testimonial-card {
+  width: 300px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  min-height: 250px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.testimonial-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #fe8735;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.testimonial-nav.left {
+  left: 0;
+}
+.testimonial-nav.right {
+  right: 0;
+}
+.testimonial-nav:hover {
+  background-color: #e05f00;
+}
+
+.avtar {
+  position: absolute;
+  right: 1rem;
+  border: 0.25rem solid #fe8735;
+}
+
+.avtar-name {
+  position: relative;
+  top: 0.75rem;
+  color: #0a2c55;
+}
+
+.read-more {
+  color: #fe8735;
+}
+
+.avtar-design {
+  position: absolute;
+  top: -3.5rem;
+  left: -0.7rem;
+  padding: 1rem;
+  opacity: 0.4;
+  font-size: 9rem;
+  color: #fe8735;
+}

@@ -1,0 +1,76 @@
+.testimonials .avtar-name {
+    position: relative;
+    top: 0.75rem;
+    color: #0a2c55 !important;
+}
+
+.testimonials .learners-underline {
+    text-decoration: underline;
+    text-decoration-color: darksalmon;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+
+.testimonials-marquee-wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.testimonials-marquee-track {
+    display: flex;
+    animation: marquee 30s linear infinite;
+    gap: 20px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.testimonial-card {
+    width: 300px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    position: relative;
+    min-height: 250px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quote-icon {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 40px;
+    color: #d3d3d3;
+    z-index: 0;
+}
+
+.card-style {
+    background: radial-gradient(circle, white 0%, #c8e4ff 100%);
+
+}
+
+.testimonials .avtar {
+    position: absolute;
+    right: 1rem;
+    border: 0.25rem solid #fe8735;
+}
+
+.testimonials .read-more {
+    color: #fe8735;
+}
+
+.avtar-design {
+    position: absolute;
+    top: -3.5rem;
+    left: -0.7rem;
+    padding: 1rem;
+    opacity: 0.4;
+    font-size: 9rem;
+    color: #fe8735;
+}
