@@ -108,7 +108,7 @@ This course also covers essential skills like connecting Java applications to da
   "business analytics": {
     description: `Develop the skills to analyze business data and guide decision-making. This course covers data visualization, dashboard creation, statistical analysis, and forecasting techniques using tools like Excel, Tableau, and Power BI. You’ll work on case studies to optimize business performance. Ideal for aspiring Business Analysts or Data Consultants.`,
     duration: "2 Months",
-    pdfLink: "https://example.com/business-analytics-course-outline.pdf",
+    pdfLink: "../../public/syllabus/Business_Analysis_Course_Syllabus.pdf",
     fees: "₹20,000 (GST not included) ",
     projects: [
       "live projects"
@@ -129,7 +129,7 @@ This course also covers essential skills like connecting Java applications to da
     description: `Understand manual and automated software testing methodologies. Topics include test case design, bug tracking, Selenium automation, and performance testing. Practical labs simulate real-world testing scenarios. This course prepares you for roles as QA Engineer, Test Analyst, or Automation Tester.`,
     duration: "3 Months",
     pdfLink: "https://example.com/software-testing-course-outline.pdf",
-    fees: "₹25,000",
+    fees: "₹25,000 (GST not included)",
     projects: [
       "live projects"
     ]
@@ -138,7 +138,7 @@ This course also covers essential skills like connecting Java applications to da
     description: `Master automation testing tools and techniques to accelerate software quality assurance processes. This course covers both foundational and advanced concepts, starting with the basics of software testing, test case design, and bug tracking systems. You'll then dive deep into automation tools like Selenium WebDriver, TestNG, and frameworks such as Maven and Jenkins. Learn how to write reusable test scripts using Java or Python, perform cross-browser testing, and set up continuous testing pipelines using CI/CD integration. Real-world labs and assignments simulate enterprise-level testing workflows, giving you experience with both front-end and back-end automation. The curriculum also touches on performance testing using tools like JMeter and explores version control practices with Git. By the end of the course, you will be confident in automating regression, functional, and integration tests.`,
     duration: "3 Months",
     pdfLink: "https://example.com/software-testing-course-outline.pdf",
-    fees: "₹15,000",
+    fees: "₹15,000 (GST not included)",
     projects: [
       "live projects"
     ]
@@ -148,7 +148,7 @@ This course also covers essential skills like connecting Java applications to da
     description: `Start with fundamentals of C programming: syntax, control structures, functions, pointers, and memory management. Build efficient console applications and understand system-level programming concepts. A strong foundation for embedded systems, OS development, and software engineering roles.`,
     duration: "1.5 Months",
     pdfLink: "https://ntitechacademy.com/wp-content/uploads/2023/09/C-LANGUAGE.pdf",
-    fees: "₹8,000",
+    fees: "₹8,000 (GST not included)",
     projects: [
       "live projects"
     ]
@@ -158,7 +158,7 @@ This course also covers essential skills like connecting Java applications to da
     description: `Start with fundamentals of C++ programming: syntax, control structures, functions, pointers, and memory management. Build efficient console applications and understand system-level programming concepts. A strong foundation for embedded systems, OS development, and software engineering roles.`,
     duration: "1.5 Months",
     pdfLink: "https://example.com/c-programming-course-outline.pdf",
-    fees: "8,000",
+    fees: "8,000 (GST not included)",
     projects: [
       "live projects"
     ]
@@ -168,7 +168,7 @@ This course also covers essential skills like connecting Java applications to da
     description: `This Android App Development course is designed to help learners build real-world mobile applications using Java and Kotlin. You’ll begin by understanding Android architecture, activities, layouts, and UI components. The course then takes you through building interactive applications, working with databases using Room and SQLite, integrating RESTful APIs, and managing user input, background tasks, and notifications. You’ll also explore Android Studio, Material Design principles, and best practices for debugging and app optimization. As you progress, you’ll implement modern development techniques like MVVM architecture, Firebase integration for authentication and cloud storage, and Google Play Store deployment strategies. Practical projects include building chat apps, e-commerce applications, and media players.`,
     duration: "2 Months",
     pdfLink: "https://example.com/android-app-development-course-outline.pdf",
-    fees: "₹15,000",
+    fees: "₹15,000 (GST not included)",
     projects: [
       "live projects"
     ]
@@ -178,7 +178,7 @@ This course also covers essential skills like connecting Java applications to da
     description: `This iOS App Development course empowers learners to design and build fully functional iOS applications using Swift and Xcode. Starting with core Swift programming—variables, control flow, and functions—you'll progress to more advanced topics like OOP, closures, and protocol-oriented programming. You’ll learn UIKit for building responsive interfaces and integrate essential components like navigation controllers, table views, gestures, and user inputs. The course emphasizes real-world development with modules on working with APIs, data persistence using Core Data and UserDefaults, and networking with URLSession. You'll also explore SwiftUI for declarative UI design and understand the Apple Human Interface Guidelines. Projects include building a task manager, a weather app, and a media gallery. By the end of the course, you’ll understand App Store submission, provisioning profiles, and performance optimization techniques.`,
     duration: "2 Months",
     pdfLink: "https://example.com/ios-app-development-course-outline.pdf",
-    fees: "₹15,000",
+    fees: "₹15,000 (GST not included)",
     projects: [
       "live projects"
     ]
@@ -188,7 +188,7 @@ This course also covers essential skills like connecting Java applications to da
     description: `Learn design principles and software tools like Adobe Photoshop, Illustrator, and InDesign. Develop skills in branding, typography, and digital illustration. The course emphasizes creativity and design thinking, enabling learners to create eye-catching graphics for print and digital platforms. Hands-on modules focus on practical tasks such as logo creation, poster layouts, brochure design, and UI mockups. You’ll also explore color theory, visual hierarchy, and portfolio building. Whether you're aiming to freelance or join a creative agency, this program builds a strong foundation for visual communication.`,
     duration: "3 Months",
     pdfLink: "https://example.com/graphics-design-course-outline.pdf",
-    fees: "₹20,000",
+    fees: "₹20,000 (GST not included)",
     projects: [
       "live projects"]
   },
@@ -212,7 +212,7 @@ This course also covers essential skills like connecting Java applications to da
     "description": "Become a Salesforce expert and learn to customize, configure, and administer the world's leading CRM platform. This course covers Salesforce Sales Cloud, Service Cloud, Marketing Cloud, and App Builder. Develop skills in creating custom objects, workflows, reports, and dashboards. Hands-on modules focus on practical tasks such as lead management, opportunity tracking, case management, and campaign automation. You’ll also explore Salesforce security, data management, and integration. Whether you're aiming to become a Salesforce Administrator, Developer, or Consultant, this program provides the knowledge and skills to excel in the Salesforce ecosystem.",
     "duration": "3 Months",
     "pdfLink": "https://example.com/salesforce-course-outline.pdf",
-    "fees": "₹22,000",
+    "fees": "₹22,000 (GST not included)",
     "projects": [
       "live projects"
     ]
@@ -325,7 +325,7 @@ const CourseTemplate = () => {
         {/* LEFT SIDE WITH TWO IMAGES */}
         <div className="col-md-5 text-center mb-4 mb-md-0 d-flex flex-column align-items-center gap-3 img-fixing">
           <img
-          loading="eager"
+            loading="eager"
             src={randomImage || DEFAULT_IMG}
             alt={`${course} course image 1`}
             className="img-fluid rounded shadow course-image"
@@ -353,13 +353,12 @@ const CourseTemplate = () => {
           <h5><FaFileDownload className="me-2 text-warning" />Curriculum</h5>
           {courseData.pdfLink ? (
             <div className="d-flex gap-3 flex-wrap mb-3">
-              <a
-                href={courseData.pdfLink}
+              <button onClick={() => { navigate(`/${courseData.pdfLink}`) }}
                 download
                 className="btn btn-outline-primary btn-sm"
               >
                 Download PDF
-              </a>
+              </button>
               <button type='button'
                 className="btn btn-outline-secondary btn-sm"
                 onClick={() => navigate("/pdf_viewer", {
@@ -396,7 +395,7 @@ const CourseTemplate = () => {
               navigate("/payment", {
                 state: {
                   course: course,
-                  fees: courseData.fees || "₹25,000 – ₹55,000"
+                  fees: courseData.fees || "-"
                 }
               })
             }
