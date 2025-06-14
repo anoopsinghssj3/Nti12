@@ -17,9 +17,7 @@ const fixedCourses = {
     pdfLink:
       "https://example.com/mernstack-genai-course-outline.pdf",
     fees: "₹35,000 (GST not included) ",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "mean stack": {
@@ -27,8 +25,7 @@ const fixedCourses = {
     duration: "5 Months",
     pdfLink: "https://example.com/mernstack-genai-course-outline.pdf",
     fees: "₹35,000 (GST not included)",
-    projects: [
-      "live projects"]
+    projects: [""]
   },
 
 
@@ -37,9 +34,7 @@ const fixedCourses = {
     duration: "3 Months",
     pdfLink: "https://example.com/cybersecurity-genai-course-outline.pdf",
     fees: "₹20,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "java full stack": {
@@ -47,9 +42,7 @@ const fixedCourses = {
     duration: "5 months",
     pdfLink: "https://example.com/java-expert-course-outline.pdf",
     fees: "₹40,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "core java": {
@@ -59,8 +52,7 @@ You will also learn exception handling, file input/output (I/O), multithreading,
     duration: "1.5 Months",
     pdfLink: "https://example.com/core-java-course-outline.pdf",
     fees: "₹10,000 (GST not included)",
-    projects: ["live projects"
-    ]
+    projects: [""]
   },
 
   "advance java": {
@@ -71,9 +63,7 @@ This course also covers essential skills like connecting Java applications to da
     duration: "3 Months",
     pdfLink: "https://example.com/advanced-java-course-outline.pdf",
     fees: "₹20,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "advance digital marketing": {
@@ -81,9 +71,7 @@ This course also covers essential skills like connecting Java applications to da
     duration: "2 Months",
     pdfLink: "https://example.com/adv-digital-marketing-course-outline.pdf",
     fees: "₹15,000 (GST not included) ",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "data science": {
@@ -91,18 +79,14 @@ This course also covers essential skills like connecting Java applications to da
     duration: "4 Months",
     pdfLink: "https://example.com/data-science-course-outline.pdf",
     fees: "₹50,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
   "python": {
     description: `Learn Python programming from basics to advanced topics including OOP, web scraping, automation, and REST APIs. Practical exercises cover building scripts, data handling, and integrating with databases. This versatile language course prepares you for software development, data science, or automation roles with hands-on coding and project work.`,
     duration: "1 Month",
     pdfLink: "https://example.com/python-training-course-outline.pdf",
     fees: "₹10,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "business analytics": {
@@ -110,9 +94,7 @@ This course also covers essential skills like connecting Java applications to da
     duration: "2 Months",
     pdfLink: "../../public/syllabus/Business_Analysis_Course_Syllabus.pdf",
     fees: "₹20,000 (GST not included) ",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "aws with devops": {
@@ -120,9 +102,7 @@ This course also covers essential skills like connecting Java applications to da
     duration: "2.5 Months",
     pdfLink: "https://example.com/aws-professional-training-course-outline.pdf",
     fees: "₹20,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "software testing (manual)": {
@@ -130,18 +110,14 @@ This course also covers essential skills like connecting Java applications to da
     duration: "3 Months",
     pdfLink: "https://example.com/software-testing-course-outline.pdf",
     fees: "₹25,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
   "automation": {
     description: `Master automation testing tools and techniques to accelerate software quality assurance processes. This course covers both foundational and advanced concepts, starting with the basics of software testing, test case design, and bug tracking systems. You'll then dive deep into automation tools like Selenium WebDriver, TestNG, and frameworks such as Maven and Jenkins. Learn how to write reusable test scripts using Java or Python, perform cross-browser testing, and set up continuous testing pipelines using CI/CD integration. Real-world labs and assignments simulate enterprise-level testing workflows, giving you experience with both front-end and back-end automation. The curriculum also touches on performance testing using tools like JMeter and explores version control practices with Git. By the end of the course, you will be confident in automating regression, functional, and integration tests.`,
     duration: "3 Months",
     pdfLink: "https://example.com/software-testing-course-outline.pdf",
     fees: "₹15,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "c programming": {
@@ -149,9 +125,7 @@ This course also covers essential skills like connecting Java applications to da
     duration: "1.5 Months",
     pdfLink: "https://ntitechacademy.com/wp-content/uploads/2023/09/C-LANGUAGE.pdf",
     fees: "₹8,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "c++ programming": {
@@ -159,9 +133,7 @@ This course also covers essential skills like connecting Java applications to da
     duration: "1.5 Months",
     pdfLink: "https://example.com/c-programming-course-outline.pdf",
     fees: "8,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "android app developement": {
@@ -169,9 +141,7 @@ This course also covers essential skills like connecting Java applications to da
     duration: "2 Months",
     pdfLink: "https://example.com/android-app-development-course-outline.pdf",
     fees: "₹15,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "ios app developement": {
@@ -179,9 +149,7 @@ This course also covers essential skills like connecting Java applications to da
     duration: "2 Months",
     pdfLink: "https://example.com/ios-app-development-course-outline.pdf",
     fees: "₹15,000 (GST not included)",
-    projects: [
-      "live projects"
-    ]
+    projects: [""]
   },
 
   "graphics design": {
@@ -189,8 +157,7 @@ This course also covers essential skills like connecting Java applications to da
     duration: "3 Months",
     pdfLink: "https://example.com/graphics-design-course-outline.pdf",
     fees: "₹20,000 (GST not included)",
-    projects: [
-      "live projects"]
+    projects: [""]
   },
 
   "communication skills & personality developement": {
@@ -198,14 +165,8 @@ This course also covers essential skills like connecting Java applications to da
     duration: "1.5 Months",
     pdfLink: "https://example.com/communication-personality-course-outline.pdf",
     fees: "₹5,000 (GST not included)",
-    projects: [
-      "live projects"
-    ],
-    extras: [
-      "Soft Skills Certification",
-      "1-on-1 Mentoring",
-      "Resume & Interview Support"
-    ]
+    projects: [""]
+    ,
   },
 
   "salesforce": {
@@ -213,16 +174,30 @@ This course also covers essential skills like connecting Java applications to da
     "duration": "3 Months",
     "pdfLink": "https://example.com/salesforce-course-outline.pdf",
     "fees": "₹22,000 (GST not included)",
-    "projects": [
-      "live projects"
-    ]
-  }
+    projects: [""]
+  }, "video editing": {
+    "description": "Master the art of video editing with our hands-on course designed for aspiring editors, content creators, and media professionals. Learn to use industry-standard tools like Adobe Premiere Pro, Final Cut Pro, and DaVinci Resolve. The course covers essential editing techniques such as cutting, trimming, transitions, audio sync, effects, and color correction. You’ll work on real-world projects like YouTube videos, short films, social media reels, and promotional content. Ideal for beginners and those looking to build a portfolio for freelance or professional opportunities.",
+    "duration": "3 Months",
+    "pdfLink": "https://example.com/video-editing-course-outline.pdf",
+    "fees": "₹20,000 (GST not included)",
+    projects: [""]
+  }, "animation": {
+    "description": "Dive into the world of animation with a comprehensive course covering both 2D and 3D techniques. Learn the principles of animation, character design, storyboarding, and motion graphics using tools like Adobe Animate, After Effects, and Blender. This course is designed to help you create compelling animated videos for films, games, and marketing. Build your creative portfolio with hands-on projects while understanding timing, movement, and storytelling fundamentals essential for animators.",
+    "duration": "3 Months",
+    "pdfLink": "https://example.com/animation-course-outline.pdf",
+    "fees": "₹20,00 (GST not included)",
+    projects: [""]
+  },
+
+  extras: [
+    "Soft Skills Certification",
+    "1-on-1 Mentoring",
+    "Resume & Interview Support"
+  ]
+
+
 };
 
-
-// const courseLink={
-
-// }
 
 const normalizedFixedCourses = {};
 Object.keys(fixedCourses).forEach(key => {
@@ -345,10 +320,10 @@ const CourseTemplate = () => {
           <hr />
 
           <h5><FaClock className="me-2 text-primary" />Duration</h5>
-          <p>{courseData.duration || "3–6 Months"}</p>
+          <p>{courseData.duration || "-"}</p>
 
           <h5><FaRupeeSign className="me-2 text-success" />Fees</h5>
-          <p>{courseData.fees || "₹25,000 – ₹55,000"}</p>
+          <p>{courseData.fees || "-0"}</p>
 
           <h5><FaFileDownload className="me-2 text-warning" />Curriculum</h5>
           {courseData.pdfLink ? (
@@ -377,7 +352,7 @@ const CourseTemplate = () => {
 
           <h5><FaProjectDiagram className="me-2 text-info" />Projects</h5>
           <ul>
-            {(courseData.projects || ["Capstone Projects", "Real-World Scenarios"]).map((proj, idx) => (
+            {(courseData.projects || ["live projects"]).map((proj, idx) => (
               <li key={idx}>{proj}</li>
             ))}
           </ul>

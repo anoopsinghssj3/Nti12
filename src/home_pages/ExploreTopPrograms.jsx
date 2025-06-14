@@ -22,7 +22,8 @@ import ios from "../../public/images/ios.svg"
 import awsDev from "../../public/images/AWS Course.png"
 import salesforce from "../../public/images/Salesforce.avif"
 import cspd from "../../public/images/Communication Skills & Personality Developement.jpg"
-
+import videoEditing from "../../public/images/video editing.webp"
+import animation from "../../public/images/animation.jpg"
 
 const programsData = [
   {
@@ -75,7 +76,7 @@ const programsData = [
   },
 
   {
-    program: 'automation',
+    program: 'automation testing',
     src: automation || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1729665153790software%20Testing.png&w=256&q=75',
   },
 
@@ -113,6 +114,16 @@ const programsData = [
     program: 'salesforce',
     src: salesforce || "",
   },
+
+  {
+    program: 'video editing',
+    src: videoEditing || "https://sm.pcmag.com/t/pcmag_me/gallery/t/the-best-o/the-best-online-video-editors-for-2025_rjmd.1920.jpg",
+  },
+{
+    program: 'animation',
+    src: animation || "https://www.tgcindia.com/wp-content/uploads/2020/07/Animation-Course-degree-1280x720.jpg",
+  },
+
 
   {
     program: 'communication skills & personality developement',

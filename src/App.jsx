@@ -43,6 +43,7 @@ export default function App() {
         <Route path="/terms_conditions" element={<TermsAndCondition />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/pdf_viewer" element={<PDFViewer />} />
+        <Route path="/receipt"  element={""}/>
 
       </Routes>
       <Footer />
