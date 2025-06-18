@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import CorporateTraining from './pages/CorporateTraining';
 import OnlineTraining from './pages/OnlineTraining';
 import Certificate from './components/Certificate';
 import ApplyForCertificate from './pages/ApplyForCertificate';
@@ -19,7 +18,8 @@ import TermsAndCondition from './footer/TermsAndCondition';
 import ScrollToTop from './components/ScrollToTop';
 import Payment from './courseTemplate/Payment';
 import PDFViewer from './courseTemplate/PDFViewer';
-
+import CorporateTrainingForm from './corporate_traning_pages/CorporateTrainingForm';
+import CorporateTraining from './pages/CorporateTraining';
 
 export default function App() {
   return (
@@ -29,8 +29,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<SearchResults />} />
-        <Route path="corpo_tra" element={<CorporateTraining />} />
-        <Route path="on_tra" element={<OnlineTraining />} />
+        <Route path="/corpo_tra" element={<CorporateTraining />} />
+        <Route path="/on_tra" element={<OnlineTraining />} />
         <Route path="/certificate" element={<Certificate />} />
         <Route path="/apply_certi" element={<ApplyForCertificate />} />
         <Route path="/download_certi" element={<DownloadCertificate />} />
@@ -43,7 +43,6 @@ export default function App() {
         <Route path="/terms_conditions" element={<TermsAndCondition />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/pdf_viewer" element={<PDFViewer />} />
-        <Route path="/receipt"  element={""}/>
 
       </Routes>
       <Footer />
