@@ -1,33 +1,33 @@
-import React from 'react';
 import "../corporate_traning_pages/CorporateTrainingForm.css";
-import { useForm } from 'react-hook-form';
+import { useForm } from "react-hook-form";
+import { domainRoute } from "../utils/domain";
+import axios from "axios";
 
 export default function CorporateTrainingForm() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
     reset,
   } = useForm();
 
   const onSubmit = async (data) => {
     try {
-      const response = await fetch("http://localhost:5000/api/send-form", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+      await axios.post(`${domainRoute}/api/v1/enquiry`, {
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        center: data.center,
+        course: data.course,
+        companyName: data.companyName,
+        message: data.message,
       });
-
-      if (response.ok) {
-        alert("Form submitted successfully!");
-        reset();
-      } else {
-        alert("Failed to submit form. Please try again.");
-      }
+      alert("Enquiry submitted successfully!");
     } catch (error) {
-      console.error("Submission error:", error);
-      alert("An error occurred. Please try again later.");
+      console.error("Error submitting form:", error);
     }
+    console.log("Form Submitted:", data);
+    reset();
   };
 
   return (
@@ -37,20 +37,24 @@ export default function CorporateTrainingForm() {
         <div className="col-lg-6 text-section d-flex flex-column justify-content-center p-5 text-white">
           <h2>
             Level Up Your <span className="highlight">Workforce</span>,<br />
-            Invest In Skills For a <span className="highlight">Future-Proof Growth</span>
+            Invest In Skills For a{" "}
+            <span className="highlight">Future-Proof Growth</span>
           </h2>
           <p>
-            By investing in your team’s skills today,<br />
+            By investing in your team’s skills today,
+            <br />
             you’re building a strong foundation for future success.
           </p>
-          <button className="btn btn-warning fw-bold mt-3">📥 DOWNLOAD BROCHURE</button>
+          <button className="btn btn-warning fw-bold mt-3">
+            📥 DOWNLOAD BROCHURE
+          </button>
         </div>
 
         {/* Right Section */}
         <div className="col-lg-6 form-section d-flex align-items-center justify-content-center py-4">
           <form
             className="p-4 shadow rounded w-100 text-white"
-            style={{ maxWidth: '500px' }}
+            style={{ maxWidth: "500px" }}
             onSubmit={handleSubmit(onSubmit)}
           >
             <h5 className="text-center mb-4 text-white border-bottom pb-2 fw-bold fs-3">
@@ -59,61 +63,84 @@ export default function CorporateTrainingForm() {
 
             <div className="row p-3">
               <div className="col-md-6 mb-3">
-                <label htmlFor="name" className="form-label">Name</label>
+                <label htmlFor="name" className="form-label">
+                  Name
+                </label>
                 <input
                   id="name"
                   className="form-control"
                   placeholder="Name"
-                  {...register('name', { required: 'Name is required' })}
+                  {...register("name", { required: "Name is required" })}
                 />
-                {errors.name && <p className="text-warning small">{errors.name.message}</p>}
+                {errors.name && (
+                  <p className="text-warning small">{errors.name.message}</p>
+                )}
               </div>
 
               <div className="col-md-6 mb-3">
-                <label htmlFor="email" className="form-label">Email</label>
+                <label htmlFor="email" className="form-label">
+                  Email
+                </label>
                 <input
                   id="email"
                   type="email"
                   className="form-control"
                   placeholder="Email"
-                  {...register('email', {
-                    required: 'Email is required',
+                  {...register("email", {
+                    required: "Email is required",
                     pattern: {
                       value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
-                      message: 'Invalid email',
+                      message: "Invalid email",
                     },
                   })}
                 />
-                {errors.email && <p className="text-warning small">{errors.email.message}</p>}
+                {errors.email && (
+                  <p className="text-warning small">{errors.email.message}</p>
+                )}
               </div>
             </div>
 
             <div className="d-flex justify-content-center gap-3 flex-wrap px-3">
-              <div className="mb-3" style={{ flex: '1', minWidth: '200px', maxWidth: '300px' }}>
-                <label htmlFor="mobile" className="form-label">Mobile</label>
+              <div
+                className="mb-3"
+                style={{ flex: "1", minWidth: "200px", maxWidth: "300px" }}
+              >
+                <label htmlFor="phone" className="form-label">
+                  Mobile
+                </label>
                 <input
                   id="mobile"
                   className="form-control"
                   placeholder="Phone Number"
                   maxLength="10"
                   minLength="10"
-                  {...register('mobile', { required: 'Mobile is required' })}
+                  {...register("phone", { required: "Mobile is required" })}
                 />
-                {errors.mobile && <p className="text-warning small">{errors.mobile.message}</p>}
+                {errors.phone && (
+                  <p className="text-warning small">{errors.phone.message}</p>
+                )}
               </div>
 
-              <div className="mb-3" style={{ flex: '1', minWidth: '200px', maxWidth: '300px' }}>
-                <label htmlFor="center" className="form-label">Center</label>
+              <div
+                className="mb-3"
+                style={{ flex: "1", minWidth: "200px", maxWidth: "300px" }}
+              >
+                <label htmlFor="center" className="form-label">
+                  Center
+                </label>
                 <select
                   id="center"
                   className="form-select"
-                  {...register('center', { required: 'Center is required' })}
+                  {...register("center", { required: "Center is required" })}
                 >
                   <option value="">Select Center</option>
-                  <option>Gurugram</option>
-                  <option>Delhi</option>
+                  <option>Noida</option>
+                  <option>Pune</option>
+                  <option>Rewa</option>
                 </select>
-                {errors.center && <p className="text-warning small">{errors.center.message}</p>}
+                {errors.center && (
+                  <p className="text-warning small">{errors.center.message}</p>
+                )}
               </div>
             </div>
 
@@ -122,13 +149,18 @@ export default function CorporateTrainingForm() {
               <select
                 id="course"
                 className="form-select"
-                {...register('course', { required: 'Course is required' })}
+                {...register("course", { required: "Course is required" })}
               >
                 <option value="">Select Course</option>
                 <option>Web Development</option>
-                <option>Data Science</option>
+                <option>Digital Marketing</option>
+                <option>Business Analyst</option>
+                <option>Software Testing</option>
+                <option>Automation Testing</option>
               </select>
-              {errors.course && <p className="text-warning small">{errors.course.message}</p>}
+              {errors.course && (
+                <p className="text-warning small">{errors.course.message}</p>
+              )}
             </div>
 
             <div className="mb-3 px-3">
@@ -137,24 +169,34 @@ export default function CorporateTrainingForm() {
                 id="companyName"
                 className="form-control"
                 placeholder="Company Name"
-                {...register('companyName', { required: 'Company Name is required' })}
+                {...register("companyName", {
+                  required: "Company Name is required",
+                })}
               />
-              {errors.companyName && <p className="text-warning small">{errors.companyName.message}</p>}
+              {errors.companyName && (
+                <p className="text-warning small">
+                  {errors.companyName.message}
+                </p>
+              )}
             </div>
 
             <div className="mb-3 px-3">
-              <label htmlFor="anyQuery">Any Query?</label>
+              <label htmlFor="message">Any Query?</label>
               <textarea
                 id="anyQuery"
                 className="form-control"
                 rows="3"
                 placeholder="Write your query..."
-                {...register('anyQuery')}
+                {...register("message")}
               />
             </div>
 
             <div className="d-flex justify-content-center">
-              <button type="submit" className="btn btn-primary w-50">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="btn btn-primary w-50"
+              >
                 Submit
               </button>
             </div>
