@@ -17,8 +17,6 @@ import RefundPolicy from './footer/RefundPolicy';
 import TermsAndCondition from './footer/TermsAndCondition';
 import ScrollToTop from './components/ScrollToTop';
 import Payment from './courseTemplate/Payment';
-import PDFViewer from './courseTemplate/PDFViewer';
-import CorporateTrainingForm from './corporate_traning_pages/CorporateTrainingForm';
 import CorporateTraining from './pages/CorporateTraining';
 
 export default function App() {
@@ -42,7 +40,6 @@ export default function App() {
         <Route path="/refund_policy" element={<RefundPolicy />} />
         <Route path="/terms_conditions" element={<TermsAndCondition />} />
         <Route path="/payment" element={<Payment />} />
-        <Route path="/pdf_viewer" element={<PDFViewer />} />
 
       </Routes>
       <Footer />

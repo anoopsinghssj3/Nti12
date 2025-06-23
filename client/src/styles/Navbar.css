@@ -45,21 +45,6 @@
 }
 
 
-/* .dropdown-menu .dropdown-menu,
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 70%;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
-    z-index: 1000;
-    max-width: 220px;
-    white-space: normal !important;
-    word-break: break-word !important;
-    overflow-wrap: break-word !important;
-} */
-
 @media (min-width: 992px) {
     .navbar {
         margin-bottom: 10% !important;
@@ -130,6 +115,12 @@
 /* ------------------------------ MOBILE STYLES ------------------------------ */
 
 @media (max-width: 992px) {
+
+
+    .navbar-nav {margin-top: clamp(3rem, 15vh, 6rem) !important;
+        background-color: white !important;
+        font-size: small;
+    }
 
     .nav-container,
     .main-navbar,
@@ -259,11 +250,6 @@
         font-size: small;
     }
 
-    .navbar-nav {
-        margin-top: 28% !important;
-        background-color: white !important;
-        font-size: small;
-    }
 }
 
 .course-style {

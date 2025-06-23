@@ -13,10 +13,8 @@
 }
 
 .course-image {
-  transition: transform 0.3s ease;
-  border-radius: 0.5rem;
-  max-height: 200px;
-  object-fit: contain;
+  border-radius: 0.5rem ;
+  object-fit: contain !important;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -32,4 +30,8 @@
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.card-body{
+  height:fit-content !important;
 }

@@ -11,7 +11,6 @@ import advanceDigitalMarketing from "../../public/images/ADVANCE DIGITAL MARKETI
 import dataScience from "../../public/images/DATA SCIENCE PROFESSIONAL TRAINING.webp"
 import python from "../../public/images/PYTHON TRAINING COURSE.webp"
 import businessAnalytics from "../../public/images/BUSINESS ANALYTICS.webp"
-import aws from "../../public/images/AWS PROFESSIONAL TRAINING.webp"
 import softwareManual from "../../public/images/SOFTWARE TESTING COURSE.webp"
 import automation from "../../public/images/SOFTWARE TESTING COURSE.webp"
 import cProgram from "../../public/images/C Programming.avif"
@@ -67,10 +66,6 @@ const programsData = [
     src: businessAnalytics || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1709621420973Business%20Analytics.png&w=256&q=75',
   },
   {
-    program: 'aws',
-    src: aws || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1729665262800aws.png&w=256&q=75',
-  },
-  {
     program: 'software testing (manual)',
     src: softwareManual || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1729665153790software%20Testing.png&w=256&q=75',
   },
@@ -119,11 +114,10 @@ const programsData = [
     program: 'video editing',
     src: videoEditing || "https://sm.pcmag.com/t/pcmag_me/gallery/t/the-best-o/the-best-online-video-editors-for-2025_rjmd.1920.jpg",
   },
-{
+  {
     program: 'animation',
     src: animation || "https://www.tgcindia.com/wp-content/uploads/2020/07/Animation-Course-degree-1280x720.jpg",
   },
-
 
   {
     program: 'communication skills & personality developement',
@@ -153,15 +147,16 @@ const ExploreTopPrograms = () => {
             tabIndex={0}
             aria-label={`Explore ${program.program} course`}
           >
-            <div className="card h-75 shadow-sm hover-scale d-flex flex-row justify-content-center cursor-pointer">
+            <div className="card h-100 shadow-sm hover-scale d-flex flex-row justify-content-center cursor-pointer align-items-center ">
               <img
                 loading="lazy"
                 src={program.src}
-                className="card-img-top course-image mx-auto w-25"
+                className="card-img-top course-image my-auto w-25"
                 alt={`${program} course visual`}
+                style={{height:"6rem"}}
               />
-              <div className="card-body text-center">
-                <h5 className="text-uppercase fs-6 fw-bold">{program.program}</h5>
+              <div className="card-body text-center  ">
+                <h5 className="text-uppercase fs-6 fw-bold  d-flex align-items-start justify-content-start ">{program.program}</h5>
               </div>
             </div>
           </div>

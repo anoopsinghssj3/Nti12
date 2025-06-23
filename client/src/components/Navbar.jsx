@@ -88,8 +88,8 @@ export default function Navbar() {
                     </span>
                     <ul className="dropdown-menu submenu text-decoration-none">
                       {[
-                        "mern stack", "mean stack", "java core", "java advance", "java full stack",
-                        "python", "c Programming", "c++ Programming", "android app developement", "ios app developement"
+                        "mern stack", "mean stack", "core java", "advance java", "java full stack",
+                        "python", "c programming", "c++ programming", "android app developement", "ios app developement"
                       ].map((prog, i) => (
                         <li key={i}>
                           <span className="dropdown-item text-decoration-none" role="button" onClick={() => handleCourseClick(prog)}>
@@ -150,7 +150,7 @@ export default function Navbar() {
                       cloud & devops
                     </span>
                     <ul className="dropdown-menu submenu">
-                      {["aws with dev ops", "saleforce"].map((prog, i) => (
+                      {["aws with devops", "salesforce"].map((prog, i) => (
                         <li key={i}>
                           <span className="dropdown-item-6 dropdown-item" role="button" onClick={() => handleCourseClick(prog)}>
                             {prog.toLowerCase()}
@@ -166,7 +166,7 @@ export default function Navbar() {
                       software testing
                     </span>
                     <ul className="dropdown-menu submenu">
-                      {["software testing (manual)", "automation"].map((prog, i) => (
+                      {["software testing (manual)", "automation testing"].map((prog, i) => (
                         <li key={i}>
                           <span className="dropdown-item-7 dropdown-item" role="button" onClick={() => handleCourseClick(prog)}>
                             {prog.toLowerCase()}
