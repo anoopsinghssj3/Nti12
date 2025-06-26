@@ -1,0 +1,65 @@
+/* Container styles */
+.social-media {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0.5rem 0.75rem;
+    z-index: 1;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* Icon button size and alignment */
+.social-media a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Icon size */
+.social-media a svg {
+    font-size: 1.25rem;
+    color: white;
+}
+
+/* WhatsApp (styled via inline or Bootstrap btn-success) */
+
+/* LinkedIn */
+.social-media .linkedin {
+    background-color: #0a66ba;
+    border: none;
+}
+
+/* Instagram */
+.social-media .insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%,
+        #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border: none;
+}
+
+/* Facebook (styled via inline or Bootstrap btn-primary) */
+
+/* Responsive behavior */
+@media (max-width: 992px) {
+    .social-media {
+        bottom: 10px;
+        right: 10px;
+        gap: 10px;
+        z-index: 1;
+    }
+
+    .social-media a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-media a svg {
+        font-size: 1rem;
+    }
+}

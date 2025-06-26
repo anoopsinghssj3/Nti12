@@ -1,0 +1,96 @@
+.dfc-container {
+  background: linear-gradient(135deg, #0b2455, #141c5c);
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.dfc-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.dfc-content h2 {
+  font-size: 1.5rem;
+  color: #f9b233;
+  margin-bottom: 1rem;
+}
+
+.dfc-content p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.dfc-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-orange {
+  background-color: #f9b233;
+  color: #000;
+}
+
+.btn-blue {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.dfc-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dfc-logo-card {
+  background: #fff;
+  border: 2px solid #f9b233;
+  padding: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dfc-logo-card img {
+  max-width: 100px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .dfc-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .dfc-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .dfc-content p {
+    font-size: 0.95rem;
+  }
+}
