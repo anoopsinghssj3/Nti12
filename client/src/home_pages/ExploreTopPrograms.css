@@ -1,0 +1,35 @@
+.explore-top-programs .learners-underline {
+  text-decoration: underline;
+  text-decoration-color: darksalmon;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+.top-explorer-container h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.course-image {
+  transition: transform 0.3s ease;
+  border-radius: 0.5rem;
+  max-height: 200px;
+  object-fit: contain;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-image:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

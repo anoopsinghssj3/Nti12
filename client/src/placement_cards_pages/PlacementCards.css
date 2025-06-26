@@ -1,0 +1,130 @@
+/* .placement-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f8f9fa;
+}
+
+.placement-heading {
+  font-size: 2.2rem;
+  color: #0b5394;
+  position: relative;
+  top: 1.5rem;
+}
+
+.placement-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.placement-card {
+  background: #004080;
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 4px 8px 10px rgba(240, 146, 4, 0.8);
+  transition: transform 0.3s ease;
+  background-color: yellow;
+  height: 30%;
+}
+
+.placement-section .details{
+  position: relative;
+  background-color: aquamarine;
+  bottom: 6rem;
+}
+
+.placement-card:hover {
+  transform: translateY(-5px);
+}
+
+.placement-image {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 15px;
+  border: 4px solid #ff9900;
+  border-radius: 50%;
+  position: relative;
+  bottom: 33%;
+  overflow: hidden;
+}
+
+.placement-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placement-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.placement-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .placement-card {
+    width: 80%;
+  }
+} */
+
+
+.placement-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.placement-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.placement-card {
+  background-color: #003366; /* deep blue */
+  color: white;
+  width: 250px;
+  padding: 20px 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(255, 102, 0, 0.5); /* orange glow */
+  position: relative;
+}
+
+.placement-img-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid orange;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 0 10px orange;
+}
+
+.placement-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placement-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.label {
+  color: orange;
+  font-weight: 600;
+}
