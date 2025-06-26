@@ -1,0 +1,27 @@
+#corporate-traning-data {
+    display: flex !important;
+    justify-self: center !important;
+}
+
+#corporate-traning-data .heading {
+    text-decoration-color: darksalmon !important;
+    text-underline-offset: 6px !important;
+    text-decoration-thickness: 2px !important;
+
+}
+/* Optional: Additional styles to enhance appearance */
+
+#corporate-traning-data  .card {
+  transition: transform 0.2s ease;
+  border-radius: 0.75rem;
+}
+
+
+#corporate-traning-data  .card:hover {
+  transform: translateY(-5px);
+}
+
+
+#corporate-traning-data .card .fs-1 {
+  color: #0d6efd; /* Bootstrap primary color */
+}

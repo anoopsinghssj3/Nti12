@@ -1,0 +1,24 @@
+#corporate-training-form {
+    background:
+        linear-gradient(to right, rgba(22, 65, 128, 0.957), rgba(19, 54, 106, 0.6))
+}
+
+.highlight {
+    color: yellow;
+}
+
+/* Mobile Optimization */
+@media (max-width: 992px) {
+    #corporate-training-form {
+        margin-top: 1% !important;
+    }
+
+    .text-section {
+        text-align: center;
+        padding: 2rem !important;
+    }
+
+    .form-section {
+        padding: 1rem !important;
+    }
+}

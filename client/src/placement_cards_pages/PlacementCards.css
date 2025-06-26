@@ -1,0 +1,53 @@
+
+.placement-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.placement-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.placement-card {
+  background-color: #003366; /* deep blue */
+  color: white;
+  width: 250px;
+  padding: 20px 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(255, 102, 0, 0.5); /* orange glow */
+  position: relative;
+}
+
+.placement-img-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid orange;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 0 10px orange;
+}
+
+.placement-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placement-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.label {
+  color: orange;
+  font-weight: 600;
+}

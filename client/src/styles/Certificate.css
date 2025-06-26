@@ -1,0 +1,29 @@
+#certificate {
+    justify-self: center;
+}
+
+#certificate .left-section {
+    background: rgba(21, 35, 56, 0.946);
+}
+
+#certificate .right-section {
+    background: #f4f7fb;
+    height: 69vh;
+}
+
+#certificate .right-section button,
+#certificate .right-section Link {
+    background-color: #14599e !important;
+}
+
+@media (max-width:992px) {
+    #certificate {
+        margin-top: 15% !important;
+    }
+
+    #certificate .right-section {
+        width: 100% !important;
+        height: 50vh !important;
+    }
+}
+

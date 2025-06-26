@@ -1,0 +1,148 @@
+.indus-info-card {
+  background: #030057 !important;
+}
+
+/* Container and Flip Card */
+.nti-flip-card-container {
+  perspective: 1200px;
+  height: 20rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.nti-flip-card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/* Trigger flip on hover */
+.nti-flip-card-container:hover .nti-flip-card {
+  transform: rotateY(180deg);
+}
+
+/* Shared front & back sides */
+.nti-flip-front,
+.nti-flip-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  padding: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: background-color 0.8s, color 0.8s;
+}
+
+/* Front side */
+.nti-flip-front {
+  background: linear-gradient(to bottom right, #d0e8ff, #f0f9ff);
+  color: #212529;
+  transform: rotateY(0deg);
+  /* ← REQUIRED */
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.4);
+}
+
+/* Back side */
+.nti-flip-back {
+  background: linear-gradient(135deg, #3cabba, #e18d07);
+  color: #0d1b2a;
+  transform: rotateY(180deg);
+  /* ← REQUIRED */
+  box-shadow: 0 0 12px rgba(255, 115, 0, 0.5);
+}
+
+/* Dark theme back */
+.nti-flip-back.dark-theme {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #a8dadc;
+  box-shadow: 0 0 15px #00ffc8, 0 0 30px #00bfa5;
+}
+
+.nti-flip-back.dark-theme>span,
+.nti-flip-back.dark-theme>p {
+  color: #a8dadc;
+  text-shadow: 0 0 6px #00ffc8, 0 0 12px #00bfa5;
+}
+
+/* Pulse overlay */
+.pulse-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05), transparent);
+  animation: pulseBack 2.5s ease-in-out infinite;
+  z-index: 0;
+}
+
+.nti-flip-back>span,
+.nti-flip-back>p {
+  position: relative;
+  z-index: 10;
+  font-weight: 600;
+  transition: color 0.8s;
+}
+
+/* Image floating */
+.nti-hero-img {
+
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 10px #007bff;
+}
+
+/* Energy glow */
+.energy-glow {
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: radial-gradient(circle, rgba(0, 132, 255, 0.2), transparent);
+  animation: softAura 3s ease-in-out infinite;
+  z-index: 0;
+}
+
+.glow-title {
+  text-shadow: 0 0 6px #0d6efd;
+  z-index: 2;
+}
+
+/* Animations */
+@keyframes softAura {
+
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulseBack {
+
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+}
