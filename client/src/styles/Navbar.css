@@ -44,6 +44,10 @@
     background-color: white !important;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e519c8f7158a9a2b01943f51cbfff4688628a1e9
 @media (min-width: 992px) {
     .navbar {
         margin-bottom: 10% !important;
@@ -114,6 +118,12 @@
 /* ------------------------------ MOBILE STYLES ------------------------------ */
 
 @media (max-width: 992px) {
+
+
+    .navbar-nav {margin-top: clamp(3rem, 15vh, 6rem) !important;
+        background-color: white !important;
+        font-size: small;
+    }
 
     .nav-container,
     .main-navbar,
@@ -243,11 +253,14 @@
         font-size: small;
     }
 
+<<<<<<< HEAD
     .navbar-nav {
         margin-top: 6rem !important;
         background-color: white !important;
         font-size: small;
     }
+=======
+>>>>>>> e519c8f7158a9a2b01943f51cbfff4688628a1e9
 }
 
 .course-style {
