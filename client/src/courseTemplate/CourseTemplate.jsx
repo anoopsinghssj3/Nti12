@@ -152,6 +152,17 @@ const CourseTemplate = () => {
                 Download PDF
               </button>
 
+              {/* <button type='button'
+                className="btn btn-outline-secondary btn-sm"
+                onClick={() => navigate("/pdf_viewer", {
+                  state: {
+                    pdfUrl: courseData.pdfLink,
+                    courseName: course
+                  }
+                })}
+              >
+                View PDF
+              </button> */}
             </div>
           ) : (
             <p className="text-muted">Curriculum not available</p>

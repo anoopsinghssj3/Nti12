@@ -2,8 +2,6 @@ export const fixedCourses = {
     "mern stack": {
         description: `Build full-stack web applications powered by intelligent AI features. You’ll master MongoDB for flexible data models, Express.js for robust server APIs, React for dynamic user interfaces, and Node.js for seamless backend logic. Then layer in Generative AI: learn how to integrate pre-trained language and image models into your apps to drive chatbots, content generation, and smart recommendations. Hands-on labs guide you step-by-step—from designing RESTful endpoints to crafting React components that consume AI-driven data. By project’s end you’ll have a polished portfolio: an end-to-end MERN app augmented with AI, plus guided capstones illustrating best practices in testing.`,
         duration: "5 Months",
-        pdfLink: "https://example.com/mernstack-genai-course-outline.pdf",
-        fees: 35000,
         pdfLink: "",
         fees: 35000,
     },
@@ -152,7 +150,7 @@ export const fixedCourses = {
         "duration": "3 Months",
         "pdfLink": "/pdfs/saleforce.pdf",
         "fees": 22000,
-    },
+    }, 
     "video editing": {
         "description": "Master the art of video editing with our hands-on course designed for aspiring editors, content creators, and media professionals. Learn to use industry-standard tools like Adobe Premiere Pro, Final Cut Pro, and DaVinci Resolve. The course covers essential editing techniques such as cutting, trimming, transitions, audio sync, effects, and color correction. You’ll work on real-world projects like YouTube videos, short films, social media reels, and promotional content. Ideal for beginners and those looking to build a portfolio for freelance or professional opportunities.",
         "duration": "3 Months",

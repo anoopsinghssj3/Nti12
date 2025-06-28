@@ -44,10 +44,7 @@
     background-color: white !important;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> e519c8f7158a9a2b01943f51cbfff4688628a1e9
 @media (min-width: 992px) {
     .navbar {
         margin-bottom: 10% !important;
@@ -253,14 +250,6 @@
         font-size: small;
     }
 
-<<<<<<< HEAD
-    .navbar-nav {
-        margin-top: 6rem !important;
-        background-color: white !important;
-        font-size: small;
-    }
-=======
->>>>>>> e519c8f7158a9a2b01943f51cbfff4688628a1e9
 }
 
 .course-style {
