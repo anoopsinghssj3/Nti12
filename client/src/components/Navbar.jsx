@@ -7,6 +7,7 @@ import { GiSuitcase } from "react-icons/gi";
 import { IoSchoolSharp } from "react-icons/io5";
 import { PiCertificateFill, PiCaretCircleDownFill } from "react-icons/pi";
 import NtiLogo from "../../public/images/NtiLogo.png";
+import { IoArrowRedoSharp } from "react-icons/io5";
 
 export default function Navbar() {
   const collapseRef = useRef();
@@ -212,6 +213,11 @@ export default function Navbar() {
               <Link className="nav-link text-secondary system" to="/about" onClick={handleLinkClick}>
                 <PiCaretCircleDownFill fontSize="1.5rem" className='mb-1' /> <span>About</span>
               </Link>
+              <Link className="nav-link text-secondary system bg-primary text-white py-1 px-2" to="/about" onClick={handleLinkClick}>
+                <IoArrowRedoSharp fontSize="1.5rem" className='mb-1' />
+                <span>Career</span>
+              </Link>
+
             </ul>
           </div>
         </div>
