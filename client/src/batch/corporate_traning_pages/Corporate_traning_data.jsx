@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "../corporate_traning_pages/Corporate_traning_data.css";
-import CorporateImages from "../../public/images/CorporateImages.webp"
+import CorporateImages from "/public/images/CorporateImages.webp"
 
 export default function CorporateTraningData() {
     const [showMore, setShowMore] = useState(false);

@@ -6,7 +6,7 @@ import { FaBookReader, FaFileSignature } from "react-icons/fa";
 import { GiSuitcase } from "react-icons/gi";
 import { IoSchoolSharp } from "react-icons/io5";
 import { PiCertificateFill, PiCaretCircleDownFill } from "react-icons/pi";
-import NtiLogo from "../../public/images/NtiLogo.png";
+import NtiLogo from "/public/images/NtiLogo.png";
 import { IoArrowRedoSharp } from "react-icons/io5";
 
 export default function Navbar() {

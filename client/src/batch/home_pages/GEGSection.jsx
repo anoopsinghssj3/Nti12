@@ -1,7 +1,7 @@
 import React from 'react';
 import "../home_pages/GEGSection.css"
 import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
-import if_you_enroll from "../../public/images/If_You_Are_Enroll.webp"
+import if_you_enroll from "/public/images/If_You_Are_Enroll.webp"
 
 export default function GEGSection() {
   return (

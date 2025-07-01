@@ -1,23 +1,23 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import OnlineTraining from './pages/OnlineTraining';
-import Certificate from './components/Certificate';
-import ApplyForCertificate from './pages/ApplyForCertificate';
-import DownloadCertificate from './pages/DownloadCertificate';
-import VerifyCertificate from './pages/VerifyCertificate';
-import Footer from './home_pages/Footer';
-import Placement from './components/Placement';
-import AboutUs from './others/AboutUs';
-import SearchResults from './home_pages/SearchResults';
-import CourseTemplate from './courseTemplate/CourseTemplate';
-import PrivacyPolicy from './footer/PrivacyPolicy';
-import RefundPolicy from './footer/RefundPolicy';
-import TermsAndCondition from './footer/TermsAndCondition';
-import ScrollToTop from './components/ScrollToTop';
-import Payment from './courseTemplate/Payment';
-import CorporateTraining from './pages/CorporateTraining';
+import Navbar from './batch/components/Navbar';
+import Home from './batch/components/Home';
+import OnlineTraining from './batch/pages/OnlineTraining';
+import Certificate from './batch/components/Certificate';
+import ApplyForCertificate from './batch/pages/ApplyForCertificate';
+import DownloadCertificate from './batch/pages/DownloadCertificate';
+import VerifyCertificate from './batch/pages/VerifyCertificate';
+import Footer from './batch/home_pages/Footer';
+import Placement from './batch/components/Placement';
+import AboutUs from './batch/others/AboutUs';
+import SearchResults from './batch/home_pages/SearchResults';
+import CourseTemplate from './batch/courseTemplate/CourseTemplate';
+import PrivacyPolicy from './batch/footer/PrivacyPolicy';
+import RefundPolicy from './batch/footer/RefundPolicy';
+import TermsAndCondition from './batch/footer/TermsAndCondition';
+import ScrollToTop from './batch/components/ScrollToTop';
+import Payment from './batch/courseTemplate/Payment';
+import CorporateTraining from './batch/pages/CorporateTraining';
 
 export default function App() {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 import "../home_pages/UpcomingBatches.css"
-import mern from "../../public/images/MERN STACK + GEN AI.webp"
-import mean from "../../public/images/Mean Stack.webp"
-import cyberSecurity from "../../public/images/CYBER SECURITY + GEN AI.webp"
-import javaFullStack from "../../public/images/Java Full Stack Developer.png"
+import mern from "/public/images/MERN STACK + GEN AI.webp"
+import mean from "/public/images/Mean Stack.webp"
+import cyberSecurity from "/public/images/CYBER SECURITY + GEN AI.webp"
+import javaFullStack from "/public/images/Java Full Stack Developer.png"
 
 
 const batches = [
