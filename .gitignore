@@ -211,3 +211,5 @@ web_modules/
 .idea/
 *.sublime*
 *.code-workspa*
+
+.config/
