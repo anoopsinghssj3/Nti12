@@ -36,10 +36,11 @@ function Testimonials() {
 
   return (
     <div className="container py-5 testimonials">
-      <h2 className="text-center mb-4 learners-underline">
-        Testimonials
-        <div className="mx-auto mt-2"></div>
-      </h2>
+      <div className="bg-animated-gradient mb-3">
+        <h2 className="fw-bold mb-0 position-relative custom-heading">
+          Testimonials
+        </h2>
+      </div>
 
       <div className="testimonials-marquee-wrapper position-relative overflow-hidden">
         <div className="testimonials-marquee-track d-flex">

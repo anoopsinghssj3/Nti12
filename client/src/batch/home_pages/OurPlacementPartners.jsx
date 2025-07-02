@@ -37,13 +37,17 @@ export default function OurPlacementPartners() {
   return (
     <div className="py-5 bg-light our-placement-partners">
       <div className="container ">
-        <h2 className="text-center mb-4 learners-underline">Our Placement Partners</h2>
+        <div className="bg-animated-gradient mb-3">
+          <h2 className="fw-bold mb-0 position-relative custom-heading">
+            Our <span className="text-warning">Placement Partners</span>
+          </h2>
+        </div>
         <div className="row g-2  d-flex justify-content-center">
           {clients.map((client, index) => (
             <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
               <div className="bg-white border rounded shadow-sm p-1 h-100 d-flex align-items-center justify-content-center">
                 <img
-                loading="lazy"
+                  loading="lazy"
                   src={client.logo}
                   alt={client.name}
                   className="img-fluid"

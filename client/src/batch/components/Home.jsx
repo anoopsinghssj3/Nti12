@@ -6,6 +6,7 @@ import OurLearners from '../home_pages/OurLearners'
 import Testimonials from '../home_pages/Testimonials'
 import OurPlacementPartners from '../home_pages/OurPlacementPartners'
 import GEGSection from '../home_pages/GEGSection'
+import "./Home.css"
 
 export default function Home() {
     return (
@@ -14,12 +15,12 @@ export default function Home() {
             {/* <SocialMedia /> */}
             <ExploreTopPrograms />
 
-            <div className="text-center mt-5">
-                <h3 className="mb-3">
-                    <strong className="learners-underline">
-                        OUR <span className="">LEARNERS WORK AT</span>
-                    </strong>
-                </h3>
+            <div className="text-center mt-5 container py-5 home">
+                <div className="bg-animated-gradient">
+                    <h3 className="fw-bold mb-0 position-relative custom-heading">
+                        Our <span className="text-warning">Learners Work At</span>
+                    </h3>
+                </div>
 
                 <p className="mx-auto " style={{ maxWidth: '600px' }}>
                     Ducat learners work at some of the leading and innovative organizations of today, solving core business problems.

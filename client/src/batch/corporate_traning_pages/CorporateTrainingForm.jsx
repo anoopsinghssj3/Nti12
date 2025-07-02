@@ -63,7 +63,7 @@ export default function CorporateTrainingForm() {
 
             <div className="row p-3">
               <div className="col-md-6 mb-3">
-                <label htmlFor="name" className="form-label">
+                <label htmlFor="name">
                   Name
                 </label>
                 <input
@@ -78,7 +78,7 @@ export default function CorporateTrainingForm() {
               </div>
 
               <div className="col-md-6 mb-3">
-                <label htmlFor="email" className="form-label">
+                <label htmlFor="email">
                   Email
                 </label>
                 <input
@@ -105,7 +105,7 @@ export default function CorporateTrainingForm() {
                 className="mb-3"
                 style={{ flex: "1", minWidth: "200px", maxWidth: "300px" }}
               >
-                <label htmlFor="phone" className="form-label">
+                <label htmlFor="phone">
                   Mobile
                 </label>
                 <input
@@ -125,7 +125,7 @@ export default function CorporateTrainingForm() {
                 className="mb-3"
                 style={{ flex: "1", minWidth: "200px", maxWidth: "300px" }}
               >
-                <label htmlFor="center" className="form-label">
+                <label htmlFor="center">
                   Center
                 </label>
                 <select

@@ -43,7 +43,7 @@ const clients = [
 export default function OurLearners() {
 
     return (
-        <div className="container my-5 our-learners">
+        <div className="container our-learners">
 
 
             <div className="marquee-wrapper">

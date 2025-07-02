@@ -51,7 +51,7 @@ export default function OnlineTraining() {
               <div className="row g-3">
                 {/* Name */}
                 <div className="col-md-6">
-                  <label htmlFor="name" className="form-label">
+                  <label htmlFor="name" className="form-label text-white">
                     Name
                   </label>
                   <input
@@ -68,7 +68,7 @@ export default function OnlineTraining() {
 
                 {/* Phone */}
                 <div className="col-md-6">
-                  <label htmlFor="phone" className="form-label">
+                  <label htmlFor="phone" className="form-label text-white">
                     Mobile Number
                   </label>
                   <input
@@ -89,7 +89,7 @@ export default function OnlineTraining() {
 
                 {/* Email */}
                 <div className="col-md-6">
-                  <label htmlFor="email" className="form-label">
+                  <label htmlFor="email" className="form-label text-white">
                     Email Address
                   </label>
                   <input
@@ -112,7 +112,7 @@ export default function OnlineTraining() {
 
                 {/* Course */}
                 <div className="col-md-6">
-                  <label htmlFor="course" className="form-label">
+                  <label htmlFor="course" className="form-label text-white">
                     Course
                   </label>
                   <select
@@ -136,7 +136,7 @@ export default function OnlineTraining() {
 
                 {/* Branch */}
                 <div className="col-md-6">
-                  <label htmlFor="branch" className="form-label">
+                  <label htmlFor="branch" className="form-label text-white">
                     Branch
                   </label>
                   <select
@@ -158,7 +158,7 @@ export default function OnlineTraining() {
 
                 {/* Address */}
                 <div className="col-12">
-                  <label htmlFor="address" className="form-label">
+                  <label htmlFor="address" className="form-label text-white">
                     Address
                   </label>
                   <textarea
@@ -179,7 +179,7 @@ export default function OnlineTraining() {
 
                 {/* City */}
                 <div className="col-md-6">
-                  <label htmlFor="city" className="form-label">
+                  <label htmlFor="city" className="form-label text-white">
                     City
                   </label>
                   <input
@@ -196,7 +196,7 @@ export default function OnlineTraining() {
 
                 {/* Country */}
                 <div className="col-md-6">
-                  <label htmlFor="country" className="form-label">
+                  <label htmlFor="country" className="form-label text-white">
                     Country
                   </label>
                   <input
@@ -217,7 +217,7 @@ export default function OnlineTraining() {
 
                 {/* Pincode */}
                 <div className="col-md-6">
-                  <label htmlFor="pincode" className="form-label">
+                  <label htmlFor="pincode" className="form-label text-white">
                     Pin Code
                   </label>
                   <input

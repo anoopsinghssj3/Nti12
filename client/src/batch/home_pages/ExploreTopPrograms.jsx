@@ -26,6 +26,59 @@ import animation from "/public/images/animation.jpg"
 
 const programsData = [
   {
+    program: 'data science',
+    src: dataScience || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1707559465273Data%20Science%20Training%20in%20Delhi.png&w=256&q=75',
+  },
+  {
+    program: 'data analytics',
+    src: businessAnalytics || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1709621420973Business%20Analytics.png&w=256&q=75',
+  },
+  {
+    program: 'business analytics',
+    src: businessAnalytics || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1709621420973Business%20Analytics.png&w=256&q=75',
+  },
+  {
+    program: 'java full stack',
+    src: javaFullStack || "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg",
+  },
+
+  {
+    program: 'software testing (manual)',
+    src: softwareManual || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1729665153790software%20Testing.png&w=256&q=75',
+  },
+
+  {
+    program: 'automation testing',
+    src: automation || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1729665153790software%20Testing.png&w=256&q=75',
+  },
+  {
+    program: 'advance digital marketing',
+    src: advanceDigitalMarketing || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1721644964282Digital%20Marketing.png&w=256&q=75',
+  },
+
+  {
+    program: 'graphics design',
+    src: graphicDesign || "https://img.freepik.com/free-photo/graphic-designer-creative-artist-working-color-selection_23-2148895654.jpg",
+  },
+  {
+    program: 'animation',
+    src: animation || "https://www.tgcindia.com/wp-content/uploads/2020/07/Animation-Course-degree-1280x720.jpg",
+  },
+
+  {
+    program: 'communication skills & personality developement',
+    src: cspd || "https://blog.iilm.edu/wp-content/uploads/2020/06/Soft-skill-image-2.jpg",
+  },
+  {
+    program: 'salesforce',
+    src: salesforce || "",
+  },
+
+  {
+    program: 'video editing',
+    src: videoEditing || "https://sm.pcmag.com/t/pcmag_me/gallery/t/the-best-o/the-best-online-video-editors-for-2025_rjmd.1920.jpg",
+  },
+  {
     program: 'mern stack',
     src: mern || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1739790191984mern-removebg-preview%20(1).png&w=256&q=75',
   },
@@ -38,10 +91,6 @@ const programsData = [
     src: cyberSecurity || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1707561125125Cyber%20Security.png&w=256&q=75',
   },
   {
-    program: 'java full stack',
-    src: javaFullStack || "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg",
-  },
-  {
     program: 'core java',
     src: javacore || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1709033901773Java.png&w=256&q=75',
   },
@@ -50,29 +99,8 @@ const programsData = [
     src: advanceJava || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1709033901773Java.png&w=256&q=75',
   },
   {
-    program: 'advance digital marketing',
-    src: advanceDigitalMarketing || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1721644964282Digital%20Marketing.png&w=256&q=75',
-  },
-  {
-    program: 'data science',
-    src: dataScience || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1707559465273Data%20Science%20Training%20in%20Delhi.png&w=256&q=75',
-  },
-  {
     program: 'python',
     src: python || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1710312728346Python.png&w=256&q=75',
-  },
-  {
-    program: 'business analytics',
-    src: businessAnalytics || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1709621420973Business%20Analytics.png&w=256&q=75',
-  },
-  {
-    program: 'software testing (manual)',
-    src: softwareManual || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1729665153790software%20Testing.png&w=256&q=75',
-  },
-
-  {
-    program: 'automation testing',
-    src: automation || 'https://www.ducatindia.com/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Fcourse%2F1729665153790software%20Testing.png&w=256&q=75',
   },
 
   {
@@ -83,11 +111,6 @@ const programsData = [
   {
     program: 'c++ programming',
     src: cPlus || "https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg",
-  },
-
-  {
-    program: 'graphics design',
-    src: graphicDesign || "https://img.freepik.com/free-photo/graphic-designer-creative-artist-working-color-selection_23-2148895654.jpg",
   },
 
   {
@@ -105,24 +128,7 @@ const programsData = [
     program: 'aws with devops',
     src: awsDev || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIYGRXTb5UEZpd2NyUZxw8AUpLIF6zeZ16Pg&s",
   },
-  {
-    program: 'salesforce',
-    src: salesforce || "",
-  },
 
-  {
-    program: 'video editing',
-    src: videoEditing || "https://sm.pcmag.com/t/pcmag_me/gallery/t/the-best-o/the-best-online-video-editors-for-2025_rjmd.1920.jpg",
-  },
-  {
-    program: 'animation',
-    src: animation || "https://www.tgcindia.com/wp-content/uploads/2020/07/Animation-Course-degree-1280x720.jpg",
-  },
-
-  {
-    program: 'communication skills & personality developement',
-    src: cspd || "https://blog.iilm.edu/wp-content/uploads/2020/06/Soft-skill-image-2.jpg",
-  }
 ];
 
 const ExploreTopPrograms = () => {
@@ -134,7 +140,11 @@ const ExploreTopPrograms = () => {
 
   return (
     <div className="container py-5 explore-top-programs w-75">
-      <h2 className="mb-4 text-center learners-underline">Explore Top Programs</h2>
+      <div className="bg-animated-gradient mb-3">
+        <h3 className="fw-bold mb-0 position-relative custom-heading">
+          Explore <span className="text-warning">Top Programs</span>
+        </h3>
+      </div>
 
       <div className="row g-4">
         {programsData.map((program, idx) => (
@@ -153,7 +163,7 @@ const ExploreTopPrograms = () => {
                 src={program.src}
                 className="card-img-top course-image my-auto w-25"
                 alt={`${program} course visual`}
-                style={{height:"6rem"}}
+                style={{ height: "6rem" }}
               />
               <div className="card-body text-center  ">
                 <h5 className="text-uppercase fs-6 fw-bold  d-flex align-items-start justify-content-start ">{program.program}</h5>

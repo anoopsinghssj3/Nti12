@@ -9,7 +9,7 @@ const RefundPolicy = () => {
                     <strong>Fee once paid</strong> is <strong>non-refundable</strong>, <strong>non-adjustable</strong>, and <strong>non-transferable</strong> under any circumstances.
                 </p>
                 <p className="fs-5">
-                    <strong>All disputes</strong> are subject to the jurisdiction of  <strong>Pune Court</strong> only.
+                    <strong>All disputes</strong> are subject to the jurisdiction of  <strong>Rewa Court</strong> only.
                 </p>
             </div>
         </div>

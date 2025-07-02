@@ -1,50 +1,5 @@
-.explore-top-programs .learners-underline {
-  text-decoration: underline;
-  text-decoration-color: darksalmon;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 2px;
-}
-
-.explore-top-programs .top-explorer-container h3 {
-  margin-bottom: 1rem;
-  font-weight: 600;
-  font-size: 1.8rem;
-  color: #222;
-}
-
-
-.explore-top-programs .course-image {
-  border-radius: 0.5rem;
-  object-fit: contain !important;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-
-.explore-top-programs .course-image:hover {
-  transform: scale(1.05);
-}
-
-
-.explore-top-programs .card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-}
-
-
-.explore-top-programs .cursor-pointer {
-  cursor: pointer;
-}
-
-
-.explore-top-programs .card-body {
-  height: fit-content !important;
-}
-
-
 /* Animated Gradient Background */
-
-.explore-top-programs .bg-animated-gradient {
+.home .bg-animated-gradient {
   background: linear-gradient(-45deg, #0d6efd, #6610f2, #e83e8c, #20c997) !important;
   background-size: 400% 400% !important;
   animation: gradientBG 8s ease infinite !important;
@@ -70,7 +25,7 @@
 }
 
 /* Underline Effect */
-.explore-top-programs .custom-heading::after {
+.home .custom-heading::after {
   position: absolute !important;
   bottom: 15px !important;
   left: 50% !important;
@@ -82,6 +37,6 @@
   transition: width 0.4s ease !important;
 }
 
-.explore-top-programs .custom-heading:hover::after {
+.home .custom-heading:hover::after {
   width: 200px !important;
 }

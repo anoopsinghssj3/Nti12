@@ -10,7 +10,7 @@ const AboutUs = () => {
     <div>
       <section className="about-section d-flex flex-column align-items-center justify-content-center text-white text-center px-3 py-5">
         <div className="container about-content">
-          <h2 className="fw-bold mb-3">About NTI India</h2>
+          <h2 className="fw-bold mb-3">About NTI</h2>
           <p className="fs-5 lh-lg">
             Empowering careers through quality IT education
             . Discover our journey,
