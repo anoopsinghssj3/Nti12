@@ -114,9 +114,9 @@ export default function Heroes() {
                                                     <span className="badge fs-3 fw-bold px-3 py-2 mb-2 fullstack-badge">
                                                         {card.course}
                                                     </span>
-                                                    <span className="badge fs-3 fw-bold px-3 py-2 salary-badge">
+                                                    {/* <span className="badge fs-3 fw-bold px-3 py-2 salary-badge">
                                                         {card.package}
-                                                    </span>
+                                                    </span> */}
                                                 </div>
 
                                             </div>
@@ -132,11 +132,11 @@ export default function Heroes() {
 
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
+                    <span className="">Previous</span>
                 </button>
                 <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
+                    <span className="">Next</span>
                 </button>
                 <form className="d-flex align-items-center justify-content-center gap-2 mt-5 px-3" onSubmit={handleSearchSubmit}>
                     <input
