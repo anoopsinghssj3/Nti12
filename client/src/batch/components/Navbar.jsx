@@ -15,7 +15,7 @@ export default function Navbar() {
 
   const handleLinkClick = () => {
     if (window.innerWidth <= 992 && collapseRef.current) {
-      const collapse = new Collapse(collapseRef.current, { toggle: false });
+      const collapse = new Collapse(collapseRef.current, { toggle: true });
       collapse.hide();
     }
   };
