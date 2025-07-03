@@ -77,10 +77,8 @@ export default function Navbar() {
             ref={collapseRef}
           >
             <ul className="navbar-nav gap-2 mb-2 mb-lg-0 d-flex align-items-start">
-              <NavLink
+              <NavLink  to="/"
                 className="nav-link nav-item active home-style text-secondary system"
-                to="/"
-                onClick={handleLinkClick}
               >
                 <IoMdHome fontSize="1.5rem" className="mb-1" />
                 <span>Home</span>
@@ -273,27 +271,21 @@ export default function Navbar() {
 
               <NavLink
                 className="nav-link text-secondary system me-1"
-                to="/placement"
-                onClick={handleLinkClick}
-              >
+                to="/placement" >
                 <GiSuitcase fontSize="1.5rem" className="mb-1" />{" "}
                 <span>Placement</span>
               </NavLink>
 
               <NavLink
                 className="nav-link text-secondary system"
-                to="/corpo_tra"
-                onClick={handleLinkClick}
-              >
+                to="/corpo_tra">
                 <IoSchoolSharp fontSize="1.25rem" className="mb-1" />{" "}
                 <span>Corporate Training</span>
               </NavLink>
 
               <NavLink
                 className="nav-link text-secondary system ms-1"
-                to="/on_tra"
-                onClick={handleLinkClick}
-              >
+                to="/on_tra"           >
                 <FaFileSignature fontSize="1.25rem" className="mb-1" />
                 <span>Online Registration</span>
               </NavLink>
@@ -301,25 +293,20 @@ export default function Navbar() {
               <NavLink
                 className="nav-link text-secondary system"
                 to="/certificate"
-                onClick={handleNavLinkClick}
               >
                 <PiCertificateFill fontSize="1.5rem" className="mb-1" />{" "}
                 <span>Certificate</span>
               </NavLink>
 
-              <NavLink
+              <NavLink to="/about"
                 className="nav-link text-secondary system"
-                to="/about"
-                onClick={handleLinkClick}
               >
                 <PiCaretCircleDownFill fontSize="1.5rem" className="mb-1" />{" "}
                 <span>About</span>
               </NavLink>
 
-              <NavLink type="submit"
+              <NavLink to="/career" type="submit"
                 className="nav-link text-secondary system bg-primary text-white py-1 px-2"
-                to="/career"
-
               >
                 <IoArrowRedoSharp fontSize="1.5rem" className="mb-1" />
                 <span>Career</span>
