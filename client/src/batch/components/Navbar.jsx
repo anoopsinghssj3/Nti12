@@ -272,13 +272,23 @@ export default function Navbar() {
               </div>
 
               <Link
+                className="nav-link nav-item active home-style text-secondary system"
+                to="/placement"
+                onClick={handleLinkClick}
+              >
+                <IoMdHome fontSize="1.5rem" className="mb-1" />
+                <span>Placement</span>
+              </Link>
+
+
+              {/* <Link
                 className="nav-link text-secondary system me-1"
                 to="/placement"
                 onClick={handleLinkClick}
               >
                 <GiSuitcase fontSize="1.5rem" className="mb-1" />{" "}
                 <span>Placement</span>
-              </Link>
+              </Link> */}
 
               <Link
                 className="nav-link text-secondary system"
