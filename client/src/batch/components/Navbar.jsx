@@ -272,23 +272,13 @@ export default function Navbar() {
               </div>
 
               <Link
-                className="nav-link nav-item active home-style text-secondary system"
-                to="/placement"
-                onClick={handleLinkClick}
-              >
-                <IoMdHome fontSize="1.5rem" className="mb-1" />
-                <span>Placement</span>
-              </Link>
-
-
-              {/* <Link
                 className="nav-link text-secondary system me-1"
                 to="/placement"
                 onClick={handleLinkClick}
               >
                 <GiSuitcase fontSize="1.5rem" className="mb-1" />{" "}
                 <span>Placement</span>
-              </Link> */}
+              </Link>
 
               <Link
                 className="nav-link text-secondary system"
@@ -326,14 +316,16 @@ export default function Navbar() {
                 <span>About</span>
               </Link>
 
-              <Link
+              <button type="submit"
                 className="nav-link text-secondary system bg-primary text-white py-1 px-2"
-                to="/career"
-                onClick={handleLinkClick}
+                // to=""
+                onClick={(handleLinkClick) => {
+                  navigate("/career")
+                }}
               >
                 <IoArrowRedoSharp fontSize="1.5rem" className="mb-1" />
                 <span>Career</span>
-              </Link>
+              </button>
             </ul>
           </div>
         </div>
