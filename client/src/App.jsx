@@ -24,21 +24,20 @@ import CorporateTraining from "./batch/pages/CorporateTraining";
 
 // career
 import NavbarC from "./career/components/Navbar";
-// import HomeC from "./career/components/Home";
 import LandingPage from "../src/career/LandingPage/LandingPage";
 
 const AppWrapper = () => {
   const location = useLocation();
-  const isCareerRoute = location.pathname.startsWith("/career");
-  const isLandingRoute = location.pathname === "/landing";
+  const path = location.pathname;
+
+  const isCareerRoute = path.startsWith("/career");
+  const isLandingRoute = path === "/landing";
 
   return (
-    <>
-      {/* Only show navbar and footer for non-landing pages */}
+    <div key={path}> {/* 👈 KEY FOR FORCING RE-RENDER ON ROUTE CHANGE */}
       {!isLandingRoute && (isCareerRoute ? <NavbarC /> : <Navbar />)}
 
       <Routes>
-
         {/* batch */}
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<SearchResults />} />
@@ -61,7 +60,7 @@ const AppWrapper = () => {
       </Routes>
 
       {!isLandingRoute && <Footer />}
-    </>
+    </div>
   );
 };
 

@@ -1,4 +1,7 @@
-.indus-info-card {
+.indus-info-card,
+.prev-icon,
+.next-icon,
+.btn-search {
   background: #030057 !important;
 }
 

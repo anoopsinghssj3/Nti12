@@ -24,6 +24,7 @@
   width: 100%;
   min-height: 100vh;
   background: #f1f1f1;
+  background-color:red;
   font-family:
     Inter,
     -apple-system,
@@ -60,33 +61,6 @@
   padding: 0;
 }
 
-/* Header Styles */
-.header {
-  display: flex;
-  width: 100%;
-  padding: 11.137px 100.234px;
-  justify-content: space-between;
-  align-items: center;
-  gap: 43.852px;
-  background: var(--neutral-white);
-  box-shadow: 0px 4px 8px 0px rgba(171, 190, 209, 0.4);
-  height: 61px;
-}
-
-.header-logo .logo-image {
-  width: 31px;
-  height: 31px;
-  flex-shrink: 0;
-  aspect-ratio: 1/1;
-}
-
-.header-menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 22.274px;
-  flex: 1 0 0;
-}
 
 .menu-items {
   display: flex;

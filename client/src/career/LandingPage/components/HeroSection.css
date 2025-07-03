@@ -1,0 +1,58 @@
+.hero-section {
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.title-accent {
+  color: #5856d6;
+  display: block;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+.hero-image .illustration {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: left;
+    flex: 1;
+  }
+
+  .hero-image {
+    flex: 1;
+  }
+}

@@ -130,13 +130,24 @@ export default function Heroes() {
                 </div>
 
 
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="">Previous</span>
+                <button
+                    className="carousel-control-prev d-flex align-items-center"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                >
+                    <span className="carousel-control-prev-icon d-none"></span>
+                    <span className=" text-white px-3 py-1 rounded prev-icon ">&lt;</span>
                 </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="">Next</span>
+
+                <button
+                    className="carousel-control-next d-flex align-items-center"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                >
+                    <span className="carousel-control-next-icon d-none"></span>
+                    <span className=" text-white px-3 py-1 rounded next-icon">&gt;</span>
                 </button>
                 <form className="d-flex align-items-center justify-content-center gap-2 mt-5 px-3" onSubmit={handleSearchSubmit}>
                     <input
@@ -148,11 +159,11 @@ export default function Heroes() {
                         aria-label="Search courses"
                     />
                     <button
-                        className="btn btn-danger p-2 d-flex align-items-center justify-content-center fs-4 rounded-3"
+                        className="btn btn-search p-2 d-flex align-items-center justify-content-center fs-4 rounded-3"
                         type="submit"
                         aria-label="Search"
                     >
-                        <IoIosSearch />
+                        <IoIosSearch color="white"/>
                     </button>
                 </form>
 

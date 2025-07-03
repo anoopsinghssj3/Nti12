@@ -15,63 +15,28 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
-  const validatePhone = (phone) => {
-    const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
-    return phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ""));
-  };
+  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const validatePhone = (phone) =>
+    /^[\+]?[1-9][\d]{0,15}$/.test(phone.replace(/[\s\-\(\)]/g, ""));
 
   const validateForm = () => {
     const newErrors = {};
+    if (!formData.firstName.trim()) newErrors.firstName = "First name is required";
+    else if (formData.firstName.length < 2) newErrors.firstName = "Must be at least 2 characters";
 
-    // First Name validation
-    if (!formData.firstName.trim()) {
-      newErrors.firstName = "First name is required";
-    } else if (formData.firstName.trim().length < 2) {
-      newErrors.firstName = "First name must be at least 2 characters";
-    }
+    if (!formData.lastName.trim()) newErrors.lastName = "Last name is required";
+    else if (formData.lastName.length < 2) newErrors.lastName = "Must be at least 2 characters";
 
-    // Last Name validation
-    if (!formData.lastName.trim()) {
-      newErrors.lastName = "Last name is required";
-    } else if (formData.lastName.trim().length < 2) {
-      newErrors.lastName = "Last name must be at least 2 characters";
-    }
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    else if (!validateEmail(formData.email)) newErrors.email = "Invalid email";
 
-    // Email validation
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    } else if (!validateEmail(formData.email)) {
-      newErrors.email = "Please enter a valid email address";
-    }
+    if (!formData.phone.trim()) newErrors.phone = "Phone is required";
+    else if (!validatePhone(formData.phone)) newErrors.phone = "Invalid phone number";
 
-    // Phone validation
-    if (!formData.phone.trim()) {
-      newErrors.phone = "Phone number is required";
-    } else if (!validatePhone(formData.phone)) {
-      newErrors.phone = "Please enter a valid phone number";
-    }
-
-    // Company validation
-    if (!formData.company.trim()) {
-      newErrors.company = "Company name is required";
-    }
-
-    // Interest validation
-    if (!formData.interest) {
-      newErrors.interest = "Please select an area of interest";
-    }
-
-    // Message validation
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    } else if (formData.message.trim().length < 10) {
-      newErrors.message = "Message must be at least 10 characters";
-    }
+    if (!formData.company.trim()) newErrors.company = "Company is required";
+    if (!formData.interest) newErrors.interest = "Select an interest";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+    else if (formData.message.length < 10) newErrors.message = "Minimum 10 characters";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -79,37 +44,18 @@ const ContactForm = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-
-    // Clear error when user starts typing
-    if (errors[name]) {
-      setErrors((prev) => ({
-        ...prev,
-        [name]: "",
-      }));
-    }
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errors[name]) setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!validateForm()) {
-      return;
-    }
+    if (!validateForm()) return;
 
     setIsSubmitting(true);
-
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-
-      console.log("Form submitted:", formData);
+      await new Promise((res) => setTimeout(res, 1500)); // simulate delay
       setIsSubmitted(true);
-
-      // Reset form after success
       setTimeout(() => {
         setFormData({
           firstName: "",
@@ -122,8 +68,8 @@ const ContactForm = () => {
         });
         setIsSubmitted(false);
       }, 3000);
-    } catch (error) {
-      console.error("Form submission error:", error);
+    } catch (err) {
+      console.error("Submit error", err);
     } finally {
       setIsSubmitting(false);
     }
@@ -131,152 +77,111 @@ const ContactForm = () => {
 
   if (isSubmitted) {
     return (
-      <div className="contact-form-success">
-        <div className="success-icon">
-          <svg
-            width="60"
-            height="60"
-            viewBox="0 0 60 60"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+      <div className="text-center py-5">
+        <div className="mb-3">
+          <svg width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="30" cy="30" r="30" fill="#28a745" />
-            <path
-              d="M20 30L26 36L40 22"
-              stroke="white"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+            <path d="M20 30L26 36L40 22" stroke="white" strokeWidth="3" strokeLinecap="round" />
           </svg>
         </div>
-        <h3 className="success-title">Thank You!</h3>
-        <p className="success-message">
-          Your message has been sent successfully. We'll get back to you within
-          24 hours.
-        </p>
+        <h3 className="text-success">Thank You!</h3>
+        <p>Your message has been sent successfully. We'll contact you soon.</p>
       </div>
     );
   }
 
   return (
-    <div className="contact-form-container">
-      <div className="contact-form-header">
-        <h2 className="contact-form-title">Get Started Today</h2>
-        <p className="contact-form-subtitle">
-          Ready to transform your business? Fill out the form below and our team
-          will contact you within 24 hours.
+    <div className="container py-5">
+      <div className="text-center mb-4">
+        <h2>Get Started Today</h2>
+        <p className="text-muted">
+          Fill out the form and our team will contact you within 24 hours.
         </p>
       </div>
 
-      <form className="contact-form" onSubmit={handleSubmit} noValidate>
-        <div className="form-row">
-          <div className="form-group">
-            <label htmlFor="firstName" className="form-label">
-              First Name <span className="required">*</span>
+      <form onSubmit={handleSubmit} noValidate>
+        <div className="row g-3">
+          <div className="col-md-6">
+            <label className="form-label">
+              First Name <span className="text-danger">*</span>
             </label>
             <input
               type="text"
-              id="firstName"
               name="firstName"
+              className={`form-control ${errors.firstName && "is-invalid"}`}
               value={formData.firstName}
               onChange={handleInputChange}
-              className={`form-input ${errors.firstName ? "error" : ""}`}
-              placeholder="Enter your first name"
             />
-            {errors.firstName && (
-              <span className="error-message">{errors.firstName}</span>
-            )}
+            {errors.firstName && <div className="invalid-feedback">{errors.firstName}</div>}
           </div>
 
-          <div className="form-group">
-            <label htmlFor="lastName" className="form-label">
-              Last Name <span className="required">*</span>
+          <div className="col-md-6">
+            <label className="form-label">
+              Last Name <span className="text-danger">*</span>
             </label>
             <input
               type="text"
-              id="lastName"
               name="lastName"
+              className={`form-control ${errors.lastName && "is-invalid"}`}
               value={formData.lastName}
               onChange={handleInputChange}
-              className={`form-input ${errors.lastName ? "error" : ""}`}
-              placeholder="Enter your last name"
             />
-            {errors.lastName && (
-              <span className="error-message">{errors.lastName}</span>
-            )}
+            {errors.lastName && <div className="invalid-feedback">{errors.lastName}</div>}
           </div>
-        </div>
 
-        <div className="form-row">
-          <div className="form-group">
-            <label htmlFor="email" className="form-label">
-              Email Address <span className="required">*</span>
+          <div className="col-md-6">
+            <label className="form-label">
+              Email <span className="text-danger">*</span>
             </label>
             <input
               type="email"
-              id="email"
               name="email"
+              className={`form-control ${errors.email && "is-invalid"}`}
               value={formData.email}
               onChange={handleInputChange}
-              className={`form-input ${errors.email ? "error" : ""}`}
-              placeholder="Enter your email address"
             />
-            {errors.email && (
-              <span className="error-message">{errors.email}</span>
-            )}
+            {errors.email && <div className="invalid-feedback">{errors.email}</div>}
           </div>
 
-          <div className="form-group">
-            <label htmlFor="phone" className="form-label">
-              Phone Number <span className="required">*</span>
+          <div className="col-md-6">
+            <label className="form-label">
+              Phone <span className="text-danger">*</span>
             </label>
             <input
               type="tel"
-              id="phone"
               name="phone"
+              className={`form-control ${errors.phone && "is-invalid"}`}
               value={formData.phone}
               onChange={handleInputChange}
-              className={`form-input ${errors.phone ? "error" : ""}`}
-              placeholder="Enter your phone number"
             />
-            {errors.phone && (
-              <span className="error-message">{errors.phone}</span>
-            )}
+            {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
           </div>
-        </div>
 
-        <div className="form-row">
-          <div className="form-group">
-            <label htmlFor="company" className="form-label">
-              Company Name <span className="required">*</span>
+          <div className="col-md-6">
+            <label className="form-label">
+              Company <span className="text-danger">*</span>
             </label>
             <input
               type="text"
-              id="company"
               name="company"
+              className={`form-control ${errors.company && "is-invalid"}`}
               value={formData.company}
               onChange={handleInputChange}
-              className={`form-input ${errors.company ? "error" : ""}`}
-              placeholder="Enter your company name"
             />
-            {errors.company && (
-              <span className="error-message">{errors.company}</span>
-            )}
+            {errors.company && <div className="invalid-feedback">{errors.company}</div>}
           </div>
 
-          <div className="form-group">
-            <label htmlFor="interest" className="form-label">
-              Area of Interest <span className="required">*</span>
+          <div className="col-md-6">
+            <label className="form-label">
+              Area of Interest <span className="text-danger">*</span>
             </label>
             <select
-              id="interest"
               name="interest"
+              className={`form-select ${errors.interest && "is-invalid"}`}
               value={formData.interest}
               onChange={handleInputChange}
-              className={`form-select ${errors.interest ? "error" : ""}`}
             >
-              <option value="">Select an option</option>
+              <option value="">-- Select --</option>
               <option value="membership">Membership Management</option>
               <option value="events">Event Management</option>
               <option value="community">Community Building</option>
@@ -284,58 +189,47 @@ const ContactForm = () => {
               <option value="training">Training & Development</option>
               <option value="other">Other</option>
             </select>
-            {errors.interest && (
-              <span className="error-message">{errors.interest}</span>
-            )}
+            {errors.interest && <div className="invalid-feedback">{errors.interest}</div>}
+          </div>
+
+          <div className="col-12">
+            <label className="form-label">
+              Message <span className="text-danger">*</span>
+            </label>
+            <textarea
+              name="message"
+              rows="4"
+              className={`form-control ${errors.message && "is-invalid"}`}
+              value={formData.message}
+              onChange={handleInputChange}
+            ></textarea>
+            {errors.message && <div className="invalid-feedback">{errors.message}</div>}
           </div>
         </div>
 
-        <div className="form-group">
-          <label htmlFor="message" className="form-label">
-            Message <span className="required">*</span>
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-            className={`form-textarea ${errors.message ? "error" : ""}`}
-            placeholder="Tell us about your project or requirements..."
-            rows="4"
-          />
-          {errors.message && (
-            <span className="error-message">{errors.message}</span>
-          )}
-        </div>
-
-        <div className="form-submit">
+        <div className="mt-4 text-center">
           <button
             type="submit"
-            className="btn-primary btn-submit"
+            className="btn btn-primary px-4"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
-              <div className="btn-loading">
-                <div className="spinner"></div>
+              <>
+                <span className="spinner-border spinner-border-sm me-2"></span>
                 Sending...
-              </div>
+              </>
             ) : (
               <>
-                <span className="label">Send Message</span>
+                Send Message{" "}
                 <svg
                   width="16"
                   height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
+                  fill="currentColor"
+                  className="ms-1"
                   xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
                 >
-                  <path
-                    d="M8 1L15 8L8 15M15 8H1"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
+                  <path d="M1 8h14M8 1l7 7-7 7" stroke="white" strokeWidth="2" />
                 </svg>
               </>
             )}

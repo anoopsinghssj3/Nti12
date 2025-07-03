@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
-import Header from "./components/Header";
+
+// Sections
 import HeroSection from "./components/HeroSection";
 import ClientsSection from "./components/ClientsSection";
 import CommunitySection from "./components/CommunitySection";
@@ -16,26 +17,69 @@ import MobileNavigation from "./components/MobileNavigation";
 
 const LandingPage = () => {
   return (
-    <div className="landing-page">
-      <div className="main-content">
-        <Header />
-        <main className="home-content">
+    <div className="landing-page bg-light w-100">
+      <div className="main-content container-fluid px-0">
+
+        {/* Hero Section */}
+        <section className="py-5 bg-white w-100">
           <HeroSection />
+        </section>
+
+        {/* Clients Section */}
+        <section className=" bg-light w-100">
           <ClientsSection />
+        </section>
+
+        {/* Community Section */}
+        <section className="py-5 bg-white w-100">
           <CommunitySection />
-        </main>
-        <div className="body-content">
+        </section>
+
+        {/* Unlock Section */}
+        <section className="py-5 bg-light w-100">
           <UnlockSection />
+        </section>
+
+        {/* Achievements Section */}
+        <section className="py-5 bg-white w-100">
           <AchievementsSection />
+        </section>
+
+        {/* Calendar Section */}
+        <section className="py-5 bg-light w-100">
           <CalendarSection />
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-5 bg-white w-100">
           <TestimonialsSection />
+        </section>
+
+        {/* Blog Section */}
+        <section className="py-5 bg-light w-100">
           <BlogSection />
-        </div>
-        <ContactFormSection />
-        <CTASection />
-        <FooterSection />
+        </section>
+
+        {/* Contact Form Section */}
+        <section className="py-5 bg-white w-100">
+          <ContactFormSection />
+        </section>
+
+        {/* Call to Action Section */}
+        <section className="py-5 bg-primary text-white w-100">
+          <CTASection />
+        </section>
+
+        {/* Footer */}
+        <footer className="py-4 bg-dark text-white w-100">
+          <FooterSection />
+        </footer>
       </div>
-      <MobileNavigation />
+
+      {/* Mobile Navigation */}
+      <div className="d-md-none w-100">
+        <MobileNavigation />
+      </div>
     </div>
   );
 };

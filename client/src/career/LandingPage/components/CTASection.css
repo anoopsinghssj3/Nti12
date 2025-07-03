@@ -1,0 +1,8 @@
+.cta-section {
+  background: linear-gradient(135deg, #4a90e2, #007bff);
+}
+
+.btn-cta:hover {
+  transform: translateX(2px);
+  transition: all 0.3s ease;
+}

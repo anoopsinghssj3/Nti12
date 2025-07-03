@@ -1,0 +1,12 @@
+.contact-form-background {
+  background: linear-gradient(to right, #f0f0f0, #ffffff);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.contact-form-pattern {
+  background-image: url('/path-to-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}

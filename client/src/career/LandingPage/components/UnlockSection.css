@@ -1,0 +1,38 @@
+.unlock-section {
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+}
+
+.unlock-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.unlock-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+}
+
+.unlock-description {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}

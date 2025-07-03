@@ -13,11 +13,8 @@ const EmailSignup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Reset error
     setError("");
 
-    // Validate email
     if (!email.trim()) {
       setError("Email address is required");
       return;
@@ -31,20 +28,16 @@ const EmailSignup = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500));
-
       console.log("Email signup:", email);
       setIsSubmitted(true);
 
-      // Reset form after success
       setTimeout(() => {
         setEmail("");
         setIsSubmitted(false);
       }, 3000);
-    } catch (error) {
+    } catch (err) {
       setError("Something went wrong. Please try again.");
-      console.error("Email signup error:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -52,14 +45,12 @@ const EmailSignup = () => {
 
   const handleInputChange = (e) => {
     setEmail(e.target.value);
-    if (error) {
-      setError("");
-    }
+    if (error) setError("");
   };
 
   if (isSubmitted) {
     return (
-      <div className="email-signup-success">
+      <div className="email-signup-success" role="status">
         <div className="success-icon-small">
           <svg
             width="20"
@@ -87,22 +78,30 @@ const EmailSignup = () => {
     <div className="email-signup">
       <h3 className="email-signup-title">Stay up to date</h3>
       <form className="email-signup-form" onSubmit={handleSubmit} noValidate>
+        <label htmlFor="email" className="visually-hidden">
+          Email Address
+        </label>
         <div className="email-input-group">
           <input
             type="email"
+            id="email"
+            name="email"
             value={email}
             onChange={handleInputChange}
             className={`email-input ${error ? "error" : ""}`}
             placeholder="Your email address"
             disabled={isSubmitting}
+            aria-label="Email address"
+            required
           />
           <button
             type="submit"
             className="email-submit-btn"
             disabled={isSubmitting || !email.trim()}
+            aria-label="Subscribe"
           >
             {isSubmitting ? (
-              <div className="btn-spinner"></div>
+              <div className="btn-spinner" aria-hidden="true"></div>
             ) : (
               <svg
                 width="16"
@@ -122,7 +121,11 @@ const EmailSignup = () => {
             )}
           </button>
         </div>
-        {error && <span className="email-error-message">{error}</span>}
+        {error && (
+          <span className="email-error-message" role="alert">
+            {error}
+          </span>
+        )}
       </form>
     </div>
   );
