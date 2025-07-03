@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import { IoMdHome } from "react-icons/io";
 import { FaBookReader, FaFileSignature } from "react-icons/fa";
@@ -316,16 +316,14 @@ export default function Navbar() {
                 <span>About</span>
               </Link>
 
-              <button type="submit"
+              <NavLink type="submit"
                 className="nav-link text-secondary system bg-primary text-white py-1 px-2"
-                // to=""
-                onClick={(handleLinkClick) => {
-                  navigate("/career")
-                }}
+                to="/career"
+
               >
                 <IoArrowRedoSharp fontSize="1.5rem" className="mb-1" />
                 <span>Career</span>
-              </button>
+              </NavLink>
             </ul>
           </div>
         </div>
