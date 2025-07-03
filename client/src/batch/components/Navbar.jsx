@@ -315,14 +315,6 @@ export default function Navbar() {
                 <PiCaretCircleDownFill fontSize="1.5rem" className="mb-1" />{" "}
                 <span>About</span>
               </Link>
-              {/* <Link
-                className="nav-link text-secondary system bg-success text-white py-1 px-2 me-2"
-                to="/landing"
-                onClick={handleLinkClick}
-              >
-                <IoArrowRedoSharp fontSize="1.5rem" className="mb-1" />
-                <span>Landing</span>
-              </Link> */}
 
               <Link
                 className="nav-link text-secondary system bg-primary text-white py-1 px-2"
