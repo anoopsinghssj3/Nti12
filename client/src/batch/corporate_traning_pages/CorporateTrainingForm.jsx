@@ -1,6 +1,6 @@
 import "../corporate_traning_pages/CorporateTrainingForm.css";
 import { useForm } from "react-hook-form";
-import { domainRoute } from "../utils/domain";
+import { domainRoute } from "../../utils/domain.js";
 import axios from "axios";
 
 export default function CorporateTrainingForm() {

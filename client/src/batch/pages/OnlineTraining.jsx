@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/OnlineTraining.css";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { domainRoute } from "../utils/domain";
+import { domainRoute } from "../../utils/domain.js";
 
 export default function OnlineTraining() {
   const {
