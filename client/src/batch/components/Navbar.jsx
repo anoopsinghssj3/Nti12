@@ -54,14 +54,14 @@ export default function Navbar() {
     <div className="w-100 sticky-top bg-white">
       <nav className="navbar navbar-expand-lg navbar-light text-secondary main-navbar">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/" onClick={handleLinkClick}>
+          <NavLink className="navbar-brand" to="/" onClick={handleLinkClick}>
             <img
               src={NtiLogo}
               alt="NtiLogo"
               loading="lazy"
               style={{ height: "5.5rem" }}
             />
-          </Link>
+          </NavLink>
 
           <button
             className="navbar-toggler dashboard"
@@ -77,14 +77,14 @@ export default function Navbar() {
             ref={collapseRef}
           >
             <ul className="navbar-nav gap-2 mb-2 mb-lg-0 d-flex align-items-start">
-              <Link
+              <NavLink
                 className="nav-link nav-item active home-style text-secondary system"
                 to="/"
                 onClick={handleLinkClick}
               >
                 <IoMdHome fontSize="1.5rem" className="mb-1" />
                 <span>Home</span>
-              </Link>
+              </NavLink>
 
               <div className="nav-item dropdown system ms-1 course-style">
                 <span
@@ -271,50 +271,50 @@ export default function Navbar() {
                 </ul>
               </div>
 
-              <Link
+              <NavLink
                 className="nav-link text-secondary system me-1"
                 to="/placement"
                 onClick={handleLinkClick}
               >
                 <GiSuitcase fontSize="1.5rem" className="mb-1" />{" "}
                 <span>Placement</span>
-              </Link>
+              </NavLink>
 
-              <Link
+              <NavLink
                 className="nav-link text-secondary system"
                 to="/corpo_tra"
                 onClick={handleLinkClick}
               >
                 <IoSchoolSharp fontSize="1.25rem" className="mb-1" />{" "}
                 <span>Corporate Training</span>
-              </Link>
+              </NavLink>
 
-              <Link
+              <NavLink
                 className="nav-link text-secondary system ms-1"
                 to="/on_tra"
                 onClick={handleLinkClick}
               >
                 <FaFileSignature fontSize="1.25rem" className="mb-1" />
                 <span>Online Registration</span>
-              </Link>
+              </NavLink>
 
-              <Link
+              <NavLink
                 className="nav-link text-secondary system"
                 to="/certificate"
-                onClick={handleLinkClick}
+                onClick={handleNavLinkClick}
               >
                 <PiCertificateFill fontSize="1.5rem" className="mb-1" />{" "}
                 <span>Certificate</span>
-              </Link>
+              </NavLink>
 
-              <Link
+              <NavLink
                 className="nav-link text-secondary system"
                 to="/about"
                 onClick={handleLinkClick}
               >
                 <PiCaretCircleDownFill fontSize="1.5rem" className="mb-1" />{" "}
                 <span>About</span>
-              </Link>
+              </NavLink>
 
               <NavLink type="submit"
                 className="nav-link text-secondary system bg-primary text-white py-1 px-2"
