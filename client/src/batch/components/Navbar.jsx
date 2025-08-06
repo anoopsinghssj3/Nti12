@@ -54,13 +54,8 @@ export default function Navbar() {
     <div className="w-100 sticky-top bg-white">
       <nav className="navbar navbar-expand-lg navbar-light text-secondary main-navbar">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/" onClick={handleLinkClick}>
-            <img
-              src={NtiLogo}
-              alt="NtiLogo"
-              loading="lazy"
-              style={{ height: "5.5rem" }}
-            />
+          <NavLink className="navbar-brand fs-2 text-primary fw-bold" to="/" onClick={handleLinkClick}>
+           CloudAcademy
           </NavLink>
 
           <button
